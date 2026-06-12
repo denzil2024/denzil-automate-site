@@ -1,27 +1,7 @@
 import { useEffect, useState } from 'react';
-
-const CONTACT = 'https://wa.me/254781246345';
-
-/* ---------- logo: a crafted "rising automation" mark + two-tone wordmark ---------- */
-function Logo({ id }) {
-  return (
-    <svg className="mk" viewBox="0 0 34 34" fill="none" aria-hidden="true">
-      <defs><linearGradient id={`bm${id}`} x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#6d5efc" /><stop offset="1" stopColor="#a575ff" /></linearGradient></defs>
-      <rect width="34" height="34" rx="10" fill={`url(#bm${id})`} />
-      <g fill="#fff">
-        <rect x="12.1" y="6.4" width="1.7" height="5.6" rx="0.85" /><circle cx="12.95" cy="5.9" r="1.6" />
-        <rect x="20.2" y="6.4" width="1.7" height="5.6" rx="0.85" /><circle cx="21.05" cy="5.9" r="1.6" />
-        <rect x="6.5" y="14.8" width="4.1" height="7.2" rx="2.05" /><rect x="23.4" y="14.8" width="4.1" height="7.2" rx="2.05" />
-        <rect x="8.9" y="10.8" width="16.2" height="15.7" rx="7" />
-      </g>
-      <rect x="11.3" y="16.3" width="11.4" height="5.7" rx="2.85" fill="#2c2658" />
-      <ellipse cx="15" cy="19.15" rx="1.3" ry="2.05" fill="#fff" /><ellipse cx="19" cy="19.15" rx="1.3" ry="2.05" fill="#fff" />
-    </svg>
-  );
-}
-function Brand({ id }) {
-  return <a className="brand" href="/"><Logo id={id} /><span className="bword">Denzil <span>Automations</span></span></a>;
-}
+import SiteHeader from '../components/SiteHeader';
+import SiteFooter from '../components/SiteFooter';
+import { CONTACT } from '../site';
 
 /* ---------- hero workflow (long horizontal pipeline) ---------- */
 const G = {
@@ -232,35 +212,15 @@ function Show({ id, bg, flip, eye, scene, copy, pts, visual }) {
 
 /* ---------- page ---------- */
 function Hero() {
-  const [menu, setMenu] = useState(false);
   return (
     <section className="hero">
       <div className="wrap">
-        <nav className="nav">
-          <Brand id="nav" />
-          <div className="nav-links"><a href="#work">What we build</a><a href="#automations">Automations</a><a href="#how">How it works</a><a href="#faq">FAQ</a></div>
-          <a className="btn btn-primary nav-cta" href={CONTACT}>Book a call</a>
-          <button className="nav-toggle" aria-label="Menu" onClick={() => setMenu((o) => !o)}>
-            {menu
-              ? <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg>
-              : <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg>}
-          </button>
-        </nav>
-        {menu && (
-          <div className="nav-menu">
-            <a href="#work" onClick={() => setMenu(false)}>What we build</a>
-            <a href="#automations" onClick={() => setMenu(false)}>Automations</a>
-            <a href="#how" onClick={() => setMenu(false)}>How it works</a>
-            <a href="#faq" onClick={() => setMenu(false)}>FAQ</a>
-            <a className="btn btn-primary" href={CONTACT} onClick={() => setMenu(false)}>Book a call</a>
-          </div>
-        )}
         <div className="hero-inner">
           <h1>Put your busywork <span className="grad">on autopilot.</span></h1>
           <p className="hero-lede">We design and build the automations that quietly run your business, capturing leads, replying, following up, booking and billing, so you spend your time on the work that grows it.</p>
           <div className="hero-actions">
             <a className="btn btn-primary btn-lg" href={CONTACT}>Book a call</a>
-            <a className="btn btn-outline btn-lg" href="#work">See what we build</a>
+            <a className="btn btn-ghost btn-lg" href="/#work">See what we build</a>
           </div>
         </div>
         <div className="wf-panel">
@@ -309,9 +269,9 @@ function Automations() {
   const a = AUTOS[on];
   const slug = a.t.toLowerCase().replace(/[^a-z]+/g, '-').replace(/^-|-$/g, '');
   return (
-    <section className="block" id="automations">
+    <section className="block dark" id="automations">
       <div className="wrap">
-        <div className="shead"><span className="eyebrow">What we automate</span><h2>If it is repetitive, we can build it.</h2><p>The workflows businesses ask us for most. Pick any one to watch it run. Every build is shaped around your tools and goals, never a fixed template.</p></div>
+        <div className="shead"><span className="eyebrow dark">What we automate</span><h2>If it is repetitive, we can build it.</h2><p>The workflows businesses ask us for most. Pick any one to watch it run. Every build is shaped around your tools and goals, never a fixed template.</p></div>
         <div className="ex-tabs">
           {AUTOS.map((x, i) => (
             <button key={x.t} className={`ex-tab${i === on ? ' on' : ''}`} onMouseEnter={() => setOn(i)} onFocus={() => setOn(i)} onClick={() => setOn(i)}>{x.t}</button>
@@ -375,47 +335,29 @@ function Cta() {
     </section>
   );
 }
-function Footer() {
-  return (
-    <footer>
-      <div className="wrap">
-        <div className="foot-top">
-          <div className="foot-brand">
-            <Brand id="foot" />
-            <p>We design and build the automations that quietly run your business, so you can spend your time on the work that grows it.</p>
-          </div>
-          <div className="foot-col"><h4>Explore</h4><a href="#work">What we build</a><a href="#automations">Automations</a><a href="#how">How it works</a></div>
-          <div className="foot-col"><h4>Company</h4><a href="#faq">FAQ</a><a href={CONTACT}>Contact</a><a href={CONTACT}>Book a call</a></div>
-          <div className="foot-col"><h4>Get started</h4><a href={CONTACT}>WhatsApp us</a><a href={CONTACT}>Request a quote</a></div>
-        </div>
-        <div className="foot-bottom"><span>© {new Date().getFullYear()} Denzil Automations</span><span>Built to run while you sleep.</span></div>
-      </div>
-    </footer>
-  );
-}
-
 export default function Landing() {
   useEffect(() => { document.title = 'Denzil Automations | AI automation agency for growing businesses'; }, []);
   return (
     <>
+      <SiteHeader />
       <Hero />
-      <Show id="work" bg="soft" eye="When they reach out" scene="It is 11pm. A customer messages. You are asleep. You still win the job."
+      <Show id="work" bg="dark" eye="When they reach out" scene="It is 11pm. A customer messages. You are asleep. You still win the job."
         copy="The moment someone messages you, on WhatsApp, email or your site, they get an instant, on-brand reply that answers them, qualifies them, and books them in. No lead waits until morning, and none goes cold."
         pts={['Answers in seconds, day or night', 'Sounds like you, not a robot', 'Books the meeting before you wake up']} visual={<ChatMock />} />
-      <Show bg="dark" flip eye="When they go quiet" scene="The deal did not die. It just went quiet, and you forgot to chase it."
+      <Show bg="soft" flip eye="When they go quiet" scene="The deal did not die. It just went quiet, and you forgot to chase it."
         copy="Most leads never get a second message, and that is where the money leaks. We build follow-up that runs itself, nudging quiet leads at the right moment in the right tone, until they reply or buy. The deals you would have written off come back."
         pts={['Perfectly-timed, human-sounding nudges', 'Stops the instant they reply', 'Recovers revenue you were losing']} visual={<TimelineMock />} />
-      <Show bg="soft" eye="When you need to know" scene="Stop digging through chats to work out who to call next."
+      <Show bg="dark" eye="When you need to know" scene="Stop digging through chats to work out who to call next."
         copy="Every lead, deal and task flows into one live board that updates itself. Who is new, who is waiting, who is booked, who has gone cold, all at a glance. Your team finally works from one source of truth instead of scattered notes and memory."
         pts={['Updates itself in real time', 'A clear next action on every lead', 'Nothing slips through the cracks']} visual={<TableMock />} />
-      <Show bg="dark" flip eye="When it is time to get paid" scene="Get paid without the awkward 'just following up on payment' message."
+      <Show bg="soft" flip eye="When it is time to get paid" scene="Get paid without the awkward 'just following up on payment' message."
         copy="Quotes go out the moment they are needed, invoices send themselves, and polite reminders chase late payers on their own, so you get paid faster without lifting a finger or feeling pushy about it."
         pts={['Quotes and invoices on autopilot', 'Reminders that never feel awkward', 'Paid days sooner']} visual={<InvoiceMock />} />
       <Automations />
-      <ProcessProof />
       <Faq />
+      <ProcessProof />
       <Cta />
-      <Footer />
+      <SiteFooter />
     </>
   );
 }
