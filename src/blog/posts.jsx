@@ -51,7 +51,7 @@ export const POSTS = [
     readTime: '12 min read',
     content: () => (
       <>
-        <p>If you run a business that takes enquiries on WhatsApp, you already know the feeling. The messages arrive at all hours, from people who expect an answer in minutes, and every one you miss or reply to late is a customer quietly drifting to whoever responded first. WhatsApp has become the front door to your business, and for most owners that front door stays wide open long after everyone has gone home.</p>
+        <p>If you run a business that takes enquiries on WhatsApp, you already know the feeling. The messages arrive at all hours, from people who expect an answer in minutes, and every one you miss or reply to late is a customer quietly drifting to whoever responded first. WhatsApp has become <strong>the front door to your business</strong>, and for most owners that front door stays wide open long after everyone has gone home.</p>
 
         <p>This is the problem WhatsApp automation is built to solve. Done with care, it can carry a huge share of the work that currently lands on you.</p>
 
@@ -61,7 +61,7 @@ export const POSTS = [
 
         <p>The reason WhatsApp deserves this much attention becomes obvious the moment you look at how people use it. More than three billion people are on it worldwide, and over 175 million of them message a business account every single day. For a growing share of your customers, sending a WhatsApp is now the default way to ask a question, in a world where a phone call feels like too much effort and an email feels like shouting into a void.</p>
 
-        <p>The way people treat the app is what makes it so powerful for business. A WhatsApp message is opened around 98% of the time, against roughly 20% for marketing email. Most are read within minutes, and people reply fast, usually within 45 to 90 seconds.</p>
+        <p>The way people treat the app is what makes it so powerful for business. A WhatsApp message is <strong>opened around 98% of the time</strong>, against roughly 20% for marketing email. Most are read within minutes, and people reply fast, usually <strong>within 45 to 90 seconds</strong>.</p>
 
         <p>That speed changes everything downstream. We unpack why a fast first response decides so many sales in our piece on <a href="/blog/speed-to-lead">replying to new enquiries within minutes</a>.</p>
 
@@ -141,7 +141,7 @@ export const POSTS = [
 
         <h2>How to Set It Up Without Sounding Like a Robot</h2>
 
-        <p>Every owner worries that automating WhatsApp will make their business feel cold. The worry is fair, because a clumsy bot is worse than a slow human. The difference is in how the system is built.</p>
+        <p>Every owner worries that automating WhatsApp will make their business feel cold. The worry is fair, because <strong>a clumsy bot is worse than a slow human</strong>. The difference is in how the system is built.</p>
 
         <p>A good one writes in your real voice, with the warmth your customers already know. It skips the stiff "your query is important to us" tone everyone has learned to ignore.</p>
 
@@ -177,7 +177,7 @@ export const POSTS = [
 
         <h2>What It Costs, and What It Gives Back</h2>
 
-        <p>It is easy to see WhatsApp automation as a convenience that saves a little typing. Its bigger value, though, shows up on the revenue side.</p>
+        <p>It is easy to see WhatsApp automation as a convenience that saves a little typing. Its <strong>bigger value shows up on the revenue side</strong>.</p>
 
         <p>Every enquiry that gets an instant answer is a customer you were at risk of losing to a faster competitor. Across a month, those recovered conversations add up to real money, alongside the bookings that no longer slip away overnight and the quiet leads a timely nudge brings back.</p>
 
@@ -230,9 +230,9 @@ export const POSTS = [
     readTime: '11 min read',
     content: () => (
       <>
-        <p>Most businesses are convinced they have a lead problem. They almost never do. What they have is a follow-up problem, and it is quietly costing them the majority of the sales they could be closing right now.</p>
+        <p>Most businesses are convinced they have a lead problem. They almost never do. What they have is <strong>a follow-up problem</strong>, and it is quietly costing them the majority of the sales they could be closing right now.</p>
 
-        <p>The evidence is not subtle. Only 2% of deals close on the first contact, yet nearly half of all salespeople give up after a single follow-up. Read those two numbers together and the gap is impossible to ignore: the exact moment most of the selling should begin is the moment most businesses stop. This is the largest and cheapest opportunity hiding in your pipeline, and almost no one is taking it.</p>
+        <p>The evidence is not subtle. <strong>Only 2% of deals close on the first contact</strong>, yet <strong>nearly half of all salespeople give up after a single follow-up</strong>. Read those two numbers together and the gap is impossible to ignore: the exact moment most of the selling should begin is the moment most businesses stop. This is the largest and cheapest opportunity hiding in your pipeline, and almost no one is taking it.</p>
 
         <h2>Lead Generation Is Rarely the Problem. Follow-Up Is.</h2>
 
@@ -244,7 +244,7 @@ export const POSTS = [
 
         <h2>The Persistence Gap: Where Sales Are Won and Lost</h2>
 
-        <p>Track where deals close and a precise pattern appears. Around 80% of sales are made between the fifth and twelfth contact, and 95% of leads who eventually buy are reached by the sixth attempt. Persistence is not a personality trait in sales. It is the mechanism by which sales happen at all.</p>
+        <p>Track where deals close and a precise pattern appears. Around <strong>80% of sales are made between the fifth and twelfth contact</strong>, and 95% of leads who eventually buy are reached by the sixth attempt. Persistence is not a personality trait in sales. It is the mechanism by which sales happen at all.</p>
 
         <p>Now set that against how most sellers behave:</p>
 
@@ -383,7 +383,7 @@ export const POSTS = [
 
         <h2>Follow-Up Is Not a Task. It Is the Business.</h2>
 
-        <p>Most leads never reject you. They go quiet, then they get forgotten, because doing follow-up by hand is genuinely hard and almost everyone quits too early. The businesses that win are rarely the ones with the slickest opening message. They are the ones still politely present at the fifth and sixth touch, where the overwhelming majority of sales are made.</p>
+        <p>Most leads never reject you. They go quiet, then they get forgotten, because doing follow-up by hand is genuinely hard and almost everyone quits too early. The businesses that win are rarely the ones with the slickest opening message. They are the ones <strong>still politely present at the fifth and sixth touch</strong>, where the overwhelming majority of sales are made.</p>
 
         <p>Build a system that never forgets a lead, times its nudges with care, says something worth replying to, and goes silent the instant a customer responds, and the revenue you used to lose in the gap starts coming back on its own. That is the system we build, wired into the channel your customers already use, so the follow-up runs whether or not anyone on your team remembers to send it.</p>
       </>
@@ -402,11 +402,11 @@ export const POSTS = [
       <>
         <p>Someone fills in your form, taps your WhatsApp link, or sends "Hi, are you available?" at 9:47pm. In that moment they are as warm as they will ever be. They have a clear need, they have your name in front of them, and they are almost certainly messaging two or three of your competitors in the same breath.</p>
 
-        <p>What happens in the next five minutes quietly decides whether that person becomes a paying customer or a missed notification you find the next morning. It is the single most under-measured number in most businesses, and once you understand what the research says about it, you cannot unsee it.</p>
+        <p>What happens in the next five minutes quietly decides whether that person becomes a paying customer or a missed notification you find the next morning. It is <strong>the single most under-measured number in most businesses</strong>, and once you understand what the research says about it, you cannot unsee it.</p>
 
         <h2>The Five-Minute Window Is Not a Marketing Myth</h2>
 
-        <p>The most cited research on this comes from a Harvard Business Review study titled "The Short Life of Online Sales Leads," which examined more than 100,000 web-generated leads across 2,241 United States companies. Its central finding is blunt. Businesses that responded to a new lead within five minutes were 100 times more likely to connect with that lead, and 21 times more likely to qualify them, than businesses that waited just 30 minutes.</p>
+        <p>The most cited research on this comes from a Harvard Business Review study titled "The Short Life of Online Sales Leads," which examined more than 100,000 web-generated leads across 2,241 United States companies. Its central finding is blunt. Businesses that responded to a new lead within five minutes were <strong>100 times more likely to connect</strong> with that lead, and <strong>21 times more likely to qualify them</strong>, than businesses that waited just 30 minutes.</p>
 
         <p>Thirty minutes. Not thirty hours. The gap between a five-minute reply and a half-hour reply is the gap between a live conversation and a voicemail nobody returns.</p>
 
@@ -528,7 +528,7 @@ export const POSTS = [
 
         <h2>The Bottom Line</h2>
 
-        <p>Speed to lead is the cheapest competitive advantage available to almost any business. The research is unambiguous. The fastest responder wins a wildly disproportionate share of the work, and roughly nine in ten businesses are too slow to claim it. You do not need a bigger ad budget to fix this. You need the first reply to happen in seconds instead of hours, automatically, every time, on the channel your customers already use.</p>
+        <p>Speed to lead is <strong>the cheapest competitive advantage available to almost any business</strong>. The research is unambiguous. <strong>The fastest responder wins a wildly disproportionate share of the work</strong>, and roughly nine in ten businesses are too slow to claim it. You do not need a bigger ad budget to fix this. You need the first reply to happen in seconds instead of hours, automatically, every time, on the channel your customers already use.</p>
 
         <p>That is the exact problem we build for. If you want to see where your enquiries are leaking today and how an instant-response system would plug the gap, it is a short conversation away.</p>
       </>
