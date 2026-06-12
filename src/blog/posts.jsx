@@ -41,6 +41,135 @@ export function CtaCard({ title, sub, label = 'Book a call' }) {
 
 export const POSTS = [
   {
+    slug: 'automations-to-set-up-first',
+    title: '7 Automations Every Growing Business Should Set Up First',
+    excerpt: 'Most owners know they should automate, yet only a quarter of small businesses have started while their bigger rivals race ahead. Here are the seven automations worth setting up first, in the order that pays back fastest, with no jargon and no guesswork.',
+    date: '2026-06-13',
+    category: CATEGORIES.gettingStarted,
+    cover: '/blog/automations-to-set-up-first-cover.jpg',
+    author: AUTHOR,
+    readTime: '12 min read',
+    content: () => (
+      <>
+        <p>Most business owners know, somewhere in the back of their mind, that they are spending hours on work a machine could handle. The enquiries answered at midnight, the quotes typed out by hand, the follow-ups that get forgotten in a busy week. The hard part is almost never a lack of willingness. For most owners it comes down to one question: which task to hand over first, without breaking what already works.</p>
+
+        <p>That hesitation quietly costs you. <strong>Only about a quarter of small businesses have automated even one part of how they work</strong>, against roughly 40% of larger companies, and the gap grows wider every year. The owners who do take the step tend to <strong>save between 8 and 15 hours every week</strong>, time they pour straight back into winning and looking after customers while their slower rivals stay buried in admin.</p>
+
+        <p>This guide is the shortcut through that decision. Below are the seven automations worth building first, ranked by how much they return for how little effort, so you can start with the single one that will change your week the fastest and add the rest only as each proves itself.</p>
+
+        <h2>What Makes a Task Worth Automating First</h2>
+
+        <p>Not every job is worth automating, and pouring effort into the wrong one is how people end up disappointed. The tasks that pay back fastest tend to share four traits, and the more of them a job ticks, the higher it belongs on your list. Hold each idea in this guide against them and the right order will almost choose itself.</p>
+
+        <ul>
+          <li><strong>It happens often.</strong> A task you repeat many times a day or week returns far more than a chore you face once a month, because the saved minutes stack up fast.</li>
+          <li><strong>It follows the same steps every time.</strong> Predictable, rule-based work is simple to hand to a system, while the messy judgement calls are better kept with a person who can think.</li>
+          <li><strong>It is time-sensitive.</strong> Anywhere a slow response costs you money, such as a fresh enquiry going cold, automating it early protects revenue you are otherwise leaking.</li>
+          <li><strong>It is easy to drop when you are busy.</strong> The jobs that slip through the cracks under pressure, like following up, are exactly where a tireless system earns its keep.</li>
+        </ul>
+
+        <h2>The Seven Automations, in the Order That Pays</h2>
+
+        <p>Each automation below is built around the tools you already use, so nothing gets ripped out and rebuilt. For most of the businesses we work with, the conversations themselves run through WhatsApp, which we cover end to end in our guide to <a href="/blog/whatsapp-automation">automating WhatsApp for your business</a>. Work down the list in order, and let each one earn its place before you add the next.</p>
+
+        <h3>1. Instant Lead Response</h3>
+
+        <p>The highest-return automation you can build is also the most overlooked: an instant, on-brand reply to every new enquiry, at any hour. The reason it sits at the top is blunt. The business that answers first wins a wildly disproportionate share of the work, and a reply that arrives in seconds rather than hours is the single biggest lever on whether a lead ever becomes a customer, as we set out in detail in our piece on <a href="/blog/speed-to-lead">answering enquiries within five minutes</a>.</p>
+
+        <p>A well-built version does far more than fire off a holding message. It greets the customer, answers the question they opened with, asks one or two things to understand what they need, and offers a time to talk, all before anyone on your team picks up their phone. Picture an enquiry arriving at nine at night: instead of sitting unread until morning, when the customer has already booked elsewhere, it is met, qualified and warmed up, so you wake to a conversation ready to close rather than a missed opportunity.</p>
+
+        <h3>2. Automatic Follow-Up</h3>
+
+        <p>Most sales are made somewhere between the fifth and twelfth contact, yet the average business gives up after the first. That gap is where an enormous amount of revenue quietly disappears, not because the leads were weak, but because nobody kept the conversation alive. An automated follow-up sequence closes it by nudging the people who go quiet, on a sensible schedule, until they either reply or buy.</p>
+
+        <p>In practice it might be a warm check-in two days after a quote, a reminder with a little extra value a week later, and a final, low-pressure message after two weeks, every one of them stopping the instant the customer responds. Done with care it never feels like pestering; it feels like a business that simply stayed interested. Recovering those drifting leads costs you nothing in extra advertising, only a system that never forgets, which is the whole approach we lay out in our guide to <a href="/blog/why-leads-go-cold">the follow-up system that revives quiet leads</a>.</p>
+
+        <h3>3. Booking and Reminders</h3>
+
+        <p>If your business runs on appointments, handing the booking over to an automation is close to a superpower. Instead of the usual back-and-forth to find a time, the customer is shown your genuine availability, picks a slot, and gets an instant confirmation while the appointment drops straight into your calendar. A salon, a clinic or a consultant can fill a week this way without ever touching the phone.</p>
+
+        <p>The quiet hero, though, is the reminder it sends the day before. No-shows are one of the most expensive and least talked about leaks in any appointment business, and a single well-timed message <strong>cuts them sharply</strong> week after week. You end up with fewer empty slots, far fewer "are we still on for today" exchanges, and a calendar that effectively manages itself.</p>
+
+        <h3>4. Answering the Questions You Get Every Day</h3>
+
+        <p>Every business answers the same handful of questions over and over: your hours, your prices, where you are, whether you have something available. Each one is small, but together they swallow hours of attention every week and pull you away from the work that grows the business. Automating these answers gives customers a helpful reply the instant they ask, day or night, and hands those hours back to you.</p>
+
+        <p>How you build it makes all the difference, though. A rigid chatbot can only answer the exact questions it was scripted for, and the moment a customer phrases things their own way it falls apart, while an AI agent understands the intent behind a message and replies naturally. That gap is the whole subject of our guide to <a href="/blog/ai-agents-vs-chatbots">AI agents versus chatbots</a>, and for any business whose customers ask real, varied questions, the agent is the version worth building.</p>
+
+        <h3>5. Quotes, Invoices and Payment Reminders</h3>
+
+        <p>The money side of a business is where time and goodwill leak away in equal measure. Quotes sit half-written for days, invoices go out late, and chasing a payment means an awkward message most owners quietly put off. Automating this whole chain keeps the cash moving without the friction: a quote can go out within minutes of a request, an invoice the moment a job is finished, and a polite reminder whenever one slips past its due date.</p>
+
+        <p>For a trades or services business in particular, this can be the difference between being paid in days and chasing the same money for weeks. The reminders handle the uncomfortable part on your behalf, firmly but politely and always on time, so you <strong>get paid sooner</strong> and never have to spend another evening writing "just following up on that invoice".</p>
+
+        <h3>6. Review and Feedback Requests</h3>
+
+        <p>Reviews are the quiet engine of new business, and yet most happy customers never leave one for the simplest reason: nobody asked them to. A small automation fixes that permanently, sending a friendly, well-timed request the moment a job is finished, while the customer still feels good about the work. Asking at exactly the right moment is what turns a satisfied customer into a public recommendation.</p>
+
+        <p>Set it up once and it runs forever in the background, steadily building the reputation that wins your next customers before they ever message you. Over a year, that trickle of fresh, recent reviews becomes one of your most valuable sales assets, doing its work long before anyone reaches your inbox. It is about as close to free marketing as a business gets.</p>
+
+        <h3>7. A Live View of Every Lead</h3>
+
+        <p>Once the first six are running, the final piece ties them all together: a single, self-updating view of every lead and exactly where it stands. Who is new, who is waiting on you, who is booked, who has gone quiet, all in one place rather than scattered across chats, notebooks and memory. This is the difference between reacting to whoever shouts loudest and steering your business with a clear head.</p>
+
+        <p>For any team sharing the work, it is also the piece that stops leads slipping between people. Everyone sees the same picture and knows the next step on every lead, so no customer is ever forgotten because two people each assumed the other had it covered. <strong>Nothing falls through the cracks</strong> when everything is finally visible in one place.</p>
+
+        <h2>How to Choose Where to Start</h2>
+
+        <p>You do not, and should not, try to build all seven at once. The smartest first move is to pick the single automation that solves your most expensive problem today, and for most businesses drowning in more enquiries than they can answer, that is instant lead response without much debate. Choosing one keeps the project small enough to get live quickly and to judge honestly.</p>
+
+        <p>From there, you add the next automation only once the previous one is clearly paying for itself. This patient, one-at-a-time rhythm keeps everything simple to understand, lets you feel each win before spending again, and means you are never saddled with a sprawling system nobody on your team quite trusts. Slow and proven beats fast and fragile every time.</p>
+
+        <CtaCard
+          title="Not sure which one to start with?"
+          sub="We will look at your day, find the automation that frees your week the fastest, and build it done-for-you, wired into the tools you already use."
+          label="Book a call"
+        />
+
+        <h2>How to Roll It Out Without Disruption</h2>
+
+        <p>The fear that keeps owners stuck is that automating something will break what already works. Built properly, it does the opposite, slotting quietly into your day and taking load off without anyone noticing a bump. The way to get there is to start small, test each automation against your real enquiries before you trust it fully, and always keep a person able to step in the moment a conversation needs one.</p>
+
+        <p>Just as important, a good build is documented and handed over so it runs on your own accounts, in your own voice, with you holding the keys. <strong>You should never feel like you are renting your own business back from a black box</strong> you cannot see into or change. The automation works for you, and a proper handover is what keeps it that way.</p>
+
+        <h2>The Mistakes That Trip People Up</h2>
+
+        <p>A few avoidable missteps cause most of the frustration owners feel with automation. The most common is trying to automate everything at once, which turns a clean, simple win into a tangle nobody fully understands or trusts. Starting with one clear automation, proving it on real customers, and only then adding the next keeps you in control the whole way through.</p>
+
+        <p>The second trap is automating a broken process rather than fixing it first, because if your follow-up has no real logic behind it, automating it simply sends weak messages faster and at greater scale. The third is stripping the human out altogether, when the genuine magic is a system that does the heavy lifting yet knows the precise moment to hand a conversation to a person who can close it.</p>
+
+        <h2>What You Get Back</h2>
+
+        <p>The real payoff runs deeper than the 8 to 15 hours a week the average business reclaims, welcome as those are. It shows up as the leads you stop losing to a slow reply, the appointments that no longer quietly vanish, and the invoices that get paid without a single awkward chase. Each automation plugs a specific leak in how money and time move through your business.</p>
+
+        <p>Put together, these seven quietly hand back both your hours and your peace of mind, turning a business that runs on frantic memory into one that runs on a system. <strong>You get to spend your days on the work that grows the business, while the busywork takes care of itself in the background.</strong></p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>Which automation should I set up first?</h3>
+        <p>For almost every business, instant lead response is the place to begin, because a slow first reply quietly costs you customers every single day you leave it unsolved. It also happens to be one of the simplest to put in place, which makes it both the highest-impact and the fastest win on the list. Everything else here builds naturally on top of that foundation.</p>
+
+        <h3>Do I need a different tool for each automation?</h3>
+        <p>Usually not, and that is part of the point. The strongest setups connect the tools you already use, your messaging number, your calendar, your spreadsheet and your invoicing, into one system that passes information cleanly between them. A done-for-you build wires those pieces together for you, so you are never left juggling a dozen disconnected apps and logins.</p>
+
+        <h3>Will automating make my business feel impersonal?</h3>
+        <p>Only if it is built badly. A well-made automation replies in your own voice and hands the conversation to a real person the moment a human touch is needed, so customers feel genuinely looked after at every step rather than processed. The aim is to take the busywork off your plate while keeping the relationship itself firmly human.</p>
+
+        <h3>Is automation worth it for a very small business?</h3>
+        <p>Often it matters even more when the team is small, because every hour and every lost lead weighs heavier with fewer of you to absorb them. A single automation that recovers a handful of customers a month can pay for itself many times over. What matters is choosing the right first build, and even the smallest team tends to feel the difference within weeks.</p>
+
+        <h3>How long does it take to see results?</h3>
+        <p>Faster than most people expect. A focused first automation can be live within days, and the time it saves and the leads it recovers usually show up in the very first week of running. Each one you add afterwards compounds the return, so the gains build rather than plateau.</p>
+
+        <h2>Start With One, and Build From There</h2>
+
+        <p>Transforming how your business runs comes down to choosing the single automation that frees your week the fastest, proving it works on your real customers, and then adding the next with the same care. Seven steps down that road, the busywork that used to own your evenings simply takes care of itself.</p>
+
+        <p>That is exactly the system we build for businesses every day, one deliberate automation at a time, wired into the tools you already rely on. If you would like to see which one would change your week the most, that is a short conversation away.</p>
+      </>
+    ),
+  },
+  {
     slug: 'ai-agents-vs-chatbots',
     title: 'AI Agents vs Chatbots: Which One Should Answer Your Customers',
     excerpt: 'Chatbots and AI agents get talked about as if they are the same thing, and businesses keep buying one expecting the other. Here is what really separates them, where each belongs, and which one your customers will thank you for.',
