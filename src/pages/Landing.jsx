@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
 import { CONTACT } from '../site';
+import { applySeo } from '../seo';
 
 /* ---------- hero workflow (long horizontal pipeline) ---------- */
 const G = {
@@ -280,11 +281,11 @@ function Automations() {
         <div className="ex-stage">
           <div className="wf-bar">
             <span className="d" style={{ background: '#ff5f57' }} /><span className="d" style={{ background: '#febc2e' }} /><span className="d" style={{ background: '#28c840' }} />
-            <span className="name">{slug}.flow</span><span className="run"><span className="ping" />Running</span>
+            <span className="name">{`${slug}.flow`}</span><span className="run"><span className="ping" />Running</span>
           </div>
           <div className="ex-body2"><MiniFlow graph={a.graph} /></div>
         </div>
-        <p className="ex-cap">{a.tg}.</p>
+        <p className="ex-cap">{`${a.tg}.`}</p>
       </div>
     </section>
   );
@@ -336,7 +337,13 @@ function Cta() {
   );
 }
 export default function Landing() {
-  useEffect(() => { document.title = 'Denzil Automations | AI automation agency for growing businesses'; }, []);
+  useEffect(() => {
+    applySeo({
+      title: 'Denzil Automations | AI automation agency for growing businesses',
+      description: 'Denzil Automations designs and builds done-for-you AI automations: instant lead response, follow-ups, bookings, billing and support, wired into the tools you already use. Built in days. You own it.',
+      path: '/',
+    });
+  }, []);
   return (
     <>
       <SiteHeader />

@@ -3,9 +3,8 @@ import { Link, useParams, Navigate } from 'react-router-dom';
 import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
 import { CONTACT } from '../site';
+import { applySeo, ORIGIN } from '../seo';
 import { getPostBySlug, getRelatedPosts, formatPostDate } from '../blog/posts.jsx';
-
-const ORIGIN = 'https://automate.workwithdenzil.com';
 
 function CoverFallback({ title }) {
   const letter = (title || 'D').trim()[0].toUpperCase();
@@ -39,48 +38,42 @@ export default function BlogPost() {
 
   useEffect(() => {
     if (!post) return;
-    document.title = `${post.title} | Denzil Automations`;
-    const meta = document.querySelector('meta[name="description"]') || (() => {
-      const m = document.createElement('meta'); m.name = 'description'; document.head.appendChild(m); return m;
-    })();
-    meta.content = post.excerpt;
-
     const canonical = `${ORIGIN}/blog/${post.slug}`;
     const image = post.cover ? `${ORIGIN}${post.cover}` : `${ORIGIN}/og-cover.jpg`;
-    const jsonLd = {
-      '@context': 'https://schema.org',
-      '@graph': [
-        {
-          '@type': 'BlogPosting',
-          headline: post.title,
-          description: post.excerpt,
-          image,
-          datePublished: post.date,
-          dateModified: post.updated || post.date,
-          author: { '@type': 'Organization', name: post.author },
-          publisher: { '@type': 'Organization', name: 'Denzil Automations', logo: { '@type': 'ImageObject', url: `${ORIGIN}/favicon.svg` } },
-          mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
-          articleSection: post.category?.label,
-          url: canonical,
-        },
-        {
-          '@type': 'BreadcrumbList',
-          itemListElement: [
-            { '@type': 'ListItem', position: 1, name: 'Home', item: `${ORIGIN}/` },
-            { '@type': 'ListItem', position: 2, name: 'Blog', item: `${ORIGIN}/blog` },
-            { '@type': 'ListItem', position: 3, name: post.title, item: canonical },
-          ],
-        },
-      ],
-    };
-    let script = document.getElementById('bp-jsonld');
-    if (!script) {
-      script = document.createElement('script');
-      script.id = 'bp-jsonld';
-      script.type = 'application/ld+json';
-      document.head.appendChild(script);
-    }
-    script.textContent = JSON.stringify(jsonLd);
+
+    applySeo({
+      title: `${post.title} | Denzil Automations`,
+      description: post.excerpt,
+      path: `/blog/${post.slug}`,
+      image,
+      type: 'article',
+      jsonLd: {
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@type': 'BlogPosting',
+            headline: post.title,
+            description: post.excerpt,
+            image,
+            datePublished: post.date,
+            dateModified: post.updated || post.date,
+            author: { '@type': 'Organization', name: post.author },
+            publisher: { '@type': 'Organization', name: 'Denzil Automations', logo: { '@type': 'ImageObject', url: `${ORIGIN}/favicon.svg` } },
+            mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+            articleSection: post.category?.label,
+            url: canonical,
+          },
+          {
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: `${ORIGIN}/` },
+              { '@type': 'ListItem', position: 2, name: 'Blog', item: `${ORIGIN}/blog` },
+              { '@type': 'ListItem', position: 3, name: post.title, item: canonical },
+            ],
+          },
+        ],
+      },
+    });
 
     window.scrollTo({ top: 0, behavior: 'instant' });
   }, [post]);
@@ -102,8 +95,8 @@ export default function BlogPost() {
             <p className="bp-lede">{post.excerpt}</p>
             <div className="bp-byline">
               <span className="bp-byline-rule" />
-              <p className="bp-byline-author">Published by {post.author}</p>
-              <p className="bp-byline-meta">Updated {formatPostDate(post.updated || post.date)} · {post.readTime}</p>
+              <p className="bp-byline-author">{`Published by ${post.author}`}</p>
+              <p className="bp-byline-meta">{`Updated ${formatPostDate(post.updated || post.date)} · ${post.readTime}`}</p>
             </div>
           </div>
 

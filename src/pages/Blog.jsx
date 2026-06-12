@@ -3,6 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
 import { CONTACT } from '../site';
+import { applySeo } from '../seo';
 import { posts, formatPostDate } from '../blog/posts.jsx';
 
 const POSTS_PER_PAGE = 9;
@@ -48,7 +49,7 @@ function FeaturedPost({ post }) {
         <h2 className="bl-featured-title">{post.title}</h2>
         <p className="bl-featured-excerpt">{post.excerpt}</p>
         <div className="bl-card-meta">
-          <span>By {post.author}</span>
+          <span>{`By ${post.author}`}</span>
           <span className="bl-meta-dot" />
           <span>{formatPostDate(post.date)}</span>
           <span className="bl-meta-dot" />
@@ -107,11 +108,11 @@ export default function Blog() {
   }, [featuredPost, paginatable, page]);
 
   useEffect(() => {
-    document.title = page === 1 ? 'Blog | Denzil Automations' : `Blog (Page ${page}) | Denzil Automations`;
-    const meta = document.querySelector('meta[name="description"]') || (() => {
-      const m = document.createElement('meta'); m.name = 'description'; document.head.appendChild(m); return m;
-    })();
-    meta.content = 'Practical playbooks on lead response, follow-up and AI automation for growing businesses, from the team at Denzil Automations.';
+    applySeo({
+      title: page === 1 ? 'Blog | Denzil Automations' : `Blog (Page ${page}) | Denzil Automations`,
+      description: 'Practical playbooks on lead response, follow-up and AI automation for growing businesses, from the team at Denzil Automations.',
+      path: page === 1 ? '/blog' : `/blog?page=${page}`,
+    });
   }, [page]);
 
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, [page]);

@@ -16,7 +16,7 @@ export default function SiteFooter() {
           <div className="foot-col"><h4>Company</h4><a href="/#faq">FAQ</a><a href={CONTACT}>Contact</a><a href={CONTACT}>Book a call</a></div>
           <div className="foot-col"><h4>Get started</h4><a href={CONTACT}>WhatsApp us</a><a href={CONTACT}>Request a quote</a></div>
         </div>
-        <div className="foot-bottom"><span>© {new Date().getFullYear()} Denzil Automations</span><span>Built to run while you sleep.</span></div>
+        <div className="foot-bottom"><span>{`© ${new Date().getFullYear()} Denzil Automations`}</span><span>Built to run while you sleep.</span></div>
       </div>
     </footer>
   );
