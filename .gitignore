@@ -4,13 +4,11 @@ node_modules
 .vite
 .env
 # local screenshot tooling (not part of the site)
-shot-*.png
-clip-*.png
-row-*.png
 capture.mjs
-clip.mjs
-clip2.mjs
-clipa.mjs
-clipl.mjs
-clipf.mjs
+clip*.mjs
+shot-*.png
+clip*.png
+row-*.png
+m-*.png
+m[0-9]*.png
 # NOTE: dist/ is intentionally committed and served. Do not ignore it.

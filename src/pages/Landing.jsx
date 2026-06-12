@@ -31,6 +31,9 @@ const G = {
   check: <path fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M10 16.5 L14 20.5 L22 11.5" />,
   cal: <g fill="none" strokeWidth="1.8" strokeLinecap="round"><rect x="9" y="10.5" width="14" height="11.5" rx="2" /><path d="M9 14.5 H23 M13 8.5 V12 M19 8.5 V12" /></g>,
   bell: <g fill="none" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16A6 6 0 0 0 11 16c0 6-2.6 7.5-2.6 7.5h15.2S21 22 21 16" transform="translate(-0 -2)" /><path d="M14.4 24a1.8 1.8 0 0 1-2.8 0" /></g>,
+  doc: <g fill="none" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M11 8h6l5 5v11a1 1 0 0 1-1 1H11a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" /><path d="M13 16h6M13 19h5" /></g>,
+  card: <g fill="none" strokeWidth="1.8" strokeLinecap="round"><rect x="7.5" y="11" width="17" height="11" rx="2" /><path d="M7.5 15h17" /></g>,
+  chart: <g fill="none" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M9 9v15h15" /><path d="M13 19v-3M17 19v-6M21 19v-9" /></g>,
 };
 const NTINT = { green: ['#0f3b2e', '#2bd4a0'], accent: ['#241f4d', '#b9b1ff'], blue: ['#10324f', '#4aa3ff'], amber: ['#3d2c0e', '#ffb340'] };
 function Node({ x, y, w = 200, h = 76, big, glyph, tint, title, sub }) {
@@ -52,8 +55,37 @@ function Dot({ p, dur, begin = '0s' }) {
     </circle>
   );
 }
+const HERO_NODES = [
+  { id: 'h1', tint: 'green', glyph: 'bolt', role: 'Trigger', label: 'New lead' },
+  { id: 'h2', tint: 'accent', glyph: 'spark', role: 'AI agent', label: 'Understands & decides' },
+  { id: 'h3', tint: 'blue', glyph: 'chat', role: 'Output', label: 'Instant reply' },
+  { id: 'h4', tint: 'amber', glyph: 'cal', role: 'Output', label: 'Book a call' },
+  { id: 'h5', tint: 'green', glyph: 'check', role: 'Output', label: 'Log the lead' },
+  { id: 'h6', tint: 'blue', glyph: 'bell', role: 'Output', label: 'Reminder sent' },
+];
+function MobileFlow({ nodes }) {
+  return (
+    <div className="mflow">
+      {nodes.map((n, i) => {
+        const [bg, fg] = NTINT[n.tint];
+        return (
+          <div key={n.id || i}>
+            <div className="mflow-node">
+              <span className="mflow-ic" style={{ background: bg, color: fg }}>
+                <svg width="20" height="20" viewBox="0 0 32 32" fill={fg} stroke={fg}>{G[n.glyph]}</svg>
+              </span>
+              <span className="mflow-tx"><b>{n.label}</b><small>{n.role}</small></span>
+            </div>
+            {i < nodes.length - 1 && <div className="mflow-conn" />}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
 function WorkflowCanvas() {
   return (
+    <>
     <svg className="wf" viewBox="0 0 1260 420" role="img" aria-label="A new lead flows into an AI agent that replies, books, reminds and logs the lead.">
       <defs><filter id="ns" x="-20%" y="-30%" width="140%" height="170%"><feDropShadow dx="0" dy="8" stdDeviation="12" floodColor="#000" floodOpacity="0.5" /></filter></defs>
       <path id="p0" className="wf-edge" d="M236 205 C 291 205, 291 205, 346 205" />
@@ -69,6 +101,43 @@ function WorkflowCanvas() {
       <Node x="706" y="300" tint="green" glyph={G.check} title="Log the lead" sub="Captured, never lost" />
       <Node x="1016" y="167" tint="blue" glyph={G.bell} title="Reminder sent" sub="Cuts no-shows" />
     </svg>
+    <MobileFlow nodes={HERO_NODES} />
+    </>
+  );
+}
+
+/* ---------- automations mini-workflow (a unique branching graph per type) ---------- */
+const NW = 204, NH = 76;
+function ExNode({ n }) {
+  const [bg, fg] = NTINT[n.tint];
+  return (
+    <g transform={`translate(${n.x} ${n.y})`} filter="url(#exns)">
+      <rect className={`exn-card ${n.cls || ''}`} width={NW} height={NH} rx="14" />
+      <g transform="translate(15 22)"><rect width="32" height="32" rx="9" fill={bg} /><g fill={fg} stroke={fg}>{G[n.glyph]}</g></g>
+      <text className="exn-sub" x="59" y="34">{n.role}</text>
+      <text className="exn-title" x="59" y="53">{n.label}</text>
+    </g>
+  );
+}
+function MiniFlow({ graph }) {
+  const by = {};
+  graph.nodes.forEach((n) => { by[n.id] = n; });
+  const edge = (a, b) => {
+    const s = by[a], t = by[b];
+    const sx = s.x + NW, sy = s.y + NH / 2, tx = t.x, ty = t.y + NH / 2;
+    const c = Math.max(28, (tx - sx) / 2);
+    return `M ${sx} ${sy} C ${sx + c} ${sy}, ${tx - c} ${ty}, ${tx} ${ty}`;
+  };
+  return (
+    <>
+    <svg className="ex-svg" viewBox="0 0 1160 460" role="img" aria-label="Automation workflow">
+      <defs><filter id="exns" x="-20%" y="-30%" width="140%" height="170%"><feDropShadow dx="0" dy="6" stdDeviation="9" floodColor="#000" floodOpacity="0.5" /></filter></defs>
+      {graph.edges.map((e, i) => <path key={i} id={`eg${i}`} className="wf-edge" d={edge(e[0], e[1])} />)}
+      {graph.edges.map((e, i) => <Dot key={`d${i}`} p={`#eg${i}`} dur={`${(2 + (i % 3) * 0.3).toFixed(1)}s`} begin={`${(0.35 * i).toFixed(2)}s`} />)}
+      {graph.nodes.map((n) => <ExNode key={n.id} n={n} />)}
+    </svg>
+    <MobileFlow nodes={graph.nodes} />
+    </>
   );
 }
 
@@ -145,9 +214,9 @@ function InvoiceMock() {
   );
 }
 
-function Show({ bg, flip, eye, scene, copy, pts, visual }) {
+function Show({ id, bg, flip, eye, scene, copy, pts, visual }) {
   return (
-    <section className={`show${bg ? ` ${bg}` : ''}${flip ? ' flip' : ''}`}>
+    <section id={id} className={`show${bg ? ` ${bg}` : ''}${flip ? ' flip' : ''}`}>
       <div className="wrap">
         <div className="show-text">
           <div className="show-eye">{eye}</div>
@@ -163,14 +232,29 @@ function Show({ bg, flip, eye, scene, copy, pts, visual }) {
 
 /* ---------- page ---------- */
 function Hero() {
+  const [menu, setMenu] = useState(false);
   return (
     <section className="hero">
       <div className="wrap">
         <nav className="nav">
           <Brand id="nav" />
           <div className="nav-links"><a href="#work">What we build</a><a href="#automations">Automations</a><a href="#how">How it works</a><a href="#faq">FAQ</a></div>
-          <a className="btn btn-primary" href={CONTACT}>Book a call</a>
+          <a className="btn btn-primary nav-cta" href={CONTACT}>Book a call</a>
+          <button className="nav-toggle" aria-label="Menu" onClick={() => setMenu((o) => !o)}>
+            {menu
+              ? <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg>
+              : <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg>}
+          </button>
         </nav>
+        {menu && (
+          <div className="nav-menu">
+            <a href="#work" onClick={() => setMenu(false)}>What we build</a>
+            <a href="#automations" onClick={() => setMenu(false)}>Automations</a>
+            <a href="#how" onClick={() => setMenu(false)}>How it works</a>
+            <a href="#faq" onClick={() => setMenu(false)}>FAQ</a>
+            <a className="btn btn-primary" href={CONTACT} onClick={() => setMenu(false)}>Book a call</a>
+          </div>
+        )}
         <div className="hero-inner">
           <h1>Put your busywork <span className="grad">on autopilot.</span></h1>
           <p className="hero-lede">We design and build the automations that quietly run your business, capturing leads, replying, following up, booking and billing, so you spend your time on the work that grows it.</p>
@@ -191,15 +275,34 @@ function Hero() {
   );
 }
 
+const COL = [40, 326, 612, 898];
+const ROW = { t: 78, m: 210, b: 342 };
+const nd = (id, c, r, role, label, tint, glyph, cls = '') => ({ id, x: COL[c], y: ROW[r], role, label, tint, glyph, cls });
 const AUTOS = [
-  { t: 'Lead capture & response', tg: 'Answer every enquiry the second it lands', flow: ['New message arrives', 'AI reads & replies', 'Lead saved'] },
-  { t: 'Follow-up & nurture', tg: 'Re-engage quiet leads until they buy', flow: ['Lead goes quiet', 'Nudge sent at the right time', 'They reply'] },
-  { t: 'Booking & scheduling', tg: 'Customers book themselves, with reminders', flow: ['Customer picks a time', 'Calendar booked', 'Reminder sent'] },
-  { t: 'Quotes & proposals', tg: 'Tailored quotes out in minutes, not days', flow: ['Request comes in', 'Quote generated', 'Sent automatically'] },
-  { t: 'Invoicing & payments', tg: 'Invoices and reminders that chase themselves', flow: ['Job complete', 'Invoice sent', 'Reminder sent', 'Marked paid'] },
-  { t: 'Customer support', tg: 'Instant, on-brand answers around the clock', flow: ['Question asked', 'Answered instantly', 'Human if it matters'] },
-  { t: 'Reminders & alerts', tg: 'Nudge customers and your team on time', flow: ['Trigger hits', 'Reminder fires', 'Nobody forgets'] },
-  { t: 'Reporting & dashboards', tg: 'A live view of leads, deals and next steps', flow: ['Activity happens', 'Auto-logged', 'Live dashboard updates'] },
+  { t: 'Lead capture & response', tg: 'Answer every enquiry the second it lands', graph: {
+    nodes: [nd('a', 0, 'm', 'Trigger', 'New message', 'green', 'bolt', 'trig'), nd('b', 1, 'm', 'AI agent', 'Reads & acts', 'accent', 'spark', 'ai'), nd('c', 2, 't', 'Output', 'Instant reply', 'blue', 'chat'), nd('d', 2, 'b', 'Output', 'Lead saved', 'green', 'check'), nd('e', 3, 'b', 'Action', 'Team alerted', 'amber', 'bell')],
+    edges: [['a', 'b'], ['b', 'c'], ['b', 'd'], ['d', 'e']] } },
+  { t: 'Follow-up & nurture', tg: 'Re-engage quiet leads until they buy', graph: {
+    nodes: [nd('a', 0, 'm', 'Trigger', 'Goes quiet', 'amber', 'bell', 'trig'), nd('b', 1, 'm', 'Wait', 'Wait 2 days', 'blue', 'cal'), nd('c', 2, 'm', 'AI agent', 'Smart nudge', 'accent', 'spark', 'ai'), nd('d', 3, 't', 'Output', 'They reply', 'green', 'check'), nd('e', 3, 'b', 'Output', 'Still quiet', 'amber', 'bell')],
+    edges: [['a', 'b'], ['b', 'c'], ['c', 'd'], ['c', 'e']] } },
+  { t: 'Booking & scheduling', tg: 'Customers book themselves, with reminders', graph: {
+    nodes: [nd('a', 0, 'm', 'Trigger', 'Picks a time', 'green', 'bolt', 'trig'), nd('b', 1, 'm', 'Action', 'Calendar', 'blue', 'cal'), nd('c', 2, 'm', 'Output', 'Slot booked', 'green', 'check'), nd('d', 3, 't', 'Output', 'Confirmed', 'blue', 'chat'), nd('e', 3, 'b', 'Output', 'Reminder set', 'amber', 'bell')],
+    edges: [['a', 'b'], ['b', 'c'], ['c', 'd'], ['c', 'e']] } },
+  { t: 'Quotes & proposals', tg: 'Tailored quotes out in minutes, not days', graph: {
+    nodes: [nd('a', 0, 'm', 'Trigger', 'New request', 'green', 'bolt', 'trig'), nd('b', 1, 'm', 'AI agent', 'Reads needs', 'accent', 'spark', 'ai'), nd('c', 2, 'm', 'Action', 'Quote built', 'blue', 'doc'), nd('d', 3, 'm', 'Output', 'Sent', 'green', 'check')],
+    edges: [['a', 'b'], ['b', 'c'], ['c', 'd']] } },
+  { t: 'Invoicing & payments', tg: 'Invoices and reminders that chase themselves', graph: {
+    nodes: [nd('a', 0, 'm', 'Trigger', 'Job complete', 'green', 'bolt', 'trig'), nd('b', 1, 'm', 'Action', 'Invoice sent', 'blue', 'doc'), nd('c', 2, 'm', 'Wait', 'Not paid?', 'amber', 'cal'), nd('d', 3, 't', 'Action', 'Reminder', 'amber', 'bell'), nd('e', 3, 'b', 'Output', 'Marked paid', 'green', 'card')],
+    edges: [['a', 'b'], ['b', 'c'], ['c', 'd'], ['c', 'e']] } },
+  { t: 'Customer support', tg: 'Instant, on-brand answers around the clock', graph: {
+    nodes: [nd('a', 0, 'm', 'Trigger', 'Question in', 'green', 'bolt', 'trig'), nd('b', 1, 'm', 'AI agent', 'AI answers', 'accent', 'spark', 'ai'), nd('c', 2, 't', 'Output', 'Resolved', 'green', 'check'), nd('d', 2, 'b', 'Output', 'Needs human', 'amber', 'bell'), nd('e', 3, 'b', 'Action', 'Agent alerted', 'blue', 'chat')],
+    edges: [['a', 'b'], ['b', 'c'], ['b', 'd'], ['d', 'e']] } },
+  { t: 'Reminders & alerts', tg: 'Nudge customers and your team on time', graph: {
+    nodes: [nd('a', 0, 'm', 'Trigger', 'Trigger time', 'green', 'bolt', 'trig'), nd('b', 1, 'm', 'Action', 'Scheduler', 'blue', 'cal'), nd('c', 2, 't', 'Output', 'Customer', 'accent', 'chat'), nd('d', 2, 'b', 'Output', 'Team alerted', 'amber', 'bell'), nd('e', 3, 't', 'Output', 'Confirmed', 'green', 'check')],
+    edges: [['a', 'b'], ['b', 'c'], ['b', 'd'], ['c', 'e']] } },
+  { t: 'Reporting & dashboards', tg: 'A live view of leads, deals and next steps', graph: {
+    nodes: [nd('a', 0, 'm', 'Trigger', 'New activity', 'green', 'bolt', 'trig'), nd('b', 1, 'm', 'Action', 'Auto-logged', 'blue', 'doc'), nd('c', 2, 'm', 'Process', 'Dashboard', 'accent', 'chart', 'ai'), nd('d', 3, 't', 'Output', 'Weekly report', 'blue', 'doc'), nd('e', 3, 'b', 'Output', 'Alert if off', 'amber', 'bell')],
+    edges: [['a', 'b'], ['b', 'c'], ['c', 'd'], ['c', 'e']] } },
 ];
 function Automations() {
   const [on, setOn] = useState(0);
@@ -208,30 +311,20 @@ function Automations() {
   return (
     <section className="block" id="automations">
       <div className="wrap">
-        <div className="shead center"><span className="eyebrow">What we automate</span><h2>If it is repetitive, we can build it.</h2><p>The workflows businesses ask us for most. Hover any one to watch it run. Every build is shaped around your tools and goals, never a fixed template.</p></div>
-        <div className="explorer">
-          <div className="ex-list">
-            {AUTOS.map((x, i) => (
-              <button key={x.t} className={`ex-item${i === on ? ' on' : ''}`} onMouseEnter={() => setOn(i)} onFocus={() => setOn(i)} onClick={() => setOn(i)}>
-                <div className="nm">{x.t}</div><div className="tg">{x.tg}</div>
-              </button>
-            ))}
-          </div>
-          <div className="ex-canvas">
-            <div className="ex-bar">
-              <span className="d" style={{ background: '#ff5f57' }} /><span className="d" style={{ background: '#febc2e' }} /><span className="d" style={{ background: '#28c840' }} />
-              <span className="nm2">{slug}.flow</span><span className="run2"><i />Running</span>
-            </div>
-            <div className="ex-body">
-              {a.flow.map((step, i) => (
-                <Frag key={step}>
-                  <div className="ex-chip"><span className="n" />{step}</div>
-                  {i < a.flow.length - 1 && <div className="ex-conn" />}
-                </Frag>
-              ))}
-            </div>
-          </div>
+        <div className="shead"><span className="eyebrow">What we automate</span><h2>If it is repetitive, we can build it.</h2><p>The workflows businesses ask us for most. Pick any one to watch it run. Every build is shaped around your tools and goals, never a fixed template.</p></div>
+        <div className="ex-tabs">
+          {AUTOS.map((x, i) => (
+            <button key={x.t} className={`ex-tab${i === on ? ' on' : ''}`} onMouseEnter={() => setOn(i)} onFocus={() => setOn(i)} onClick={() => setOn(i)}>{x.t}</button>
+          ))}
         </div>
+        <div className="ex-stage">
+          <div className="wf-bar">
+            <span className="d" style={{ background: '#ff5f57' }} /><span className="d" style={{ background: '#febc2e' }} /><span className="d" style={{ background: '#28c840' }} />
+            <span className="name">{slug}.flow</span><span className="run"><span className="ping" />Running</span>
+          </div>
+          <div className="ex-body2"><MiniFlow graph={a.graph} /></div>
+        </div>
+        <p className="ex-cap">{a.tg}.</p>
       </div>
     </section>
   );
@@ -269,7 +362,7 @@ function Faq() {
   return (
     <section className="block soft" id="faq">
       <div className="wrap">
-        <div className="shead center"><span className="eyebrow">Good questions</span><h2>The things owners ask us first.</h2></div>
+        <div className="shead"><span className="eyebrow">Good questions</span><h2>The things owners ask us first.</h2></div>
         <div className="faq">{faqs.map((f, i) => <div className="faq-item" key={f.q}><div className="qn">{String(i + 1).padStart(2, '0')}</div><div><h3>{f.q}</h3><p>{f.a}</p></div></div>)}</div>
       </div>
     </section>
@@ -306,8 +399,7 @@ export default function Landing() {
   return (
     <>
       <Hero />
-      <div id="work" />
-      <Show bg="soft" eye="When they reach out" scene="It is 11pm. A customer messages. You are asleep. You still win the job."
+      <Show id="work" bg="soft" eye="When they reach out" scene="It is 11pm. A customer messages. You are asleep. You still win the job."
         copy="The moment someone messages you, on WhatsApp, email or your site, they get an instant, on-brand reply that answers them, qualifies them, and books them in. No lead waits until morning, and none goes cold."
         pts={['Answers in seconds, day or night', 'Sounds like you, not a robot', 'Books the meeting before you wake up']} visual={<ChatMock />} />
       <Show bg="dark" flip eye="When they go quiet" scene="The deal did not die. It just went quiet, and you forgot to chase it."
