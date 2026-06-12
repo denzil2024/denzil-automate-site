@@ -126,6 +126,17 @@ export const POSTS = [
 
         <p>Where businesses get into trouble is by buying lists and blasting strangers who never asked to hear from them, which is the fastest way to get a number reported and blocked. Stick to the people who reached out to you first, keep your messages genuinely helpful, and give them an easy way to stop, and your WhatsApp presence stays healthy for the long run.</p>
 
+        <h2>Common Mistakes to Avoid</h2>
+
+        <p>WhatsApp lead generation is forgiving, but a few avoidable mistakes quietly undo all the effort of capturing leads in the first place. Knowing them in advance saves you from learning each one the hard way:</p>
+
+        <ul>
+          <li><strong>Capturing leads you cannot answer fast enough.</strong> Pointing ads and buttons at a number that gets checked twice a day simply builds a bigger pile of ignored messages. More capture without an instant first reply only makes the leak bigger, because a warm lead who waits hours has usually moved on by the time you finally respond.</li>
+          <li><strong>Hiding the first tap.</strong> If your chat button is buried at the foot of a page, or your link is nowhere to be found, the conversation never starts at all. The entry point has to be obvious and present everywhere your customers look, because a lead who cannot find how to message you is a lead you will never even know you lost.</li>
+          <li><strong>Greeting people with a robotic script.</strong> A stiff, automated "Your enquiry has been received" kills the warmth that makes WhatsApp work in the first place. The opening message should sound like a real, friendly business, because the whole advantage of the channel is that it feels personal, and a clumsy bot throws that away instantly.</li>
+          <li><strong>Capturing leads and then forgetting them.</strong> Working hard to fill the top of your WhatsApp, only to let those conversations go quiet, wastes the money you spent to start them. Every captured lead needs a clear next step and a follow-up if it stalls, or your shiny new entry points just feed a slow leak further down the line.</li>
+        </ul>
+
         <h2>You Don't Need the Heavy API to Start</h2>
 
         <p>It is easy to assume that all of this requires expensive software and a technical setup, but the truth is far friendlier to a small business. You can begin with the free WhatsApp Business app, a shareable chat link and a printed QR code, and start capturing real leads this very week without spending much at all. For many businesses, that simple start is enough to prove the idea quickly and cheaply.</p>
