@@ -1,8 +1,23 @@
 {
   "name": "denzil-automate-site",
+  "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "dev": "vite",
+    "vite-build": "vite build",
+    "build": "node scripts/build.js",
+    "prerender": "node scripts/prerender.js",
     "start": "node server.js"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "puppeteer": "^23.11.1",
+    "vite": "^6.0.7"
   }
 }

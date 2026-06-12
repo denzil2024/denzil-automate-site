@@ -1,0 +1,6 @@
+node_modules
+.DS_Store
+*.log
+.vite
+.env
+# NOTE: dist/ is intentionally committed and served. Do not ignore it.
