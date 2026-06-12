@@ -3,4 +3,14 @@ node_modules
 *.log
 .vite
 .env
+# local screenshot tooling (not part of the site)
+shot-*.png
+clip-*.png
+row-*.png
+capture.mjs
+clip.mjs
+clip2.mjs
+clipa.mjs
+clipl.mjs
+clipf.mjs
 # NOTE: dist/ is intentionally committed and served. Do not ignore it.
