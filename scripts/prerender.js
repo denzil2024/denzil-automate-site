@@ -90,6 +90,44 @@ async function snapshot(page, route) {
   // Mark for in-place hydration by main.jsx.
   await page.evaluate(() => document.documentElement.setAttribute('data-prerendered', 'true'));
 
+  // Build FAQPage structured data from the post's visible "Frequently Asked
+  // Questions" section, so the schema always matches what readers see (a
+  // Google requirement) with no second copy to keep in sync. Injected as its
+  // own ld+json block; React never touches head scripts outside #root.
+  if (route.startsWith('/blog/')) {
+    await page.evaluate(() => {
+      const h2s = [...document.querySelectorAll('.bp-prose h2')];
+      const faqH2 = h2s.find((h) => /frequently asked questions/i.test(h.textContent || ''));
+      if (!faqH2) return;
+      const faqs = [];
+      let q = null, a = '';
+      for (let el = faqH2.nextElementSibling; el && el.tagName !== 'H2'; el = el.nextElementSibling) {
+        if (el.tagName === 'H3') {
+          if (q && a) faqs.push({ q, a: a.trim() });
+          q = (el.textContent || '').trim(); a = '';
+        } else if (q && el.tagName === 'P') {
+          a += (a ? ' ' : '') + (el.textContent || '').trim();
+        }
+      }
+      if (q && a) faqs.push({ q, a: a.trim() });
+      if (!faqs.length) return;
+      const data = {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqs.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      };
+      const s = document.createElement('script');
+      s.type = 'application/ld+json';
+      s.id = 'faq-jsonld';
+      s.textContent = JSON.stringify(data);
+      document.head.appendChild(s);
+    });
+  }
+
   // Pull the page's own metadata for the sitemap / llms.txt, straight from
   // what the app rendered (canonical, description, and the BlogPosting dates).
   const meta = await page.evaluate(() => {
