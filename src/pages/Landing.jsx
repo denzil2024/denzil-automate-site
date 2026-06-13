@@ -378,8 +378,8 @@ function FromTheBlog() {
 export default function Landing() {
   useEffect(() => {
     applySeo({
-      title: 'Denzil Automations | AI automation agency for growing businesses',
-      description: 'Denzil Automations designs and builds done-for-you AI automations: instant lead response, follow-ups, bookings, billing and support, wired into the tools you already use. Built in days. You own it.',
+      title: 'AI Automation Agency for Growing Businesses | Denzil Automations',
+      description: 'We build done-for-you AI automations for lead response, follow-ups, bookings and billing, wired into your existing tools. Built in days. You own it.',
       path: '/',
     });
   }, []);
