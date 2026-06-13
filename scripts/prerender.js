@@ -183,10 +183,18 @@ async function writeSeoFiles(metas) {
     (lastmod ? `    <lastmod>${lastmod}</lastmod>\n` : '') +
     `    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
 
+  // Static pages (contact, privacy, terms): everything that is not the home,
+  // the blog index, a post, or the 404.
+  const staticPages = metas.filter((m) => !m.isPost && !['/', '/blog', '/404'].includes(m.route));
   const entries = [
     urlEntry(`${ORIGIN}/`, newest, 'weekly', '1.0'),
     urlEntry(`${ORIGIN}/blog`, newest, 'weekly', '0.9'),
     ...posts.map((p) => urlEntry(p.url, p.modified, 'monthly', '0.8')),
+    ...staticPages.map((m) => urlEntry(
+      m.url, null,
+      m.route === '/contact' ? 'monthly' : 'yearly',
+      m.route === '/contact' ? '0.6' : '0.3',
+    )),
   ];
   const sitemap =
     `<?xml version="1.0" encoding="UTF-8"?>\n` +
@@ -222,7 +230,7 @@ async function main() {
     const page = await browser.newPage();
     await page.setViewport({ width: 1280, height: 900 });
 
-    const routes = [...await discoverRoutes(page), '/404'];
+    const routes = [...await discoverRoutes(page), '/contact', '/privacy', '/terms', '/404'];
     console.log(`[prerender] ${routes.length} routes:`, routes.join(', '));
 
     // Capture all snapshots first, then write, so the server never serves

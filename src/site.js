@@ -1,6 +1,9 @@
 // Shared site config: single source of truth for the contact link and
 // primary navigation so the header, mobile menu and footer never drift.
 export const CONTACT = 'https://wa.me/254781246345';
+export const WHATSAPP_DISPLAY = '+254 781 246 345';
+export const EMAIL = 'denzil@workwithdenzil.com';
+export const EMAIL_LINK = 'mailto:denzil@workwithdenzil.com';
 
 export const NAV_LINKS = [
   { href: '/#work', label: 'What we build' },
@@ -8,4 +11,5 @@ export const NAV_LINKS = [
   { href: '/#how', label: 'How it works' },
   { href: '/blog', label: 'Blog' },
   { href: '/#faq', label: 'FAQ' },
+  { href: '/contact', label: 'Contact' },
 ];
