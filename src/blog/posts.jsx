@@ -42,6 +42,8 @@ export function CtaCard({ title, sub, label = 'Book a call' }) {
 export const POSTS = [
   {
     slug: 'whatsapp-lead-generation',
+    seoTitle: 'WhatsApp Lead Generation: Capture More Leads, No Forms',
+    metaDescription: 'Capture far more leads on WhatsApp instead of losing them to forms nobody fills in. Here is how to build a WhatsApp lead engine that qualifies as it goes.',
     title: 'WhatsApp Lead Generation: How to Capture More Leads Without the Forms',
     excerpt: 'You pay for the clicks, the visitors arrive, and then most of your leads vanish into a form nobody finishes or an inbox nobody checks. Capturing them on WhatsApp instead, where they already are, turns far more of those clicks into real conversations. Here is how to build a lead engine that does it.',
     date: '2026-06-13',
@@ -198,6 +200,8 @@ export const POSTS = [
   },
   {
     slug: 'spreadsheet-to-pipeline',
+    seoTitle: 'From Spreadsheet Chaos to One Live Sales Pipeline',
+    metaDescription: 'Stop losing leads across scattered spreadsheets and chats. Here is how to move to one live pipeline that updates itself, without a bloated CRM.',
     title: 'From Spreadsheet Chaos to One Live Pipeline: How to Stop Losing Leads in the Mess',
     excerpt: 'Most businesses track leads across a spreadsheet, a notebook, a few chats and their own memory, and that scatter is exactly where deals quietly die. The fix is one live pipeline that updates itself. Here is how to get there, without a bloated CRM you will never fully use.',
     date: '2026-06-13',
@@ -352,6 +356,8 @@ export const POSTS = [
   },
   {
     slug: 'stop-no-shows',
+    seoTitle: 'How to Stop No-Shows: The Booking and Reminder System',
+    metaDescription: 'No-shows waste paid-for time, and most are preventable. Here is the booking and reminder system that reliably brings customers through the door.',
     title: 'How to Stop No-Shows: The Booking and Reminder System That Works',
     excerpt: 'Every no-show is paid-for time gone to waste: an empty slot, lost revenue, and a customer you could have served instead. The good news is that most of them are preventable. Here is the booking and reminder system that reliably brings people through the door, backed by real data.',
     date: '2026-06-13',
@@ -492,6 +498,8 @@ export const POSTS = [
   },
   {
     slug: 'done-for-you-vs-diy-automation',
+    seoTitle: 'Done-for-You vs DIY Automation: How to Decide',
+    metaDescription: 'Should you build your automations yourself or hire it out? Here is how to decide, with real numbers on time, cost, and what breaks when it goes wrong.',
     title: 'Done-for-You vs DIY Automation: Should You Build It Yourself or Hire It Out?',
     excerpt: 'The tools to automate your business yourself have never been cheaper, which makes the build-or-hire question genuinely hard. The honest answer comes down to your time, the stakes, and what it costs you when something breaks. Here is how to decide, with real numbers.',
     date: '2026-06-13',
@@ -656,6 +664,8 @@ export const POSTS = [
   },
   {
     slug: 'automations-to-set-up-first',
+    seoTitle: '7 Automations Every Growing Business Should Set Up First',
+    metaDescription: 'Not sure what to automate first? Here are the seven automations every growing business should set up, in the order that pays back the fastest.',
     title: '7 Automations Every Growing Business Should Set Up First',
     excerpt: 'Most owners know they should automate, yet only a quarter of small businesses have started while their bigger rivals race ahead. Here are the seven automations worth setting up first, in the order that pays back fastest, with no jargon and no guesswork.',
     date: '2026-06-13',
@@ -785,6 +795,8 @@ export const POSTS = [
   },
   {
     slug: 'ai-agents-vs-chatbots',
+    seoTitle: 'AI Agents vs Chatbots: Which One to Use, and When',
+    metaDescription: 'Chatbots and AI agents get confused constantly. Here is what really separates them, where each belongs, and which one your customers will thank you for.',
     title: 'AI Agents vs Chatbots: Which One Should Answer Your Customers',
     excerpt: 'Chatbots and AI agents get talked about as if they are the same thing, and businesses keep buying one expecting the other. Here is what really separates them, where each belongs, and which one your customers will thank you for.',
     date: '2026-06-13',
@@ -939,6 +951,8 @@ export const POSTS = [
   },
   {
     slug: 'whatsapp-automation',
+    seoTitle: 'WhatsApp Automation for Business: What to Automate',
+    metaDescription: 'WhatsApp gets opened 98% of the time. Here is what you can automate, what to keep human, and how to set it up without sounding like a robot.',
     title: 'WhatsApp Automation for Business: What You Can Automate, and What to Keep Human',
     excerpt: 'WhatsApp messages get opened 98% of the time and answered in under two minutes, which is exactly why automating the right parts of it can transform a business. Here is what WhatsApp automation can genuinely do for you, where a person should still step in, and how to set it up without sounding like a robot.',
     date: '2026-06-12',
@@ -1118,6 +1132,8 @@ export const POSTS = [
   },
   {
     slug: 'why-leads-go-cold',
+    seoTitle: 'Why Leads Go Cold and the Follow-Up System That Wins',
+    metaDescription: 'Warm leads rarely say no, they just go quiet. Here is why it happens and the exact follow-up system that brings them back and wins the sale.',
     title: 'Why Most Leads Go Cold, and the Follow-Up System That Wins Them Back',
     excerpt: 'Most businesses do not have a lead problem. They have a follow-up problem, and it quietly costs them most of their sales. Here is the data behind it, why warm leads really go quiet, and the exact follow-up system that brings them back.',
     date: '2026-06-12',
@@ -1288,6 +1304,8 @@ export const POSTS = [
   },
   {
     slug: 'speed-to-lead',
+    seoTitle: 'Speed to Lead: Why the First Five Minutes Decide the Sale',
+    metaDescription: 'A lead you answer within five minutes is up to 21 times likelier to qualify. Here is the research, why almost nobody acts on it, and how to fix it.',
     title: 'Speed to Lead: Why the First Five Minutes Decide the Sale',
     excerpt: 'A lead who hears back within five minutes is up to 21 times more likely to qualify than one who waits half an hour. Here is what the research says, why almost nobody acts on it, and how to close the gap for good.',
     date: '2026-06-12',

@@ -40,10 +40,11 @@ export default function BlogPost() {
     if (!post) return;
     const canonical = `${ORIGIN}/blog/${post.slug}`;
     const image = post.cover ? `${ORIGIN}${post.cover}` : `${ORIGIN}/og-cover.jpg`;
+    const desc = post.metaDescription || post.excerpt;
 
     applySeo({
-      title: `${post.title} | Denzil Automations`,
-      description: post.excerpt,
+      title: post.seoTitle || `${post.title} | Denzil Automations`,
+      description: desc,
       path: `/blog/${post.slug}`,
       image,
       type: 'article',
@@ -53,7 +54,7 @@ export default function BlogPost() {
           {
             '@type': 'BlogPosting',
             headline: post.title,
-            description: post.excerpt,
+            description: desc,
             image,
             datePublished: post.date,
             dateModified: post.updated || post.date,
