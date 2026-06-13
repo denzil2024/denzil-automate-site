@@ -70,6 +70,7 @@ async function discoverRoutes(page) {
 
 function outPathFor(route) {
   if (route === '/') return join(DIST, 'index.html');
+  if (route === '/404') return join(DIST, '404.html');
   return join(DIST, route.replace(/^\//, ''), 'index.html');
 }
 
@@ -221,7 +222,7 @@ async function main() {
     const page = await browser.newPage();
     await page.setViewport({ width: 1280, height: 900 });
 
-    const routes = await discoverRoutes(page);
+    const routes = [...await discoverRoutes(page), '/404'];
     console.log(`[prerender] ${routes.length} routes:`, routes.join(', '));
 
     // Capture all snapshots first, then write, so the server never serves

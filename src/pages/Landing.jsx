@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
 import { CONTACT } from '../site';
 import { applySeo } from '../seo';
+import { posts, formatPostDate } from '../blog/posts.jsx';
 
 /* ---------- hero workflow (long horizontal pipeline) ---------- */
 const G = {
@@ -336,6 +338,43 @@ function Cta() {
     </section>
   );
 }
+function FromTheBlog() {
+  const latest = [...posts].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 3);
+  if (latest.length === 0) return null;
+  return (
+    <section className="block soft">
+      <div className="wrap">
+        <div className="shead">
+          <span className="eyebrow">From the blog</span>
+          <h2>Playbooks for turning more leads into customers</h2>
+          <p>Practical, deeply researched guides on responding faster, following up automatically, and putting your busywork on autopilot.</p>
+        </div>
+        <div className="bl-grid">
+          {latest.map((p) => (
+            <Link key={p.slug} to={`/blog/${p.slug}`} className="bl-card">
+              <div className="bl-card-cover">
+                {p.cover
+                  ? <img src={p.cover} alt={p.title} loading="lazy" />
+                  : <div className="bl-cover-fallback">{(p.title || 'D').trim()[0].toUpperCase()}</div>}
+                <span className="bl-cat-pill">{p.category.label}</span>
+              </div>
+              <div className="bl-card-body">
+                <h3 className="bl-card-title">{p.title}</h3>
+                <div className="bl-card-meta">
+                  <span>{formatPostDate(p.date)}</span>
+                  <span className="bl-meta-dot" />
+                  <span>{p.readTime}</span>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+        <div className="bl-more"><Link className="btn btn-primary btn-lg" to="/blog">Read the blog</Link></div>
+      </div>
+    </section>
+  );
+}
+
 export default function Landing() {
   useEffect(() => {
     applySeo({
@@ -363,6 +402,7 @@ export default function Landing() {
       <Automations />
       <Faq />
       <ProcessProof />
+      <FromTheBlog />
       <Cta />
       <SiteFooter />
     </>

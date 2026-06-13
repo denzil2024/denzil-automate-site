@@ -41,8 +41,13 @@ const server = http.createServer(async (req, res) => {
     const ss = await statSafe(snap);
     if (ss && ss.isFile()) return await send(res, snap);
 
-    // 3. Fallback to the SPA shell
-    return await send(res, join(DIST, 'index.html'));
+    // 3. Unknown route: serve the prerendered 404 page with a real 404 status
+    //    (every valid route has a snapshot above, so anything here is genuinely
+    //    not found, not a soft-404).
+    const notFound = join(DIST, '404.html');
+    const nf = await statSafe(notFound);
+    res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
+    return res.end(nf && nf.isFile() ? await readFile(notFound) : 'Not found');
   } catch (err) {
     res.writeHead(500, { 'Content-Type': 'text/plain' });
     res.end('Server error');

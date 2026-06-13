@@ -60,7 +60,7 @@ function setJsonLd(data) {
  * @param {string} [opts.type]        OG type: 'website' (default) or 'article'.
  * @param {object} [opts.jsonLd]      Optional per-page JSON-LD graph. Removed when omitted.
  */
-export function applySeo({ title, description, path, image, type = 'website', jsonLd = null }) {
+export function applySeo({ title, description, path, image, type = 'website', jsonLd = null, robots = 'index, follow, max-image-preview:large, max-snippet:-1' }) {
   const url = ORIGIN + path;
   const img = image
     ? (image.startsWith('http') ? image : ORIGIN + image)
@@ -68,6 +68,7 @@ export function applySeo({ title, description, path, image, type = 'website', js
 
   document.title = title;
   upsertMeta('name', 'description', description);
+  upsertMeta('name', 'robots', robots);
   upsertLink('canonical', url);
 
   upsertMeta('property', 'og:type', type);
