@@ -18,7 +18,7 @@ const G = {
   card: <g fill="none" strokeWidth="1.8" strokeLinecap="round"><rect x="7.5" y="11" width="17" height="11" rx="2" /><path d="M7.5 15h17" /></g>,
   chart: <g fill="none" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M9 9v15h15" /><path d="M13 19v-3M17 19v-6M21 19v-9" /></g>,
 };
-const NTINT = { green: ['#0f3b2e', '#2bd4a0'], accent: ['#241f4d', '#b9b1ff'], blue: ['#10324f', '#4aa3ff'], amber: ['#3d2c0e', '#ffb340'] };
+const NTINT = { green: ['#0f3b2e', '#2bd4a0'], accent: ['#3d1410', '#ff8079'], blue: ['#10324f', '#4aa3ff'], amber: ['#3d2c0e', '#ffb340'] };
 function Node({ x, y, w = 200, h = 76, big, glyph, tint, title, sub }) {
   const [bg, fg] = NTINT[tint]; const cy = (h - 32) / 2;
   return (
@@ -400,9 +400,9 @@ export default function Landing() {
         copy="Quotes go out the moment they are needed, invoices send themselves, and polite reminders chase late payers on their own, so you get paid faster without lifting a finger or feeling pushy about it."
         pts={['Quotes and invoices on autopilot', 'Reminders that never feel awkward', 'Paid days sooner']} visual={<InvoiceMock />} />
       <Automations />
-      <Faq />
-      <ProcessProof />
       <FromTheBlog />
+      <ProcessProof />
+      <Faq />
       <Cta />
       <SiteFooter />
     </>

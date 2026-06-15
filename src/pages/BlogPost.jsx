@@ -117,18 +117,19 @@ export default function BlogPost() {
         </div>
       </article>
 
-      <section className="block soft">
-        <div className="wrap">
-          <div className="cta">
-            <h2>Don't just read the playbook. Run it.</h2>
+      <section className="block bl-cta-sec">
+        <div className="wrap" style={{ maxWidth: 1000 }}>
+          <div className="bl-cta-card">
+            <span className="bl-cta-eyebrow"><span>Work with us</span></span>
+            <h2>Don't just read the playbook.<br /><span className="accent">Run it.</span></h2>
             <p>Book a short call and we will map your busywork and show you exactly what to automate first.</p>
-            <a className="btn btn-light btn-lg" href={CONTACT}>Book a call</a>
+            <a className="bl-cta-btn" href={CONTACT}>Book a call →</a>
           </div>
         </div>
       </section>
 
       {related.length > 0 && (
-        <section className="block">
+        <section className="block bl-related">
           <div className="wrap">
             <div className="shead"><span className="eyebrow">Keep reading</span><h2>More from the blog</h2></div>
             <div className="bl-grid">

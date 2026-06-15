@@ -148,12 +148,13 @@ export default function Blog() {
         </div>
       </section>
 
-      <section className="block">
-        <div className="wrap">
-          <div className="cta">
-            <h2>Reading is good. Doing is better.</h2>
+      <section className="block bl-cta-sec">
+        <div className="wrap" style={{ maxWidth: 1000 }}>
+          <div className="bl-cta-card">
+            <span className="bl-cta-eyebrow"><span>Work with us</span></span>
+            <h2>Reading is good.<br /><span className="accent">Doing is better.</span></h2>
             <p>Tell us what is slowing you down and we will show you exactly what we would automate first.</p>
-            <a className="btn btn-light btn-lg" href={CONTACT}>Book a call</a>
+            <a className="bl-cta-btn" href={CONTACT}>Book a call →</a>
           </div>
         </div>
       </section>
