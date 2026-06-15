@@ -5,6 +5,21 @@
     <meta name="theme-color" content="#08090f">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 
+    <!-- Google tag (gtag.js) — only on the live domain, so local dev and
+         the prerender build never send junk hits to Analytics. -->
+    <script>
+      if (location.hostname === 'automate.workwithdenzil.com') {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2T2PP8T1NC';
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-2T2PP8T1NC');
+      }
+    </script>
+
     <title>Speed to Lead: Why the First Five Minutes Decide the Sale</title>
     <meta name="description" content="A lead you answer within five minutes is up to 21 times likelier to qualify. Here is the research, why almost nobody acts on it, and how to fix it.">
     <link rel="canonical" href="https://automate.workwithdenzil.com/blog/speed-to-lead">
