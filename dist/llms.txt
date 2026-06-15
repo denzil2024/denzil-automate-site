@@ -6,6 +6,7 @@ Denzil Automations builds custom automation systems for growing businesses, so t
 
 ## Blog
 
+- [The Best AI Automation Tools, Sorted by the Job](https://automate.workwithdenzil.com/blog/ai-automation-tools): A no-hype guide to the best AI automation tools, sorted by the job you want done, with honest costs, the catch on each, and the free options that fit.
 - [WhatsApp Lead Generation: Capture More Leads, No Forms](https://automate.workwithdenzil.com/blog/whatsapp-lead-generation): Capture far more leads on WhatsApp instead of losing them to forms nobody fills in. Here is how to build a WhatsApp lead engine that qualifies as it goes.
 - [From Spreadsheet Chaos to One Live Sales Pipeline](https://automate.workwithdenzil.com/blog/spreadsheet-to-pipeline): Stop losing leads across scattered spreadsheets and chats. Here is how to move to one live pipeline that updates itself, without a bloated CRM.
 - [How to Stop No-Shows: The Booking and Reminder System](https://automate.workwithdenzil.com/blog/stop-no-shows): No-shows waste paid-for time, and most are preventable. Here is the booking and reminder system that reliably brings customers through the door.
