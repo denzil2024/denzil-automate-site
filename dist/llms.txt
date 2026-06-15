@@ -6,6 +6,7 @@ Denzil Automations builds custom automation systems for growing businesses, so t
 
 ## Blog
 
+- [Customer Support Automation: Answer Every Customer](https://automate.workwithdenzil.com/blog/customer-support-automation): Customer support automation in plain English: what to automate, what to keep human, the real costs, and how to answer every customer without a call centre.
 - [Business Automation: A Plain-English Guide](https://automate.workwithdenzil.com/blog/business-automation): Business automation in plain English: what it is, what you can automate, how to choose what is worth it, and how to start, with no enterprise jargon.
 - [The Best AI Automation Tools, Sorted by the Job](https://automate.workwithdenzil.com/blog/ai-automation-tools): A no-hype guide to the best AI automation tools, sorted by the job you want done, with honest costs, the catch on each, and the free options that fit.
 - [WhatsApp Lead Generation: Capture More Leads, No Forms](https://automate.workwithdenzil.com/blog/whatsapp-lead-generation): Capture far more leads on WhatsApp instead of losing them to forms nobody fills in. Here is how to build a WhatsApp lead engine that qualifies as it goes.
@@ -15,7 +16,6 @@ Denzil Automations builds custom automation systems for growing businesses, so t
 - [7 Automations Every Growing Business Should Set Up First](https://automate.workwithdenzil.com/blog/automations-to-set-up-first): Not sure what to automate first? Here are the seven automations every growing business should set up, in the order that pays back the fastest.
 - [AI Agents vs Chatbots: Which One to Use, and When](https://automate.workwithdenzil.com/blog/ai-agents-vs-chatbots): Chatbots and AI agents get confused constantly. Here is what really separates them, where each belongs, and which one your customers will thank you for.
 - [WhatsApp Automation for Business: What to Automate](https://automate.workwithdenzil.com/blog/whatsapp-automation): WhatsApp gets opened 98% of the time. Here is what you can automate, what to keep human, and how to set it up without sounding like a robot.
-- [Why Leads Go Cold and the Follow-Up System That Wins](https://automate.workwithdenzil.com/blog/why-leads-go-cold): Warm leads rarely say no, they just go quiet. Here is why it happens and the exact follow-up system that brings them back and wins the sale.
 
 ## Contact
 
