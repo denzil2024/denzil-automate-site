@@ -552,6 +552,11 @@ footer { background: var(--dark); color: rgba(255,255,255,0.64); padding: 74px 0
 .bp-flow-sub { margin-top: 3px; font-size: 10.5px; color: var(--ytg-text-3); line-height: 1.3; }
 .bp-flow-link { flex-shrink: 0; width: 22px; height: 56px; display: flex; align-items: center; }
 .bp-flow-link::before { content: ""; width: 100%; height: 2px; border-radius: 2px; background: var(--ytg-text-3); opacity: .55; }
+.bp-flow-node.is-agent { width: 132px; }
+.bp-flow-subnodes { position: relative; margin-top: 22px; display: flex; flex-direction: column; gap: 7px; align-items: center; }
+.bp-flow-subnodes::before { content: ""; position: absolute; top: -22px; left: 50%; width: 2px; height: 22px; background: var(--ytg-text-3); opacity: .45; }
+.bp-flow-chip { display: inline-flex; align-items: center; gap: 6px; padding: 5px 9px; background: var(--ytg-card); border: 1px solid var(--ytg-border); border-radius: 8px; box-shadow: var(--ytg-shadow-sm); font-family: "DM Sans"; font-weight: 600; font-size: 10.5px; color: var(--ytg-text-2); white-space: nowrap; }
+.bp-flow-chip svg { width: 13px; height: 13px; flex-shrink: 0; }
 
 @media (max-width: 920px) {
   .bl-grid { grid-template-columns: repeat(2, 1fr); }
