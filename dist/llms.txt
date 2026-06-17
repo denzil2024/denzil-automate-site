@@ -6,6 +6,7 @@ Denzil Automations builds custom automation systems for growing businesses, so t
 
 ## Blog
 
+- [CRM Workflow Automation: 10 Recipes and How to Build Them](https://automate.workwithdenzil.com/blog/crm-workflow-automation): A build guide to CRM workflow automation: the 10 workflows worth building first, the exact trigger and action behind each, how to build one, and when to stop.
 - [CRM Automation: What to Automate and What to Skip](https://automate.workwithdenzil.com/blog/crm-automation): CRM automation in plain English: the nine jobs worth automating first, what to never touch, a simple way to estimate the payback, and how to roll it out.
 - [Lead Automation: Catch and Convert Every Lead](https://automate.workwithdenzil.com/blog/lead-automation): Lead automation in plain English: the six stages from enquiry to customer, what to automate at each, and how to stop losing leads before the reply.
 - [Customer Support Automation: Answer Every Customer](https://automate.workwithdenzil.com/blog/customer-support-automation): Customer support automation in plain English: what to automate, what to keep human, the real costs, and how to answer every customer without a call centre.
