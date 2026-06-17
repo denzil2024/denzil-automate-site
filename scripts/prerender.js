@@ -58,14 +58,31 @@ function startServer() {
 }
 
 /* Discover routes: the two static pages plus every post link the blog
- * index renders, so new posts are picked up with no list to maintain. */
+ * index renders, so new posts are picked up with no list to maintain.
+ * The index is paginated, so we walk every page (?page=N) and collect
+ * post links from each, otherwise posts beyond page 1 are never rendered. */
 async function discoverRoutes(page) {
-  await page.goto(`${BASE}/blog`, { waitUntil: 'networkidle2', timeout: 45000 });
-  const slugs = await page.evaluate(() =>
-    [...document.querySelectorAll('a[href^="/blog/"]')]
-      .map((a) => a.getAttribute('href'))
-      .filter((h) => /^\/blog\/[a-z0-9-]+$/.test(h)));
-  return ['/', '/blog', ...new Set(slugs)];
+  const collectFrom = async (url) => {
+    await page.goto(url, { waitUntil: 'networkidle2', timeout: 45000 });
+    return page.evaluate(() => {
+      const slugs = [...document.querySelectorAll('a[href^="/blog/"]')]
+        .map((a) => a.getAttribute('href'))
+        .filter((h) => /^\/blog\/[a-z0-9-]+$/.test(h));
+      const pageNums = [...document.querySelectorAll('a[href*="/blog?page="]')]
+        .map((a) => parseInt((a.getAttribute('href').match(/[?&]page=(\d+)/) || [])[1], 10))
+        .filter((n) => Number.isFinite(n));
+      return { slugs, maxPage: pageNums.length ? Math.max(...pageNums) : 1 };
+    });
+  };
+
+  const slugs = new Set();
+  const first = await collectFrom(`${BASE}/blog`);
+  first.slugs.forEach((s) => slugs.add(s));
+  for (let p = 2; p <= first.maxPage; p++) {
+    const more = await collectFrom(`${BASE}/blog?page=${p}`);
+    more.slugs.forEach((s) => slugs.add(s));
+  }
+  return ['/', '/blog', ...slugs];
 }
 
 function outPathFor(route) {

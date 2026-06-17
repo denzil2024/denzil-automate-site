@@ -2042,7 +2042,7 @@ export const POSTS = [
 
         <p>Think about your own buying. You ask three plumbers for a quote, get busy, and hire whichever one sends a friendly reminder on the evening you finally have a moment to deal with it. You were always going to hire someone. You hired the one who stayed visible at the right time. Your leads behave exactly the same way, and most of your competitors vanish long before that moment arrives.</p>
 
-        <blockquote><strong>Worth remembering:</strong> a quiet lead is not a rejection, it is a lead with bad timing. Your job is not to convince them harder, it is to still be in the conversation when their timing finally turns.</blockquote>
+        <blockquote><strong>Worth remembering:</strong> when a good lead goes quiet, the cause is usually timing rather than a decision against you. Stay in the conversation until that timing turns and a surprising share of those leads come back on their own.</blockquote>
 
         <h2>Not All Quiet Leads Are Equal: Segment First</h2>
 
@@ -2069,7 +2069,7 @@ export const POSTS = [
           <li><strong>It stops the instant someone replies</strong>, handing a warm, re-engaged lead straight to a person with the full history.</li>
         </ul>
 
-        <p>The payoff is not marginal. Nurtured leads make <strong>around 47% larger purchases</strong> than leads left alone, and structured nurture sequences earn several times the response of one-off blasts. Follow-up is not administrative clean-up. It is among the highest-return selling your business can do, and a system lets you do it for every lead at once.</p>
+        <p>The payoff is not marginal. Nurtured leads make <strong>around 47% larger purchases</strong> than leads left alone, and structured nurture sequences earn several times the response of one-off blasts. Far from being mere admin, follow-up is among the highest-return selling your business can do, and a system lets you do it for every lead at once.</p>
 
         <CtaCard
           title="Losing deals in the gap after the first reply?"
@@ -2130,7 +2130,7 @@ export const POSTS = [
 
         <p>For re-engaging a quiet lead, that read rate is the whole game. A follow-up system that nudges on WhatsApp, in your voice, and steps aside the moment the customer replies, turns your quietest leads back into live conversations without you sending a single awkward "just checking in" yourself. Follow-up is only one of the jobs the channel can carry, as we cover in our guide to <a href="/blog/whatsapp-automation">automating WhatsApp the right way</a>.</p>
 
-        <blockquote><strong>The opportunity:</strong> roughly 79% of leads never convert, and weak follow-up is one of the largest reasons why. Fixing your follow-up does not cost you a shilling more in leads, it rescues the ones you have already paid for.</blockquote>
+        <blockquote><strong>The opportunity:</strong> roughly 79% of leads never convert, and weak follow-up is one of the largest reasons why. Fixing it adds nothing to your ad spend and simply rescues the leads you have already paid to win.</blockquote>
 
         <h2>Where to Start</h2>
 
@@ -2144,7 +2144,21 @@ export const POSTS = [
 
         <p>That single system, sitting on top of an instant first response, is usually enough to recover a meaningful share of the deals you are currently writing off as dead. Once it pays for itself, you layer on segmentation, longer sequences, and booking from there.</p>
 
-        <h2>Follow-Up Is Not a Task. It Is the Business.</h2>
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>How many times should I follow up with a lead?</h3>
+        <p>The data points to at least five or six touches, since <strong>around 80% of sales are made between the fifth and twelfth contact</strong>, yet most sellers stop after one or two. A sensible baseline is <strong>three or four well-spaced nudges</strong> after the first reply, then a slower long-term check-in for the leads who are simply not ready yet. The exact number matters far less than the discipline of showing up consistently rather than chasing once and giving up.</p>
+
+        <h3>How long should I wait between follow-up messages?</h3>
+        <p>Early messages sit close together while the lead still remembers you, then space out as time passes, so a common rhythm is <strong>day two or three, then day seven, then day fourteen</strong>. Hot leads who asked about price or booking can be nudged a little tighter, while quieter ones get a lighter, slower touch. Keep the gaps wide enough that each message reads as attentive rather than anxious.</p>
+
+        <h3>When should follow-up stop?</h3>
+        <p>The sequence should end <strong>the instant a lead replies, books, or asks a real question</strong>, handing the conversation straight to a person with the full history. Nothing damages trust faster than an automated nudge that arrives after the customer has already answered. A good system goes quiet the moment a genuine conversation begins.</p>
+
+        <h3>Is WhatsApp better than email for following up?</h3>
+        <p>For re-engaging quiet leads it usually is, because a WhatsApp message arrives where people talk to family and close friends and <strong>tends to get read within minutes</strong>. An email nudge competes with a hundred unread others and is often never opened, so the same words earn far fewer replies. Following up on the channel your customers already check is one of the simplest ways to lift your response rate.</p>
+
+        <h2>The Sale Goes to Whoever Is Still There at the Sixth Touch</h2>
 
         <p>Most leads never reject you. They go quiet, then they get forgotten, because doing follow-up by hand is genuinely hard and almost everyone quits too early. The businesses that win are rarely the ones with the slickest opening message. They are the ones <strong>still politely present at the fifth and sixth touch</strong>, where the overwhelming majority of sales are made.</p>
 
@@ -2169,7 +2183,7 @@ export const POSTS = [
 
         <p>What happens in the next five minutes quietly decides whether that person becomes a paying customer or a missed notification you find the next morning. It is <strong>the single most under-measured number in most businesses</strong>, and once you understand what the research says about it, you cannot unsee it.</p>
 
-        <h2>The Five-Minute Window Is Not a Marketing Myth</h2>
+        <h2>Reply Within Five Minutes and You Are 21 Times Likelier to Qualify</h2>
 
         <p>The most cited research on this comes from a Harvard Business Review study titled "The Short Life of Online Sales Leads," which examined more than 100,000 web-generated leads across 2,241 United States companies. Its central finding is blunt. Businesses that responded to a new lead within five minutes were <strong>100 times more likely to connect</strong> with that lead, and <strong>21 times more likely to qualify them</strong>, than businesses that waited just 30 minutes.</p>
 
@@ -2208,7 +2222,7 @@ export const POSTS = [
 
         <p>The software company Drift ran a now famous audit. They submitted enquiries to 433 businesses and timed the replies. Only <strong>7%</strong> responded within the first five minutes. More than half took five working days to respond or never replied at all, and the average response time was a staggering 47 hours. Drift chose the five-minute mark for a simple reason: after five minutes, the odds of qualifying a lead fall by ten times.</p>
 
-        <p>Sit with that for a second. Roughly nine out of ten businesses are too slow to claim the single biggest advantage sitting in their pipeline. Which means speed to lead is not only important, it is one of the few places where a small business can out-compete a much larger one today, without spending another shilling on advertising.</p>
+        <p>Sit with that for a second. Roughly nine out of ten businesses are too slow to claim the single biggest advantage sitting in their pipeline. Which means speed to lead is not only important, it is one of the few places where a small business can out-compete a much larger one today, without spending anything more on advertising.</p>
 
         <h2>The Cost, in Plain Numbers</h2>
 
@@ -2216,7 +2230,7 @@ export const POSTS = [
 
         <p>Now multiply that by your average job value. For most businesses, the revenue leaking out through slow response is larger than the entire marketing budget bringing those leads in. You pay for ads, referrals and time to generate enquiries, then lose a share of them out the back door because nobody could answer in time.</p>
 
-        <p>This is what makes speed to lead such an unusual lever. Improving it costs you nothing in extra ad spend. You are not buying more leads, you are refusing to waste the ones you already paid for, which is almost always the cheapest growth a business can buy.</p>
+        <p>This is what makes speed to lead such an unusual lever. Improving it costs you nothing in extra ad spend. Instead of buying more leads, you simply stop wasting the ones you already paid for, which is almost always the cheapest growth a business can buy.</p>
 
         <blockquote><strong>Reality check:</strong> for most businesses, the revenue lost to slow replies each month is larger than the entire budget spent attracting those leads in the first place. You are rarely short of leads, you are losing the ones you already paid good money to win.</blockquote>
 
@@ -2226,7 +2240,7 @@ export const POSTS = [
 
         <p>Enquiries arrive at 11pm, on a Sunday, in the middle of a job, or while you are driving. They arrive in three or four different places at once: a website form, an Instagram message, an email, a WhatsApp chat. No single person is watching all of them all of the time. By the time someone sits down, opens the right inbox and types a reply, the window has closed and the lead has gone quiet. Not because the reply was bad, but because it was late.</p>
 
-        <p>This is the part worth being honest about. It is not a discipline problem you can fix by telling your team to be faster. A human cannot watch every channel every minute of every day, and they should not have to. It is a systems problem, and systems problems have systems solutions.</p>
+        <p>This is the part worth being honest about. No amount of telling your team to be faster will fix it, because a human cannot watch every channel every minute of every day, and they should not have to. This is a systems problem, and systems problems have systems solutions.</p>
 
         <CtaCard
           title="Not sure how fast your business replies?"
@@ -2236,7 +2250,7 @@ export const POSTS = [
 
         <h2>You Cannot Out-Hustle the Clock, but You Can Automate It</h2>
 
-        <p>The fix is not to hire someone to stare at a phone all day. It is to make the first response automatic, instant, and good enough to hold the conversation until a human can take over.</p>
+        <p>The fix is to make the first response automatic, instant, and good enough to hold the conversation until a human can take over, instead of hiring someone to stare at a phone all day.</p>
 
         <p>A well-built lead-response automation does four things the moment a message arrives, day or night:</p>
 
@@ -2261,7 +2275,7 @@ export const POSTS = [
 
         <p>It is the right question to ask, and the honest answer is that it only feels robotic if it is built badly. A clunky "Thank you for your enquiry, an agent will be with you shortly" auto-reply is worse than silence. Everyone recognises the template and switches off.</p>
 
-        <p>A good one is a different thing entirely. It sounds like you, it answers what was asked, it varies its wording instead of repeating a script, and, crucially, it knows when to stop talking and let a person step in. Done well, most customers never realise the first reply was automated. They simply notice that this business answered immediately and made the next step easy. The goal is not to trick anyone into thinking a robot is human. The goal is to make sure nobody is left waiting.</p>
+        <p>A good one is a different thing entirely. It sounds like you, it answers what was asked, it varies its wording instead of repeating a script, and, crucially, it knows when to stop talking and let a person step in. Done well, most customers never realise the first reply was automated. They simply notice that this business answered immediately and made the next step easy. What matters is that nobody is ever left waiting. Get that right and the speed becomes the only thing the customer remembers.</p>
 
         <h2>What "Good" Looks Like</h2>
 
@@ -2291,7 +2305,21 @@ export const POSTS = [
 
         <p>That single workflow, instant reply, captured lead and clean hand-off, is usually enough to recover a meaningful share of the leads you are currently losing to faster competitors. Everything else builds on top of it later, once the foundation is paying for itself, starting with the <a href="/blog/why-leads-go-cold">follow-up that wins back leads who go quiet</a>, then booking, reminders and reporting.</p>
 
-        <h2>The Bottom Line</h2>
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>What counts as a good speed-to-lead time?</h3>
+        <p><strong>Under five minutes</strong> is the benchmark that matters, because leads answered inside that window are <strong>up to 21 times likelier to qualify</strong> than ones left for half an hour. Under one minute is better still, lifting conversions by as much as 391%. Anything measured in hours, which is where most businesses sit, means competing for a lead who has usually already replied to someone faster.</p>
+
+        <h3>How do I respond to leads faster without hiring more staff?</h3>
+        <p>The reliable way is to <strong>automate the first response</strong>, so an instant, on-brand reply goes out the moment a message arrives, day or night, then hands a warm lead to a person once the conversation needs one. This removes the impossible task of asking someone to watch every channel every minute. Your team still does the selling, they just step in when the lead is already warm and qualified.</p>
+
+        <h3>Will customers be annoyed by an automated first reply?</h3>
+        <p>Only if it is <strong>built badly</strong>, like the generic "an agent will be with you shortly" template everyone recognises and ignores. A well-built reply sounds like you, answers the question that was asked, varies its wording, and steps aside the moment a person should take over. Done well, <strong>most customers never notice it was automated</strong> and simply remember that you answered first.</p>
+
+        <h3>Which channel should I prioritise for fast lead response?</h3>
+        <p>Start with wherever your highest-intent enquiries already arrive, which for most businesses is <strong>WhatsApp</strong>, since a message there feels personal and gets read within minutes. A reply that takes hours on WhatsApp feels like being ignored, while a reply in seconds feels like genuine service. Win the first five minutes on your busiest channel before extending the same speed everywhere else.</p>
+
+        <h2>Speed to Lead Is the Cheapest Advantage You Have</h2>
 
         <p>Speed to lead is <strong>the cheapest competitive advantage available to almost any business</strong>. The research is unambiguous. <strong>The fastest responder wins a wildly disproportionate share of the work</strong>, and roughly nine in ten businesses are too slow to claim it. You do not need a bigger ad budget to fix this. You need the first reply to happen in seconds instead of hours, automatically, every time, on the channel your customers already use.</p>
 
