@@ -54,7 +54,7 @@ export const POSTS = [
     readTime: '16 min read',
     content: () => (
       <>
-        <p>Somewhere inside your CRM, switched off, is a version of your business that runs itself. The contact list works and a reminder or two fires, but the engine underneath, its workflow automation, sits idle while your team hand-feeds it by the hour. That idling is quietly expensive: <strong>around 70% of business leaders spend between 45 minutes and 3 hours every day on repetitive, manual tasks</strong> (ADP), the very work a CRM workflow was built to swallow whole.</p>
+        <p>Somewhere inside your CRM, switched off, is <strong>a version of your business that runs itself</strong>. The contact list works and a reminder or two fires, but the engine underneath, its workflow automation, sits idle while your team hand-feeds it by the hour. That idling is quietly expensive: <strong>around 70% of business leaders spend between 45 minutes and 3 hours every day on repetitive, manual tasks</strong> (ADP), the very work a CRM workflow was built to swallow whole.</p>
 
         <p>A CRM workflow is the engine that does that work for you, and this is the build guide for it. Where our wider look at <a href="/blog/crm-automation">CRM automation</a> covers what to automate and why, this one is hands-on: <strong>the ten workflows worth building first</strong>, the exact trigger and action behind each, how to build one step by step, and the safeguards that stop a workflow misfiring. None of it needs code, and most of it pays for itself within weeks.</p>
 
@@ -66,10 +66,10 @@ export const POSTS = [
 
         <h2>The 10 CRM Workflows Worth Building First</h2>
 
-        <p>These ten workflows cover the jobs that leak the most time and money in a growing business. Each one is laid out below, with the moment that sets it off and the work it lifts off your plate, and the table that follows doubles as an at-a-glance build sheet. Switch on one or two, prove them, then add the rest.</p>
+        <p>These ten workflows cover <strong>the jobs that leak the most time and money</strong> in a growing business. Each one is laid out below, with the moment that sets it off and the work it lifts off your plate, and the table that follows doubles as an at-a-glance build sheet. Switch on one or two, prove them, then add the rest.</p>
 
         <h3>1. Instant New-Lead Response</h3>
-        <p>The instant a lead fills in a form, taps an ad or fires off a message, this workflow answers in seconds, creates the contact and sets a follow-up task, all before they have a chance to drift to a competitor. Speed is the whole game here, because a reply inside the first few minutes makes a lead far likelier to convert, which is the point of a real <a href="/blog/speed-to-lead">speed-to-lead advantage</a>.</p>
+        <p>The instant a lead fills in a form, taps an ad or fires off a message, this workflow answers in seconds, creates the contact and sets a follow-up task, all before they have a chance to drift to a competitor. <strong>Speed is the whole game here</strong>, because a reply inside the first few minutes makes a lead far likelier to convert, which is the point of a real <a href="/blog/speed-to-lead">speed-to-lead advantage</a>.</p>
 
         <h3>2. Lead Routing and Assignment</h3>
         <p>As soon as a new lead arrives, this one works out who should own it, reading the source, territory, deal size or whoever is next in line, then hands it over and pings that person on the spot. Left to a shared inbox, a hot lead can sit until morning; routed automatically, <strong>every lead reaches the right hands while the interest is still warm</strong>, with round-robin rules sharing the load evenly across the team.</p>
@@ -126,7 +126,7 @@ export const POSTS = [
 
         <h2>How to Build a CRM Workflow, Step by Step</h2>
 
-        <p>Every one of those recipes is built the same way, and modern CRMs let you do it with a visual, point-and-click builder rather than code. The process is five steps, and the order matters more than the tool.</p>
+        <p>Every one of those recipes is built the same way, and modern CRMs let you do it with a visual, point-and-click builder rather than code. The process is five steps, and <strong>the order matters more than the tool</strong>.</p>
 
         <ul>
           <li><strong>1. Map the process by hand first.</strong> Write out exactly how the job happens today, every step and handoff, so you automate a clean process rather than a messy one. This is the step that decides whether the workflow helps or harms.</li>
@@ -136,13 +136,13 @@ export const POSTS = [
           <li><strong>5. Test, then turn it on.</strong> Run it on a handful of real records, watch what happens, and fix any misfires while the stakes are small. A workflow earns trust one clean run at a time.</li>
         </ul>
 
-        <p>This crawl-before-you-run discipline is the same one behind any solid <a href="/blog/business-automation">business automation</a> effort, and it is why a single workflow built carefully beats ten switched on in a rush.</p>
+        <p>This crawl-before-you-run discipline is the same one behind any solid <a href="/blog/business-automation">business automation</a> effort, and it is why <strong>a single workflow built carefully beats ten switched on in a rush</strong>.</p>
 
         <h2>Make Your Workflows Smart With Conditions and Branching</h2>
 
         <p>The difference between a workflow that helps and one that annoys is almost always the conditions. A flat rule treats every lead identically; a conditional workflow reads the situation and responds differently. <strong>Conditions are where the intelligence lives.</strong></p>
 
-        <p>A few examples show the power. If a deal is worth more than a set figure, route it to a senior rep instead of the general queue. If a lead opens three emails but never replies, branch them into a heavier follow-up. If a customer is in onboarding, hold all sales messages so the two never collide. Each branch is a simple if-then rule, but together they make the workflow behave like a thoughtful person, which is exactly the logic that powers genuine <a href="/blog/lead-automation">lead automation</a> where the right lead always takes the right path.</p>
+        <p>A few examples show the power. If a deal is worth more than a set figure, route it to a senior rep instead of the general queue. If a lead opens three emails but never replies, branch them into a heavier follow-up. If a customer is in onboarding, hold all sales messages so the two never collide. Each branch is a simple if-then rule, but together they <strong>make the workflow behave like a thoughtful person</strong>, which is exactly the logic that powers genuine <a href="/blog/lead-automation">lead automation</a> where the right lead always takes the right path.</p>
 
         <blockquote><strong>The shift:</strong> a workflow without conditions sends the same message to everyone and slowly trains people to ignore you. A few well-placed if-then rules are what make automation feel personal rather than robotic.</blockquote>
 
@@ -175,7 +175,7 @@ export const POSTS = [
 
         <h2>What to Look For in a CRM's Workflow Engine</h2>
 
-        <p>If you are choosing a CRM with workflow automation, or deciding whether your current one is enough, the platform's automation engine matters more than its feature count. A handful of capabilities separate an engine that grows with you from one you will fight.</p>
+        <p>If you are choosing a CRM with workflow automation, or deciding whether your current one is enough, <strong>the platform's automation engine matters more than its feature count</strong>. A handful of capabilities separate an engine that grows with you from one you will fight.</p>
 
         <ul>
           <li><strong>A visual, no-code builder.</strong> You should be able to build and change a workflow by pointing and clicking, without an engineer. This is what keeps the system yours as the business changes.</li>
@@ -185,7 +185,7 @@ export const POSTS = [
           <li><strong>Native automation and connectors.</strong> Some CRMs automate well alone; others need a connector to reach your calendar, inbox and billing. Decide whether you need the platform to do everything itself or to plug into the tools you already use.</li>
         </ul>
 
-        <p>The broader field of CRMs and the connectors that extend them is worth a wider look in our roundup of the best <a href="/blog/ai-automation-tools">AI automation tools</a>, sorted by the job they do. Match the engine to the workflows you genuinely plan to run, and the shortlist gets short fast.</p>
+        <p>The broader field of CRMs and the connectors that extend them is worth a wider look in our roundup of the best <a href="/blog/ai-automation-tools">AI automation tools</a>, sorted by the job they do. <strong>Match the engine to the workflows you genuinely plan to run</strong>, and the shortlist gets short fast.</p>
 
         <h2>Measuring Whether Your Workflows Work</h2>
 
@@ -196,22 +196,22 @@ export const POSTS = [
         <h2>Frequently Asked Questions</h2>
 
         <h3>What is a CRM workflow?</h3>
-        <p>A CRM workflow is a set of automated steps your CRM runs when a trigger and its conditions are met, such as sending a follow-up when a lead goes quiet or creating a task when a deal changes stage. It chains a trigger, one or more conditions and a series of actions into a process that runs on its own. The point is that routine work happens reliably without anyone remembering to do it.</p>
+        <p>A CRM workflow is a set of automated steps your CRM runs when a trigger and its conditions are met, such as sending a follow-up when a lead goes quiet or creating a task when a deal changes stage. It chains a trigger, one or more conditions and a series of actions into a process that runs on its own. The point is that <strong>routine work happens reliably without anyone remembering to do it</strong>.</p>
 
         <h3>What is the difference between CRM workflow automation and marketing automation?</h3>
-        <p>CRM workflow automation manages your internal sales and service processes, one record at a time, like routing a lead or progressing a deal. Marketing automation runs outbound campaigns to many people at once, like a newsletter or an ad sequence. They overlap and share data, but most growing businesses get the CRM workflows working first, since there is little point driving more leads into a process that loses them.</p>
+        <p>CRM workflow automation manages your internal sales and service processes, one record at a time, like routing a lead or progressing a deal. Marketing automation runs outbound campaigns to many people at once, like a newsletter or an ad sequence. They overlap and share data, but <strong>most growing businesses get the CRM workflows working first</strong>, since there is little point driving more leads into a process that loses them.</p>
 
         <h3>How many workflows should I start with?</h3>
-        <p>One or two. Pick the workflow tied to your biggest leak, usually instant lead response or follow-up, prove it on real leads, then add the next only once it runs cleanly. Switching on a dozen at once is the fastest way to lose track of which rule did what, and it makes the whole system hard to trust.</p>
+        <p><strong>One or two.</strong> Pick the workflow tied to your biggest leak, usually instant lead response or follow-up, prove it on real leads, then add the next only once it runs cleanly. Switching on a dozen at once is the fastest way to lose track of which rule did what, and it makes the whole system hard to trust.</p>
 
         <h3>Can any CRM do workflow automation?</h3>
-        <p>Most modern CRMs include some workflow automation, though the depth varies enormously, from a few simple rules to full conditional branching with timed, multi-step actions. Before switching platforms, check what your current one can already do, because the answer is often a setup gap rather than a missing feature. If you do need more, a connector can frequently add the power without replacing the CRM.</p>
+        <p>Most modern CRMs include some workflow automation, though the depth varies enormously, from a few simple rules to full conditional branching with timed, multi-step actions. Before switching platforms, <strong>check what your current one can already do</strong>, because the answer is often a setup gap rather than a missing feature. If you do need more, a connector can frequently add the power without replacing the CRM.</p>
 
         <h3>What is the difference between a workflow and a business process flow?</h3>
-        <p>A workflow runs actions automatically in the background when its conditions are met, like sending an email or assigning a task. A business process flow, a term some CRMs use, guides a record visually through defined stages so a person always knows the next move. In practice the two work together: the process flow shows the path, and workflows handle the automatic steps along it.</p>
+        <p>A workflow runs actions automatically in the background when its conditions are met, like sending an email or assigning a task. A business process flow, a term some CRMs use, guides a record visually through defined stages so a person always knows the next move. In practice the two work together: <strong>the process flow shows the path, and workflows handle the automatic steps along it</strong>.</p>
 
         <h3>Do I need to know how to code to build CRM workflows?</h3>
-        <p>No. The workflow builders in modern CRMs are visual and point-and-click, designed so a non-technical user can create and change automations. The skill that matters is understanding your own process clearly, not writing code, which is why mapping the process by hand is always the first step.</p>
+        <p><strong>No.</strong> The workflow builders in modern CRMs are visual and point-and-click, designed so a non-technical user can create and change automations. The skill that matters is understanding your own process clearly, not writing code, which is why mapping the process by hand is always the first step.</p>
 
         <h2>Stop Paying for a CRM That Sits Still</h2>
 
