@@ -6,6 +6,7 @@ Denzil Automations builds custom automation systems for growing businesses, so t
 
 ## Blog
 
+- [No-Code Automation Tools: How to Choose the Right One](https://automate.workwithdenzil.com/blog/no-code-automation-tools): A vendor-neutral guide to no-code automation tools: the types, an honest read on Zapier, Make, n8n and more, the pricing traps, free options, and where they stop.
 - [AI for Business Automation: What It Can and Can't Do](https://automate.workwithdenzil.com/blog/ai-for-business-automation): AI for business automation in plain English: what AI can automate that rules cannot, where to use it, where to keep humans in, what it costs, and how to start.
 - [Workflow Automation for Small Business: A No-Code Guide](https://automate.workwithdenzil.com/blog/workflow-automation-small-business): Workflow automation for small business in plain English: the highest-impact workflows by department, how to build one without code, what it costs, and where to…
 - [CRM Workflow Automation: 10 Recipes and How to Build Them](https://automate.workwithdenzil.com/blog/crm-workflow-automation): A build guide to CRM workflow automation: the 10 workflows worth building first, the exact trigger and action behind each, how to build one, and when to stop.
