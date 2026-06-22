@@ -42,6 +42,184 @@ export function CtaCard({ title, sub, label = 'Book a call' }) {
 
 export const POSTS = [
   {
+    slug: 'automation-agency',
+    seoTitle: 'Automation Agency: What They Do, Cost, and How to Choose',
+    metaDescription: 'What an automation agency does, what it really costs, how to choose one, and when to skip it and build the automations yourself. An honest buyer\'s guide.',
+    title: 'Automation Agency: What One Does, What It Costs, and How to Choose the Right One',
+    excerpt: 'Your inbox is full of pitches promising an AI automation agency will 10x your business in thirty days. Most are noise. Behind the hype sits a real service that can quietly run the busywork of a company, if you know what one does, what it should cost, and how to tell a builder from a reseller. Here is the honest guide.',
+    date: '2026-06-22',
+    category: CATEGORIES.gettingStarted,
+    cover: '/blog/automation-agency-cover.jpg',
+    author: AUTHOR,
+    readTime: '16 min read',
+    content: () => (
+      <>
+        <p>Open your DMs and there is a fair chance someone is promising that their <strong>AI automation agency</strong> will 10x your revenue in thirty days, hands-off, while you sleep. The pitch is everywhere in 2026, and most of it is noise. <strong>Behind the hype sits a genuinely useful service</strong>, but the gap between the two is where a lot of money gets wasted.</p>
+
+        <p>An automation agency, at its best, takes the repetitive machinery of a business off your team's hands and runs it in the background. The category is growing fast: automation-as-a-service is forecast to climb from <strong>around $10 billion in 2025 to roughly $33 billion by 2030</strong>. That same growth is exactly why so many thin operators have rushed in.</p>
+
+        <p>This is an honest buyer's guide, written by a team that builds these systems daily. It covers <strong>what an automation agency really does, what it should cost, how to choose one, and when you are better off doing it yourself</strong>. Read it before you sign anything.</p>
+
+        <h2>What an Automation Agency Does</h2>
+
+        <p>An automation agency designs, builds, connects and maintains <strong>automated workflows and AI systems on top of the tools a business already runs</strong>. A lead arrives and is answered, logged and assigned on its own; an invoice is raised the moment a job closes; a report writes itself every Monday. The agency builds that machinery and keeps it running as the business changes around it.</p>
+
+        <p>It helps to be clear about the boundaries. An automation agency does not hand you a strategy deck and walk away, and it does not rent you developers by the hour. <strong>Its job is to ship working systems into production and own them when they break</strong>, which is a different discipline from advising or staffing.</p>
+
+        <p>It also differs from a traditional digital or marketing agency, and even from a marketing automation agency that only wires up email and digital marketing funnels. Those run your campaigns and creative, while an automation agency <strong>builds the operational plumbing behind the whole business</strong>, the lead flow, the order processing, the follow-ups, the data moving cleanly between apps. Much of what it automates is the everyday <a href="/blog/business-automation">business automation</a> a growing company outgrows doing by hand.</p>
+
+        <p>The label shifted in 2026. What used to be a plain automation agency, or a business automation agency, is now often sold as an <strong>AI automation agency</strong>, because language models can read, write and decide in ways rule-based tools cannot. The useful version of that is real, but the hype version <strong>bolts AI onto problems a simple rule would solve more cheaply</strong>, a distinction worth holding onto as you read on.</p>
+
+        <h2>The Three Layers: Rule-Based, AI-Powered and Agentic</h2>
+
+        <p>Strip the marketing away and the work happens on three layers, and a good agency knows which one a job needs. <strong>The cheapest layer that solves the problem is almost always the right one</strong>, however the pitch is dressed up.</p>
+
+        <p><strong>Rule-based workflow automation</strong> is the foundation and the bulk of real work: if this happens, do that. A form is submitted, so a record is created, a message fires and an email goes out. It is predictable, cheap to run, and handles the majority of a business's repetitive tasks <strong>without a model in sight</strong>.</p>
+
+        <p><strong>AI-powered automation</strong> adds judgment where rules fall short. A language model reads an incoming email and classifies it, drafts a reply, summarizes a call or pulls clean data out of a messy document. This is the layer that the hype around <a href="/blog/ai-for-business-automation">AI in business automation</a> is really about, and <strong>used well it is genuinely powerful</strong>.</p>
+
+        <p><strong>Agentic automation</strong> goes further, letting an AI agent plan several steps and act across tools rather than follow a fixed path. It is the newest and least predictable layer, impressive in demos and still maturing in production. A serious agency uses it where it earns its place, not as a default, because <strong>an agent let loose on a critical process is a real risk</strong>.</p>
+
+        <h2>What an Automation Agency Builds</h2>
+
+        <p>A capable agency offers a recognizable set of services, and knowing them helps you tell a full-service builder from someone selling a single trick. <strong>The work runs from finding what to automate all the way to keeping it alive months later.</strong> Here is what each piece should deliver.</p>
+
+        <table>
+          <thead>
+            <tr><th>Service</th><th>What it delivers</th><th>Why it matters</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Discovery and process mapping</td><td>A ranked list of what is worth automating</td><td>Stops you automating the wrong things</td></tr>
+            <tr><td>Architecture and tool selection</td><td>The right stack for the job, vendor-neutral</td><td>Avoids lock-in and wasted licenses</td></tr>
+            <tr><td>Integration and build</td><td>Workflows and AI wired into your real systems</td><td>Where most of the complexity hides</td></tr>
+            <tr><td>Testing and deployment</td><td>Systems that run in production with error handling</td><td>A failure at 2am gets caught, not missed</td></tr>
+            <tr><td>Monitoring and maintenance</td><td>Ongoing fixes, updates and a trained team</td><td>Automation that keeps working as you change</td></tr>
+          </tbody>
+        </table>
+
+        <p>The part buyers underrate is <strong>integration, where most of the genuine difficulty sits</strong>. Connecting an automation cleanly to your CRM, payment system, spreadsheets and messaging tools is the hard, unglamorous work that decides whether the whole thing holds together. Tying it into your <a href="/blog/crm-automation">CRM automation</a> is often the make-or-break step.</p>
+
+        <p>The other underrated piece is <strong>what happens after launch</strong>. Tools change, APIs break, your process evolves, and an automation left untended quietly rots. The maintenance and monitoring most agencies fold into a retainer is not an upsell so much as <strong>the price of automation that stays reliable past month three</strong>.</p>
+
+        <blockquote><strong>Rule of thumb:</strong> judge an agency on integration and maintenance, not on the flashy demo. Anyone can show a workflow that runs once; the skill is one that survives your real systems for a year.</blockquote>
+
+        <h2>When Hiring an Agency Makes Sense, and When to Do It Yourself</h2>
+
+        <p>Hiring out is not always the right call, and an honest agency will say so. <strong>The decision comes down to complexity, stakes and whether you have the time to learn</strong>, not to whether automation would help, which it almost always would.</p>
+
+        <p>A few signals say you are ready to bring someone in. Your team <strong>copies the same data between apps every day</strong>, leads slip through because nobody replied in time, scheduling eats hours, or an in-house build stalled half-finished with nobody owning it. When the busywork is clearly costing money and you cannot spare the hands to fix it, an agency pays for itself.</p>
+
+        <p>Businesses also hire out for reasons beyond time. <strong>Most teams have never deployed automation into production</strong>, so they underestimate error handling, edge cases and the maintenance tail. An agency brings that experience, moves faster, lowers the risk of a botched build, and gives you someone to call when a workflow fails on a Friday night.</p>
+
+        <p>The honest counterpoint: <strong>plenty of automations you can and should build yourself</strong>. If your needs are standard and live on one platform, a no-code tool and a focused weekend will get you a long way, and you will understand your systems better for it. The full trade-off is worth reading in our guide to <a href="/blog/done-for-you-vs-diy-automation">done-for-you versus DIY automation</a> before you spend on either path.</p>
+
+        <blockquote><strong>The uncomfortable truth:</strong> an agency that insists every problem needs them, and needs AI, is selling, not advising. The good ones routinely point you to a tool you can run yourself.</blockquote>
+
+        <h2>What a Good Engagement Looks Like, Start to Finish</h2>
+
+        <p>Knowing how a solid engagement runs protects you from the two common failures: a project that drifts for months, and a build you cannot touch once the agency leaves. <strong>A good one is staged, time-boxed, and ends with you in control.</strong></p>
+
+        <p>Expect it to move in clear phases. <strong>Discovery and scoping come first, then a first automation live within roughly two to six weeks</strong>, not a big-bang launch months out. Early wins prove the relationship and the approach before you commit to the larger build, which is exactly how it should go.</p>
+
+        <p>Get the ownership terms in writing before work starts. <strong>You should own the build, the accounts and the documentation</strong>, so nothing is hostage to the agency staying. Insist on plain-language documentation of every workflow and a proper handoff, because a system only the builder understands is <strong>a liability dressed as an asset</strong>.</p>
+
+        <p>Pin down what support looks like too. <strong>Agree response times, who is on call when something breaks, and how updates are handled</strong> as your tools and processes change. The pitches that sell you on hiring rarely mention this, yet a clear maintenance and SLA arrangement is what separates a system that lasts from one that quietly fails.</p>
+
+        <h2>What an Automation Agency Costs</h2>
+
+        <p>Pricing is the question every buyer has and most agencies answer vaguely, so here are real ranges. <strong>They vary with the complexity of the work and where you are in the world</strong>, but the shape holds. Treat these as a map, not a quote.</p>
+
+        <table>
+          <thead>
+            <tr><th>Engagement</th><th>Typical range</th><th>Best for</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Simple workflow build</td><td>$1,000 to $5,000 one-time</td><td>A single automation, few integrations</td></tr>
+            <tr><td>Multi-system build</td><td>$5,000 to $25,000+ one-time</td><td>Connected workflows across several tools</td></tr>
+            <tr><td>Complex or AI-heavy build</td><td>$25,000 and up</td><td>Custom agents, deep integrations, scale</td></tr>
+            <tr><td>Ongoing retainer</td><td>$1,000 to $10,000 per month</td><td>Monitoring, support and continued builds</td></tr>
+          </tbody>
+        </table>
+
+        <p>One-time builds and retainers serve different needs. <strong>A one-time build hands you a finished system, while a retainer keeps it healthy and keeps shipping new automations</strong> as you find them. Many businesses start with a build and move to a light retainer once enough is running to be worth maintaining.</p>
+
+        <p>Watch the running costs that sit underneath the agency fee. <strong>Your automation platform, the apps it connects, and any AI usage all carry their own monthly bills</strong>, and language-model calls in particular can add up at volume. The honest number to weigh is total cost of ownership, the fee plus the tools, not the build price alone.</p>
+
+        <p>Set the cost against the return rather than in isolation. <strong>A single automation that catches leads you currently lose can pay for an entire build</strong>, which is the math behind any serious <a href="/blog/lead-automation">lead automation</a>. If a workflow saves ten hours a week or rescues a handful of sales a month, the payback period is usually short.</p>
+
+        <blockquote><strong>Reality check:</strong> the cheapest agency is rarely the cheapest outcome. A fragile build you have to redo costs more than paying once for one that holds through a busy season.</blockquote>
+
+        <CtaCard
+          title="Want a straight answer on what your automation would cost?"
+          sub="We will map your processes, tell you what is worth automating, and quote it honestly, including the parts you are better off building yourself."
+          label="Book a call"
+        />
+
+        <h2>How to Choose: A 10-Point Vetting Checklist</h2>
+
+        <p>Once you have decided to hire, the job is separating builders from resellers. <strong>Run any agency through these ten checks before you sign</strong>, and treat a weak answer on the first few as a reason to keep looking.</p>
+
+        <ul>
+          <li><strong>1. Proof in production, not decks.</strong> Ask to see live builds and real case studies, not a strategy slide. An agency that ships should be able to <strong>show you systems running in real businesses</strong>, and ideally let you speak to a client or two.</li>
+          <li><strong>2. Technical depth across tools.</strong> Look for fluency in several platforms rather than loyalty to one, since a one-tool shop will bend your problem to fit its tool. The stack should be chosen for your job, drawing on a real command of the <a href="/blog/ai-automation-tools">AI automation tools</a> available.</li>
+          <li><strong>3. Domain fluency in your work.</strong> An agency that understands your industry and processes will <strong>automate the right things and avoid costly misreads</strong>. Experience with businesses like yours beats a generic portfolio of unrelated builds.</li>
+          <li><strong>4. A proven process.</strong> Expect a clear method for discovery, design, testing and iteration, not improvisation. A repeatable process is what <strong>keeps a build on time and stops it ballooning</strong> into an open-ended project.</li>
+          <li><strong>5. ROI transparency.</strong> A serious partner sets a baseline and a target up front, such as cutting lead response from hours to minutes. <strong>If they cannot say what success looks like in numbers</strong>, they cannot be held to it.</li>
+          <li><strong>6. You own the deliverables.</strong> Confirm in writing that the build, accounts and documentation are yours. Anything less <strong>leaves you dependent on the agency forever</strong>, a position you never want to negotiate from later.</li>
+          <li><strong>7. Plain-language scoping and handoff.</strong> The team should explain the work without jargon and train your people to run it. A handoff a non-technical owner can follow without help is a sign of an agency that <strong>builds to last, not to retain you</strong>.</li>
+          <li><strong>8. A real maintenance model.</strong> Ask exactly what happens after launch, who fixes a broken workflow and how fast. Automation needs upkeep, and <strong>an agency with no answer here is selling a one-off</strong> that will decay.</li>
+          <li><strong>9. Documented security and data handling.</strong> Your automation will touch customer data and live systems, so how they handle access, credentials and privacy matters. <strong>Vague answers on security are a hard stop</strong>, not a detail to smooth over later.</li>
+          <li><strong>10. Clear, itemized pricing.</strong> You should understand what you are paying for, build versus retainer versus tools, before you commit. An agency that will not put pricing in plain terms <strong>tends to be just as murky once the work begins</strong>.</li>
+        </ul>
+
+        <blockquote><strong>The shift:</strong> stop asking an agency what it can build and start asking what it will hand over. Ownership, documentation and a maintenance plan tell you more than any demo.</blockquote>
+
+        <h2>Red Flags, and the AI-Agency Hype</h2>
+
+        <p>The flood of new operators in 2026 has made the warning signs easy to spot once you know them. <strong>A large share of the AI automation agency wave is cold DMs, recycled chatbot wrappers and big retainers for thin work.</strong> A few signs tell you to keep looking.</p>
+
+        <ul>
+          <li><strong>No real portfolio.</strong> An agency that cannot show live builds or name a client is selling a promise, not a track record. <strong>Hype-heavy content with no proof of shipped work</strong> is the most common warning sign of all.</li>
+          <li><strong>Rip-and-replace demands.</strong> A good agency builds on the tools you already run; one that insists you tear everything out and adopt its stack is <strong>serving itself, not you</strong>. Your systems should be connected, not replaced wholesale, unless there is a genuine reason.</li>
+          <li><strong>Won't hand over ownership.</strong> If the build, accounts or documentation stay with the agency, you are renting a system you depend on. This is the trap that <strong>turns a one-time project into an inescapable monthly bill</strong>.</li>
+          <li><strong>Vague pricing and vanishing support.</strong> Prices that will not be itemized, and an agency that disappears the moment a build ships, point to the same thing: <strong>a sale, not a partnership</strong>. Press on both before you sign.</li>
+          <li><strong>AI where a rule would do.</strong> Pushing a language model, and its running cost, at a problem a simple rule solves more reliably is a tell that <strong>the pitch is built on the trend, not your needs</strong>. Sometimes a cheap automation you could build yourself is the honest answer, which is why a tour of <a href="/blog/no-code-automation-tools">no-code automation tools</a> is worth taking first.</li>
+        </ul>
+
+        <p>The deeper test is whether you are talking to a builder or a reseller. <strong>A builder asks about your process and sometimes tells you to do it yourself; a reseller asks for your budget and has already decided the answer is AI.</strong> The honest operators in this space are easy to recognize once you have met a few of the other kind.</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>How much does an automation agency cost?</h3>
+        <p>It ranges widely with complexity. <strong>A simple workflow build often runs from $1,000 to $5,000, multi-system builds from $5,000 into the tens of thousands, and ongoing retainers from roughly $1,000 to $10,000 a month.</strong> On top of the fee, budget for the tools and any AI usage the automation relies on, since those carry their own monthly cost.</p>
+
+        <h3>How long until the first automation is live?</h3>
+        <p>A good agency aims for an early win, usually a <strong>first automation running within two to six weeks</strong> rather than a single launch months away. Larger builds take longer, but the work should be staged so you see value early and can judge the relationship before committing to the rest.</p>
+
+        <h3>Do I own what the agency builds?</h3>
+        <p>You should, and you should confirm it in writing before work starts. <strong>The build, the accounts and the documentation belong to you</strong>, so the system is never hostage to the agency staying. An agency that resists handing over ownership is a serious red flag.</p>
+
+        <h3>What is the difference between an AI automation agency and a traditional agency?</h3>
+        <p>A traditional digital or marketing agency runs your campaigns and creative, while an <strong>automation agency builds the operational systems behind the business</strong>, the lead flow, order processing, follow-ups and data movement. The AI label means it also uses language models where judgment is needed, though much of the real work is still rule-based.</p>
+
+        <h3>Can't I just use Zapier or Make myself?</h3>
+        <p>For standard automations on a single platform, often yes, and you should. <strong>Agencies earn their fee on the complex, multi-system builds where integration and reliability get hard</strong>, not on the simple workflows a focused owner can wire up. A good one will tell you which of your needs fall on each side of that line.</p>
+
+        <h3>What happens after launch if something breaks?</h3>
+        <p>That depends entirely on your support arrangement, which is why you agree it up front. <strong>A proper engagement defines who is on call, how fast they respond, and how updates are handled</strong> as your tools change. Without that, a broken workflow can sit failing for days before anyone notices.</p>
+
+        <h3>How do I know my business is ready?</h3>
+        <p>The clearest sign is repetitive manual work that is costing you: staff copying data between apps, leads going cold, hours lost to scheduling and admin. <strong>If the busywork is visible and you cannot spare the hands to fix it, you are ready.</strong> Start with the single process that hurts most rather than trying to automate everything at once.</p>
+
+        <h2>Build the Machine, or Hire the Mechanics</h2>
+
+        <p>An automation agency, chosen well, is one of the highest-leverage hires a growing business can make: <strong>it turns the repetitive work that drains your team into systems that run on their own</strong>. Chosen badly, it is a monthly bill for a fragile build you cannot touch. Everything in this guide, the proof, the ownership, the honest pricing, is what stands between the two.</p>
+
+        <p>Whether you build it yourself or bring someone in, the move is the same: <strong>start with the process that is costing you most, prove one automation, then expand</strong>. That is the work we do for businesses, the operational busywork wired up cleanly and handed over so you own it, never rented back to you. If you want a straight read on what is worth automating first, we are glad to talk it through.</p>
+      </>
+    ),
+  },
+  {
     slug: 'ecommerce-automation',
     seoTitle: 'Ecommerce Automation: What to Automate and Where to Start',
     metaDescription: 'Ecommerce automation in plain English: what to automate from cart to delivery, the best tools, where to start, and what to keep human in your store.',

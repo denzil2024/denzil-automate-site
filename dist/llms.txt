@@ -6,6 +6,7 @@ Denzil Automations builds custom automation systems for growing businesses, so t
 
 ## Blog
 
+- [Automation Agency: What They Do, Cost, and How to Choose](https://automate.workwithdenzil.com/blog/automation-agency): What an automation agency does, what it really costs, how to choose one, and when to skip it and build the automations yourself. An honest buyer's guide.
 - [Ecommerce Automation: What to Automate and Where to Start](https://automate.workwithdenzil.com/blog/ecommerce-automation): Ecommerce automation in plain English: what to automate from cart to delivery, the best tools, where to start, and what to keep human in your store.
 - [Real Estate Automation: A Practical Guide for Agents](https://automate.workwithdenzil.com/blog/real-estate-automation): Real estate automation in plain English: what agents can automate from lead to closing, the best tools, where to start, and what to keep human.
 - [Marketing Automation for Small Business: How to Start](https://automate.workwithdenzil.com/blog/marketing-automation-small-business): Marketing automation for small businesses, made practical: the workflows worth automating, segmentation, multichannel, the software honestly compared, and how to…
