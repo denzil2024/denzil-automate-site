@@ -21,6 +21,7 @@ export const CATEGORIES = {
   crmPipelines:      { slug: 'crm-pipelines',       label: 'CRM & pipelines' },
   aiTools:           { slug: 'ai-tools',            label: 'AI & tools' },
   customerService:   { slug: 'customer-service',    label: 'Customer service' },
+  industryGuides:    { slug: 'industry-guides',     label: 'Industry guides' },
   gettingStarted:    { slug: 'getting-started',     label: 'Getting started' },
 };
 
@@ -40,6 +41,182 @@ export function CtaCard({ title, sub, label = 'Book a call' }) {
 }
 
 export const POSTS = [
+  {
+    slug: 'real-estate-automation',
+    seoTitle: 'Real Estate Automation: A Practical Guide for Agents',
+    metaDescription: 'Real estate automation in plain English: what agents can automate from lead to closing, the best tools, where to start, and what to keep human.',
+    title: 'Real Estate Automation: What to Automate, the Best Tools, and How to Start',
+    excerpt: 'An agent\'s deals rarely die on price. They die in the gaps: the lead that waited an hour for a reply, the follow-up nobody sent, the closing date that slipped. Real estate automation closes those gaps, from first inquiry to repeat referral. Here is what to automate, the tools that do it, and where to start.',
+    date: '2026-06-22',
+    category: CATEGORIES.industryGuides,
+    cover: '/blog/real-estate-automation-cover.jpg',
+    author: AUTHOR,
+    readTime: '15 min read',
+    content: () => (
+      <>
+        <p>The top producer in your market is rarely a better agent than you. They simply never let a lead go cold: every inquiry answered in minutes, every past client touched on schedule, every deadline tracked. You have the same instincts and a fuller plate: showings to run, calls to return, a phone full of people you meant to call. <strong>The difference is not talent. It is systems.</strong></p>
+
+        <p>Real estate automation is how you build those systems. It keeps every lead warm, every listing seen and every deadline tracked on its own, so a solo agent can run like a team. A 2024 McKinsey study estimates that <strong>up to 45% of real estate tasks could be automated by 2035</strong>. This guide walks the whole deal, with the tools that do the work and where to start.</p>
+
+        <h2>What Real Estate Automation Means for an Agent</h2>
+
+        <p>Real estate automation is software that runs your routine tasks the moment it is triggered, from rules you lay down once; its heavier form, robotic process automation, mimics the clicks a person would make. A new lead arrives and a reply goes out while the contact files itself; a listing goes live and posts everywhere at once. <strong>The repeatable work happens on its own</strong>, without you touching it.</p>
+
+        <p>Automation does not replace the agent; the parts of the job that win deals, the relationships and the judgment, stay firmly in your hands. It lifts the administrative weight, the data entry, the chasing, the posting, the reminders, so your hours go to clients instead of busywork. <strong>Think of it as the assistant a solo agent could never afford to hire.</strong></p>
+
+        <h2>What Agents Gain by Automating</h2>
+
+        <p>The case for automating comes down to time and speed, both of which a busy agent is always short on. Agents who automate their routine tasks <strong>report saving around 20 hours a week</strong>, time that goes straight back into listings, showings and clients. For a one-person operation, that is the difference between treading water and growing.</p>
+
+        <p>Speed matters just as much. In real estate, the first agent to respond usually wins the lead, and replying within five minutes makes a lead <strong>far likelier to convert</strong> than one left for even half an hour. Automation answers instantly, day or night, so an inquiry that arrives during a showing is handled before a competitor has noticed it.</p>
+
+        <h2>From Lead to Closing: What an Agent Can Automate</h2>
+
+        <p>Automation in real estate fits at almost every stage of a deal, from the first inquiry to the referral years later. Here are the tasks worth handing off, <strong>roughly in the order they happen across a transaction</strong>. You will run some and not others, so treat it as a menu rather than a checklist.</p>
+
+        <h3>Lead Capture and Instant Response</h3>
+        <p>This is the front end of automated lead generation in real estate: every inquiry, whether from Zillow, your IDX site, a Facebook ad or a sign call, drops into your CRM and gets an instant, personal reply while a call task is created for you. A lead <strong>answered in seconds rather than hours is worth far more</strong>, which is the whole point of a real <a href="/blog/speed-to-lead">speed-to-lead advantage</a>.</p>
+
+        <h3>MLS and IDX Property Alerts</h3>
+        <p>Once a buyer tells you what they want, automation watches the MLS and sends them new and price-reduced listings that match, the moment they hit the market. These <strong>saved-search alerts keep you in a buyer's inbox</strong> for months without a single manual email, and the homes they click tell you exactly how serious and how close to ready they are.</p>
+
+        <h3>Long-Cycle Lead Nurture</h3>
+        <p>Few buyers and sellers are ready today, and a real estate decision can take six to twelve months to ripen. An automated nurture sequence keeps you present that whole time with useful, low-pressure touches, so <strong>you are the agent they call when the moment comes</strong>. This patient follow-up is exactly how you <a href="/blog/why-leads-go-cold">win back leads that go quiet</a>.</p>
+
+        <h3>Listing Promotion and Syndication</h3>
+        <p>The day a listing goes live, automation can push it everywhere at once: the major portals, your social channels, a single-property page and an email to your database. One approval replaces an afternoon of copying and pasting, and price changes or open houses can <strong>announce themselves across every channel</strong>. This is real estate marketing automation, the marketing muscle of a big brokerage on a solo agent's schedule.</p>
+
+        <h3>Showing and Open-House Scheduling</h3>
+        <p>Booking links let buyers and sellers pick a showing time without the back-and-forth, with confirmations and reminders that <strong>cut the no-shows draining your calendar</strong>. At open houses, a digital sign-in captures every visitor straight into your CRM and triggers the follow-up automatically. The reminder discipline behind a good <a href="/blog/stop-no-shows">booking and reminder system</a> applies here directly.</p>
+
+        <h3>Automated Market Reports and CMAs</h3>
+        <p>Sellers want to know what their home is worth, and buyers want to track their target neighborhood, so automation can send branded market updates and home-value reports on a schedule. These <strong>keep you useful between transactions</strong> and quietly position you as the local expert, all from data that refreshes itself rather than a report you rebuild by hand each month.</p>
+
+        <h3>Document Automation and E-Signatures</h3>
+        <p>Real estate document automation generates listing agreements, disclosures and contracts from templates that fill in the client details, then sends them for electronic signature with reminders until they are signed. Everything files itself back into the deal record, so nothing is lost and nobody is chasing a missing initial. <strong>The paperwork that eats evenings runs in the background</strong>, with you reviewing rather than retyping.</p>
+
+        <h3>Transaction and Closing-Milestone Tracking</h3>
+        <p>From accepted offer to closing, a transaction has dozens of dates and tasks, and missing one costs money or trust. Automation tracks the milestones, the inspection, the appraisal, the financing deadline, and nudges everyone involved before each one. <strong>No deadline slips because someone forgot</strong>, and both sides stay informed without a flurry of status calls.</p>
+
+        <h3>Past-Client and Referral Follow-Up</h3>
+        <p>Repeat clients and referrals drive most of an agent's future business, and automation keeps that well from running dry. Anniversary messages, home-value check-ins and review requests go out on their own, long after the sale, so you stay top of mind. <strong>A steady drip of genuine touches turns one closing into the next three.</strong></p>
+
+        <table>
+          <thead>
+            <tr><th>Stage</th><th>What automates</th><th>The payoff</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>New lead</td><td>Capture, instant reply, call task</td><td>Caught before a rival responds</td></tr>
+            <tr><td>Buyer search</td><td>MLS and IDX match alerts</td><td>Stays in their inbox for months</td></tr>
+            <tr><td>Not yet ready</td><td>Long-cycle nurture sequence</td><td>You are the agent they call</td></tr>
+            <tr><td>New listing</td><td>Syndication to portals and social</td><td>A brokerage's reach, solo</td></tr>
+            <tr><td>Showings</td><td>Booking, reminders, open-house sign-in</td><td>Fewer no-shows, every visitor captured</td></tr>
+            <tr><td>Between deals</td><td>Market reports and CMAs</td><td>Positioned as the local expert</td></tr>
+            <tr><td>Paperwork</td><td>Templates and e-signature</td><td>Evenings handed back</td></tr>
+            <tr><td>Under contract</td><td>Milestone and deadline tracking</td><td>No date slips</td></tr>
+            <tr><td>After closing</td><td>Anniversary and referral touches</td><td>One deal becomes three</td></tr>
+          </tbody>
+        </table>
+
+        <p><strong>The same playbook extends to property management</strong>, where rent collection, tenant onboarding and maintenance requests run on the same kind of triggers, turning a portfolio that once needed a full back office into something a small team can handle.</p>
+
+        <blockquote><strong>The pattern:</strong> every stage you automate is one more place a deal can no longer quietly fall apart. That is why agents who automate tend to close more without working longer hours.</blockquote>
+
+        <CtaCard
+          title="Want this built around how you sell?"
+          sub="We will map your deals from first inquiry to closing, then build the automations that keep every one moving, on the tools agents already use."
+          label="Book a call"
+        />
+
+        <h2>The Tools Real Estate Agents Use</h2>
+
+        <p>You do not need every tool below, and most agents run a handful that cover the lifecycle. The real estate automation software worth knowing falls into a few categories, each with what it does and who it suits, so you can <strong>match it to the stages above</strong> rather than chase a long shopping list.</p>
+
+        <h3>1. A Real Estate CRM (the spine)</h3>
+        <p>Everything else hangs off your CRM, which captures leads, runs the follow-up and tracks the deal. Real-estate-specific options like Follow Up Boss, kvCORE and BoomTown build in lead routing, drip campaigns and the MLS connections that a general CRM lacks. <strong>If you automate one thing, make it the CRM</strong>, the same foundation behind any solid <a href="/blog/crm-automation">CRM automation</a>.</p>
+        <ul>
+          <li><strong>Best for:</strong> any agent or team that wants one home for leads and follow-up.</li>
+          <li><strong>Watch out for:</strong> paying for a heavy platform when a simpler CRM would do early on.</li>
+        </ul>
+
+        <h3>2. A Connector (to link your apps)</h3>
+        <p>When your tools do not talk to each other, a connector like Zapier <strong>wires them together</strong>, sending a new portal lead into your CRM or a signed contract into your files. It is how agents automate across apps without a developer, and the broader options are worth a look in our guide to <a href="/blog/no-code-automation-tools">no-code automation tools</a>.</p>
+        <ul>
+          <li><strong>Best for:</strong> connecting lead sources, your CRM and the rest of your stack.</li>
+          <li><strong>Watch out for:</strong> per-task pricing that climbs as your lead volume grows.</li>
+        </ul>
+
+        <h3>3. Document and E-Signature Tools</h3>
+        <p>Built for the paperwork, tools like Dotloop and DocuSign turn contracts and disclosures into templates you send for signature in a click, with everything tracked and filed. For a transaction-heavy agent, this is <strong>the single biggest evening-saver in the stack</strong>.</p>
+        <ul>
+          <li><strong>Best for:</strong> agents and teams drowning in contracts and disclosures.</li>
+          <li><strong>Watch out for:</strong> overlap if your CRM or brokerage already includes e-sign.</li>
+        </ul>
+
+        <h3>4. Listing Marketing Tools</h3>
+        <p>These cover marketing automation for real estate agents and realtors: they <strong>push a new listing to the portals, social and your database at once</strong>, then schedule the ongoing content that keeps you visible. A platform like MoxiWorks or a scheduler such as MeetEdgar covers it, the same logic behind any small-business <a href="/blog/marketing-automation-small-business">marketing automation</a>.</p>
+        <ul>
+          <li><strong>Best for:</strong> listing agents who want a brokerage's reach on their own.</li>
+          <li><strong>Watch out for:</strong> generic, off-brand posts if you never tailor the templates.</li>
+        </ul>
+
+        <h3>5. Open-House and Lead-Capture Tools</h3>
+        <p>Tools like Spacio replace the paper sign-in sheet with a digital form that <strong>drops every visitor into your CRM</strong> and starts the follow-up before they reach the car. For agents who run open houses, it turns a pile of scribbled names into tracked, nurtured leads.</p>
+        <ul>
+          <li><strong>Best for:</strong> agents who generate leads through open houses.</li>
+          <li><strong>Watch out for:</strong> thin value if open houses are not part of how you work.</li>
+        </ul>
+
+        <h2>The First Automations to Build</h2>
+
+        <p>When you set out to automate your real estate business, doing everything at once is how agents end up with a tangle nobody trusts. Start where the leak is biggest, which for almost every agent is <strong>the speed and consistency of lead response</strong>. Get that one right and it pays for the rest.</p>
+
+        <ul>
+          <li><strong>1. Instant lead response.</strong> Connect your lead sources to your CRM so every inquiry gets a reply in seconds and a task to call. This is the highest-return real estate sales automation an agent can build, and it stops leads leaking to faster rivals.</li>
+          <li><strong>2. A simple follow-up sequence.</strong> Add a nurture drip for the leads who are not ready yet, so you stay in front of them for the months a real estate decision takes. The discipline behind it is plain <a href="/blog/lead-automation">lead automation</a>, applied to a long sales cycle.</li>
+          <li><strong>3. Showings and signatures.</strong> Once leads are handled, automate the booking, reminders and e-signatures, the real estate workflow automation that eats most of an agent's week. These are low-risk wins that free real hours fast.</li>
+          <li><strong>4. Everything else, one at a time.</strong> Layer on listing syndication, market reports and transaction tracking once the basics are proving themselves. Each addition should earn its place before the next.</li>
+        </ul>
+
+        <h2>Where Real Estate Automation Goes Wrong</h2>
+
+        <p>Automation fails in real estate for a specific reason: the business runs on trust, and trust does not automate. The agents who get burned are usually the ones who pointed it at the wrong things, so <strong>a few lines keep it on the right side</strong>.</p>
+
+        <ul>
+          <li><strong>Automating the relationship, not the admin.</strong> The tour, the offer call, the hard negotiation, these are where deals are won and belong to a person. Let automation handle the reminders and paperwork around them, and keep yourself in the conversations that matter.</li>
+          <li><strong>Blasting everyone the same message.</strong> A first-time buyer, a downsizing seller and a past client need different things, and one generic message to all of them reads as spam. Segment your database and the same automation feels personal instead.</li>
+          <li><strong>Setting it and forgetting it.</strong> A sequence written a year ago drifts out of date, and a broken connection can silently stop your leads flowing. Check your automations monthly so a quiet failure does not cost you a season of deals.</li>
+          <li><strong>Skipping the CRM and MLS connection.</strong> Automation is only as good as the data feeding it, so a CRM cut off from your lead sources and the MLS produces gaps and wrong actions. Wire them together first, then automate on top.</li>
+        </ul>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>What can a real estate agent automate?</h3>
+        <p>Almost every repeatable task between a lead and a closing: instant lead response, follow-up and nurture, MLS-matched property alerts, listing syndication, showing scheduling, market reports, document e-signing and transaction reminders. <strong>The relationship work stays with the agent</strong>, while the admin around it runs on its own. Most agents start with lead response and expand from there.</p>
+
+        <h3>Will automation make me feel less personal to clients?</h3>
+        <p>Only if you automate the wrong things. <strong>Used well, it makes you more responsive, not less personal</strong>, because clients get instant replies and timely updates while you spend your freed hours on the conversations that need you. The impersonal feeling comes from generic mass messages, which segmenting your database avoids.</p>
+
+        <h3>What is the best tool to automate my real estate business?</h3>
+        <p>There is no single best one, but the spine for most agents is a real-estate CRM such as Follow Up Boss, kvCORE or BoomTown, since it captures leads and runs the follow-up. <strong>Add a connector, e-signature and listing-marketing tools around it</strong> as you need them. Match the tools to how you sell, not to a feature list.</p>
+
+        <h3>How much time does real estate automation save?</h3>
+        <p>Agents who automate their routine work commonly report <strong>saving around 20 hours a week</strong>, mostly from lead follow-up, data entry, scheduling and paperwork. The exact figure depends on your volume, but even a single instant-response automation tends to pay for itself fast by catching leads you would otherwise lose.</p>
+
+        <h3>Do I need to be technical to set this up?</h3>
+        <p>No. Most real-estate CRMs and tools are built for agents, not engineers, with visual setup and ready-made templates. <strong>The skill that matters is knowing your own process</strong>, not coding, and a connector handles the links between apps for you. The trickier builds are where bringing in help makes sense.</p>
+
+        <h3>What should I automate first?</h3>
+        <p>Instant lead response, every time. It is the biggest leak in most agents' businesses, since <strong>the fastest agent usually wins the lead</strong>, and it is simple to set up by connecting your lead sources to your CRM. Prove that one, then add follow-up, scheduling and the rest in turn.</p>
+
+        <h2>Build the Business, Let the Busywork Run</h2>
+
+        <p>A real estate career is built on relationships, but it is lost in logistics: the follow-up that slips, the deadline that passes, the lead that waited too long. Automation takes the logistics off your plate so the relationships get your full attention. <strong>The agents who win simply lose fewer deals to the gaps</strong>, without grinding more hours.</p>
+
+        <p>Start with the lead-response gap, build one automation, and let it prove itself before you add the next. That is the kind of system we build for agents and teams: <strong>the repeatable work of real estate, running quietly in the background</strong>, wired into the tools you already use. If you want to see which automation would pay off first in your business, it is a short conversation away.</p>
+      </>
+    ),
+  },
   {
     slug: 'marketing-automation-small-business',
     seoTitle: 'Marketing Automation for Small Business: How to Start',

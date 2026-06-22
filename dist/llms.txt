@@ -6,6 +6,7 @@ Denzil Automations builds custom automation systems for growing businesses, so t
 
 ## Blog
 
+- [Real Estate Automation: A Practical Guide for Agents](https://automate.workwithdenzil.com/blog/real-estate-automation): Real estate automation in plain English: what agents can automate from lead to closing, the best tools, where to start, and what to keep human.
 - [Marketing Automation for Small Business: How to Start](https://automate.workwithdenzil.com/blog/marketing-automation-small-business): Marketing automation for small businesses, made practical: the workflows worth automating, segmentation, multichannel, the software honestly compared, and how to…
 - [No-Code Automation Tools: How to Choose the Right One](https://automate.workwithdenzil.com/blog/no-code-automation-tools): A vendor-neutral guide to no-code automation tools: the types, an honest read on Zapier, Make, n8n and more, the pricing traps, free options, and where they stop.
 - [AI for Business Automation: What It Can and Can't Do](https://automate.workwithdenzil.com/blog/ai-for-business-automation): AI for business automation in plain English: what AI can automate that rules cannot, where to use it, where to keep humans in, what it costs, and how to start.
