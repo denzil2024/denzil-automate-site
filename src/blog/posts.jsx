@@ -42,6 +42,141 @@ export function CtaCard({ title, sub, label = 'Book a call' }) {
 
 export const POSTS = [
   {
+    slug: 'finance-accounting-automation',
+    seoTitle: 'Finance and Accounting Automation: What to Automate',
+    metaDescription: 'Finance and accounting automation explained: what to automate across procure-to-pay, order-to-cash and the financial close, the RPA and AI behind it, and costs.',
+    title: 'Finance and Accounting Automation: What to Automate From AP to the Financial Close',
+    excerpt: 'Finance teams spend half the week keying invoices, chasing approvals and reconciling accounts by hand, work that earns nothing and breaks the moment a number is wrong. Yet 79% of finance leaders say they need more automation, and only a third have started. Finance and accounting automation runs those cycles on their own, from procure-to-pay to the financial close. Here is what to automate, and where the judgment stays human.',
+    date: '2026-06-23',
+    category: CATEGORIES.gettingStarted,
+    cover: '/blog/finance-accounting-automation-cover.jpg',
+    author: AUTHOR,
+    readTime: '15 min read',
+    content: () => (
+      <>
+        <p>A finance team is hired to make sense of the numbers. Instead, most of its week goes to producing them by hand: keying invoices, chasing approvals and reconciling accounts line by line. <strong>More than half of a typical finance team's time disappears into that manual work</strong>, and it is error-prone by design, with an estimated <strong>88% of the spreadsheets businesses still run on containing mistakes</strong>.</p>
+
+        <p>The will to change it is there; the action is not. <strong>Roughly 79% of finance leaders say they need more automation, while only about a third have made a meaningful start</strong>. A single invoice costs $16 to $22 to handle by hand, the close drags on for days, and <strong>the cost of waiting compounds month after month</strong>.</p>
+
+        <p>Finance and accounting automation closes that gap. <strong>It takes the repetitive work off the team so their hours go to analysis instead of admin</strong>, while <strong>the judgment that matters stays firmly with a person</strong>. The rest of this guide is a tour of where it fits: what to automate, the technology behind it, and the line you keep on the human side.</p>
+
+        <p>Finance runs on a few core cycles, and finance process automation slots into each one: <strong>procure-to-pay, order-to-cash and record-to-report</strong>, with treasury, tax and expenses around them. Here is what to automate in each, roughly in the order most teams should tackle them.</p>
+
+        <h2>Procure-to-Pay: Invoices, Approvals and Payments</h2>
+
+        <p>Procure-to-pay covers everything from raising a purchase order to paying the supplier, and it is where finance automation returns the most, fastest. <strong>Accounts payable automation captures each invoice with OCR and AI, matches it against the purchase order and receipt, routes it for approval and pays it</strong>, with no manual keying. The two-way and three-way match that once took an afternoon runs in seconds.</p>
+
+        <p>The numbers make the case on their own. A manual invoice costs $16 to $22 to process, and <strong>AP automation cuts that by up to 70%</strong> while catching the duplicates and fraud that slip past a tired reviewer. Despite this, <strong>only around 7% of finance teams have fully automated AP</strong>, which makes invoice automation one of the clearest wins still on the table.</p>
+
+        <p>Beyond the invoice itself, automation handles <strong>vendor onboarding, purchase-order creation, payment execution and AP reporting</strong>, closing the loop from request to payment. For a finance team drowning in supplier invoices, this is <strong>the cycle to automate first</strong>, and the one that pays for the rest.</p>
+
+        <h2>Order-to-Cash: Billing, Collections and Cash</h2>
+
+        <p>Order-to-cash is the mirror image: everything from a customer order to the cash in the bank. <strong>Accounts receivable automation, or AR automation, generates the invoice, sends it, chases payment with timed reminders and applies the cash when it arrives</strong>, so revenue is collected without a person nudging every account.</p>
+
+        <p>The slow, awkward part of AR is collections, and automation handles it without the friction. <strong>Dunning sequences escalate on their own, payment portals let customers pay in a click, and cash application matches incoming payments to open invoices</strong>. The result is faster cash and fewer overdue accounts, with the customer relationship intact, the same clean-data foundation behind any <a href="/blog/crm-automation">CRM automation</a>.</p>
+
+        <p>Order entry and billing round out the cycle. <strong>Sales orders flow straight into the ledger, recurring invoices send themselves, and deductions and disputes route to the right person</strong> instead of stalling. For any business carrying receivables, automating order-to-cash <strong>turns a leaky, manual chase into a reliable inflow</strong>.</p>
+
+        <h2>Record-to-Report: Reconciliation, the Close and Reporting</h2>
+
+        <p>Record-to-report is the cycle that turns raw transactions into financial statements, and it is where manual work hurts most at month-end. <strong>Reconciliation automation matches ledger entries against bank and system data, flags only the exceptions, and posts the routine journal entries and day-to-day bookkeeping</strong>, so the books stay current instead of being rebuilt under deadline.</p>
+
+        <p>The financial close is the headline win, and <strong>financial close automation compresses a close that once took a week into a matter of days</strong>, with financial reporting running around 40% faster. Running this off live systems rather than a maze of spreadsheets is the same leap as moving from a <a href="/blog/spreadsheet-to-pipeline">spreadsheet to a live pipeline</a>, applied to the ledger.</p>
+
+        <p>Reporting and revenue recognition complete the cycle. <strong>Financial reports build and distribute themselves on schedule, revenue is recognized against the rules, and fixed-asset and audit records update on their own</strong>. This is where robotic process automation in accounting earns its reputation, <strong>turning the most deadline-bound work in finance into a background process</strong>.</p>
+
+        <blockquote><strong>Reality check:</strong> the close is where automation is felt most. A team that closes in three days instead of ten gets a week of every month back for the work that moves the business forward.</blockquote>
+
+        <h2>Treasury and Cash Management</h2>
+
+        <p>Around the three core cycles sits treasury, where automation brings visibility to cash. <strong>Bank statements consolidate into one view, cash positions and forecasts update in real time, and outgoing payments are validated against rules before they leave</strong>. Automated monitoring also watches for the unusual transaction that signals fraud, giving a finance lead <strong>a live picture of liquidity instead of a stale weekly spreadsheet</strong>.</p>
+
+        <h2>Tax, Audit and Compliance</h2>
+
+        <p>Tax and compliance run on rules and deadlines, which makes them a natural fit for automation. <strong>Tax codes are validated at the point of entry, filings and provisions are prepared on schedule, and a complete audit trail is kept without anyone assembling it by hand</strong>. When regulations such as SOX or local tax rules demand evidence, <strong>an automated, time-stamped record turns audit season from a scramble into a query</strong>.</p>
+
+        <h2>Expense Management and Payroll</h2>
+
+        <p>Two more processes round out the function. <strong>Automating expense management means receipts are captured from a photo, checked against policy and routed for approval and reimbursement</strong>, with the out-of-policy claims flagged rather than rubber-stamped. Payroll integration feeds hours and pay straight into the ledger, so <strong>the largest recurring cost books itself accurately every cycle</strong>.</p>
+
+        <table>
+          <thead>
+            <tr><th>Cycle</th><th>What automates</th><th>The payoff</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Procure-to-pay (AP)</td><td>Invoice capture, PO matching, approvals, payments</td><td>Invoice cost down up to 70%</td></tr>
+            <tr><td>Order-to-cash (AR)</td><td>Billing, collections, cash application</td><td>Faster cash, fewer overdue accounts</td></tr>
+            <tr><td>Record-to-report</td><td>Reconciliation, the close, reporting</td><td>A close in days, not weeks</td></tr>
+            <tr><td>Treasury</td><td>Cash consolidation, forecasting, fraud checks</td><td>A live view of liquidity</td></tr>
+            <tr><td>Tax and compliance</td><td>Validation, filings, audit trails</td><td>Audit-ready by default</td></tr>
+            <tr><td>Expenses and payroll</td><td>Receipt capture, policy checks, payroll</td><td>Hands-off recurring spend</td></tr>
+          </tbody>
+        </table>
+
+        <blockquote><strong>The pattern:</strong> finance automation does not invent new work, it removes the keying and chasing between the numbers. The hours it gives back are the hours a finance team should spend on analysis, not data entry.</blockquote>
+
+        <CtaCard
+          title="Want your finance back office running on its own?"
+          sub="We map your procure-to-pay, order-to-cash and close, then automate the manual steps, wired into the accounting system and ERP you already use."
+          label="Book a call"
+        />
+
+        <h2>The Tech: RPA, AI and Agentic Automation</h2>
+
+        <p>Three layers of technology do this work, and knowing which is which keeps expectations honest. <strong>Robotic process automation, or RPA in finance, runs the rules-based tasks</strong>: copying data between systems, matching invoices, posting routine entries. It is the workhorse behind most finance and accounting automation, <strong>predictable and cheap to run</strong>.</p>
+
+        <p>AI adds judgment where rules fall short. <strong>It reads a messy invoice, codes an unfamiliar expense, drafts a variance commentary and flags the anomaly a fixed rule would miss</strong>, which is where the recent leap in <a href="/blog/ai-for-business-automation">AI in business automation</a> shows up in finance. Used together, RPA handles the volume and AI handles the exceptions.</p>
+
+        <p>Automation in the finance industry is moving from rules toward reasoning, and the newest layer is agentic automation, where AI agents coordinate a whole cycle end to end. <strong>An agent can run procure-to-pay or record-to-report from start to finish, handling exceptions and enforcing policy as it goes</strong>, lifting straight-through processing rates. It is promising and still maturing, so the sensible path is to <strong>automate the rules first, add AI to the exceptions, and let agents take the end-to-end work as they prove themselves</strong>.</p>
+
+        <blockquote><strong>Worth noting:</strong> most of the value in finance automation is still plain RPA, not AI. The rules-based matching and posting return more, and more reliably, than the cleverest model running on its own.</blockquote>
+
+        <h2>What Stays Human</h2>
+
+        <p>Finance is accountable in a way few functions are, which sets a clear line on what to automate. <strong>The judgment calls, the forecasts and assumptions, the advice to the business and the response to an auditor's question, stay with a person</strong>. Automation prepares the numbers and surfaces the exceptions; <strong>a qualified human still reviews, signs and owns them</strong>.</p>
+
+        <p>The exceptions matter as much as the rules. <strong>A workflow handles the transactions that follow the pattern, but the unusual invoice, the disputed receivable and the year-end estimate need a human eye</strong>. Used this way, automation makes a finance team sharper and faster, because <strong>the freed hours go to the analysis and judgment that only people can provide</strong>, the same shift behind any serious <a href="/blog/business-automation">business automation</a>.</p>
+
+        <h2>Where to Start, and What It Costs</h2>
+
+        <p>Automating the whole function at once overwhelms a small team, so sequence it. <strong>Start with accounts payable and invoice processing, the highest-volume, fastest-payback cycle</strong>, then reconciliation and the close, then accounts receivable, and layer the rest on as each proves itself. Most finance teams feel the first win within a month.</p>
+
+        <p>The cost is within reach of a small business, not only an enterprise. <strong>Finance automation software runs as monthly subscriptions, and many automations bolt onto the accounting system or ERP you already run</strong>, from QuickBooks and Xero to NetSuite and Sage. Weighed against $16 to $22 per manual invoice and days of close time, <strong>the payback is usually quick and easy to show</strong>.</p>
+
+        <p>When the build spans several systems and the stakes are high, that is the point to weigh bringing in help. <strong>The trade-offs are the same ones we set out for choosing an <a href="/blog/automation-agency">automation agency</a></strong>, with the added requirement that whoever builds it understands accounting controls and the close.</p>
+
+        <blockquote><strong>Rule of thumb:</strong> automate the cycle that costs you the most hours first, which for most teams is accounts payable. Prove it on real invoices, then let the saving fund the next build.</blockquote>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>What can a finance team automate?</h3>
+        <p>Almost any repeatable, rules-based task across the function: invoice capture and AP, billing and collections in AR, bank and ledger reconciliation, the financial close, reporting, expense management, payroll integration, tax validation and audit trails. <strong>The judgment, the forecasts and the sign-off stay with a qualified person.</strong> Most teams start with accounts payable, where the volume and payback are highest.</p>
+
+        <h3>What is the difference between RPA, AI and agentic automation in finance?</h3>
+        <p>They are three layers that work together. <strong>RPA runs rules-based tasks like matching and posting, AI adds judgment by reading messy documents and flagging anomalies, and agentic automation coordinates a whole cycle end to end.</strong> A sound approach automates the rules with RPA first, adds AI to the exceptions, then lets agents take on the end-to-end work as they prove reliable, a path we trace in our guide to <a href="/blog/ai-agents-vs-chatbots">AI agents versus chatbots</a>.</p>
+
+        <h3>How much does finance and accounting automation cost?</h3>
+        <p>It runs as affordable monthly software subscriptions, and many tools extend the accounting system or ERP you already use rather than replacing it. <strong>Set against $16 to $22 per manually processed invoice and days of close time, the payback is usually fast.</strong> A done-for-you build adds a one-time setup fee, which a single automated cycle like AP often recovers within months.</p>
+
+        <h3>What should we automate first?</h3>
+        <p>Accounts payable and invoice processing, almost every time. <strong>It is the highest-volume, most error-prone cycle, and automating it delivers a clear, measurable saving quickly.</strong> From there, reconciliation and the financial close, then accounts receivable, are the natural next steps.</p>
+
+        <h3>Will it work with QuickBooks, Xero or our ERP?</h3>
+        <p>It should, and integration is the question that matters most. <strong>Good finance automation connects to the accounting system or ERP you already run, from QuickBooks and Xero to NetSuite, Sage and Microsoft Dynamics</strong>, using the connectors built for exactly that. Confirm that any tool or partner integrates with your stack before you commit.</p>
+
+        <h3>Will automation replace accountants?</h3>
+        <p>No. <strong>Automation takes the data entry, matching and chasing, while the analysis, judgment and advice that define the role stay with the accountant.</strong> In practice it makes finance professionals more valuable, by freeing them from the manual work to focus on the decisions the business genuinely needs.</p>
+
+        <h2>Close the Books, Not the Day</h2>
+
+        <p>A finance team's value is in the judgment: what the numbers mean, where the risk sits, what the business should do next. <strong>Everything around that, the keying, the matching, the chasing, the reconciling, is what should run on its own</strong>. Finance and accounting automation takes the manual cycle off the team so their hours go to the analysis only they can do.</p>
+
+        <p>Start with the invoices, automate one cycle, and let the saving prove itself before the next. <strong>That is the work we do for finance teams: the back-office cycles of procure-to-pay, order-to-cash and the close, automated cleanly and wired into the systems you already run</strong>, with the judgment and the sign-off left where they belong. If you want a clear read on which cycle would pay off first, reach out and we will map it with you.</p>
+      </>
+    ),
+  },
+  {
     slug: 'insurance-agency-automation',
     seoTitle: 'Insurance Agency Automation: The Workflows to Automate',
     metaDescription: 'Insurance agency automation, a practical playbook: the 10 workflows to automate from intake to renewals, where an AI insurance agent fits, costs, and what to keep human.',

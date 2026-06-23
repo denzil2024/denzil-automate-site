@@ -6,6 +6,7 @@ Denzil Automations builds custom automation systems for growing businesses, so t
 
 ## Blog
 
+- [Finance and Accounting Automation: What to Automate](https://automate.workwithdenzil.com/blog/finance-accounting-automation): Finance and accounting automation explained: what to automate across procure-to-pay, order-to-cash and the financial close, the RPA and AI behind it, and costs.
 - [Insurance Agency Automation: The Workflows to Automate](https://automate.workwithdenzil.com/blog/insurance-agency-automation): Insurance agency automation, a practical playbook: the 10 workflows to automate from intake to renewals, where an AI insurance agent fits, costs, and what to keep…
 - [Travel Agency Automation: The Workflows to Set Up First](https://automate.workwithdenzil.com/blog/travel-agency-automation): Travel agency automation, a practical playbook: the 10 workflows to automate from inquiry to post-trip, the AI that helps, what it costs, and what to keep human.
 - [Logistics Automation: What to Automate From Warehouse to Delivery](https://automate.workwithdenzil.com/blog/logistics-automation): Logistics automation explained: the systems, what to automate across the warehouse, transport, back office and last mile, the robots versus the software, and costs.
