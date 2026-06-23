@@ -42,6 +42,226 @@ export function CtaCard({ title, sub, label = 'Book a call' }) {
 
 export const POSTS = [
   {
+    slug: 'hr-process-automation',
+    seoTitle: 'HR Process Automation: 10 Processes to Automate First',
+    metaDescription: 'HR process automation explained: the 10 HR processes to automate from onboarding to offboarding, how RPA and AI fit, what it costs, and what to keep human.',
+    title: 'HR Process Automation: The 10 Processes to Automate First, and the Hours They Give Back',
+    excerpt: 'Ask anyone in HR why they took the job and the answer is people. Ask how the days fill up and the answer is paperwork. Studies put close to 57% of HR time on administrative work, near seven hours a week per person, almost none of it spent on the people who are the point. HR process automation runs that busywork on rules you set once, with a layer of AI reading and drafting on top. Here are the ten processes to automate first, and the judgment you keep human.',
+    date: '2026-06-23',
+    category: CATEGORIES.industryGuides,
+    cover: '/blog/hr-process-automation-cover.jpg',
+    author: AUTHOR,
+    readTime: '15 min read',
+    content: () => (
+      <>
+        <p>Ask anyone in HR why they took the job, and the answer comes back to people. Ask how the days fill up, and the answer is paperwork. <strong>Studies put close to 57% of an HR team's time on administrative work</strong>, near <strong>seven hours a week for each person</strong>, almost none of it spent on the people who are the point.</p>
+
+        <p>That trade has a cost, and it surfaces twice. First in the hours, lost to retyping forms, chasing approvals and fixing the same record in three systems that never agree. Then in what never gets done at all: <strong>a strong hire who walks because onboarding was a shambles, a manager who needed coaching and got a calendar invite instead</strong>.</p>
+
+        <p>HR process automation closes that trade. <strong>It takes the repetitive work and runs it on rules you set once</strong>, from a candidate accepting an offer to an employee booking leave, with a new layer of AI reading and drafting on top. What follows is the practical version: the ten processes to automate first, how RPA and AI split the work, what it costs, and <strong>the judgment you keep human</strong>.</p>
+
+        <h2>What HR Process Automation Is, and How It Works</h2>
+
+        <p>Strip away the jargon and the idea is plain: <strong>you set a rule once, and software runs it the moment the trigger arrives</strong>. HR process automation, also called HR automation or HR workflow automation, does this across the repetitive, rules-based steps of the department. A form goes out, an approval routes, a record updates, a document files itself.</p>
+
+        <p>The pattern holds whatever the task. A candidate accepts, and onboarding fires on its own. An employee asks for leave, and it routes to the manager, adjusts the balance and tells payroll. This is <strong>automation in human resources at its plainest</strong>: the handoffs and the data entry run themselves, and <strong>the people work stays with people</strong>.</p>
+
+        <h2>The Real Cost of Running HR by Hand</h2>
+
+        <p>Picture a new hire's first morning under the manual version. No laptop, no logins, a folder of forms, and an HR lead apologizing between meetings. <strong>That first impression is hard to undo</strong>, and it is the cheap end of the problem. The costly end is a botched payslip or a compliance date that quietly slips past.</p>
+
+        <p>The damage compounds because <strong>HR sits on the company's most important data</strong>, and manual work lets it rot. A wrong figure on a contract, a benefit never filed, a leave balance two weeks stale: each one breeds more cleanup than the last. It is the exact drag that solid <a href="/blog/business-automation">business automation</a> is built to lift, turned on the people function.</p>
+
+        <blockquote><strong>The uncomfortable truth:</strong> the busywork does not only cost the hours it eats, it costs the work those hours could have funded. An HR team buried in admin never reaches the retention problem sitting right underneath it.</blockquote>
+
+        <h2>The HR Processes Worth Automating First</h2>
+
+        <p>Nearly any routine in HR follows the same script, from the day a role opens to the day a final paycheck clears, and that repetition is what automation feeds on. <strong>The ten processes below give back the most the moment they run on their own</strong>, set in the order a person moves through the company. Treat them as <strong>a menu, not a checklist</strong>.</p>
+
+        <h3>1. Recruiting and Applicant Tracking</h3>
+        <p>Hiring is mostly clerical, not judgment: posting the role, screening replies, booking interviews, keeping people warm. <strong>Automation does all of it without a recruiter chasing a calendar</strong>, and the candidates who once sat in silence get an answer the same day. The strongest ones stop drifting to a quicker rival, which is <a href="/blog/speed-to-lead">speed to lead</a> aimed at hiring.</p>
+
+        <h3>2. Employee Onboarding</h3>
+        <p>Nothing rewards automation like onboarding, which is repetitive, document-heavy and the first thing a new hire judges you on. <strong>The moment an offer is accepted, the whole sequence fires</strong>: contracts out for signature, accounts and kit requested, schedule sent, tax and bank forms collected. The new hire walks into <strong>a company that looks like it has its act together</strong>.</p>
+
+        <h3>3. Time-Off, Attendance and Approvals</h3>
+        <p>Leave is pure workflow, which is exactly why it clogs inboxes when handled by hand. <strong>Automation routes each request to the right manager, checks it against the balance and policy, updates the record and tells payroll</strong>, with no email thread at all. Attendance and timesheets feed in alongside, so <strong>the numbers behind pay are right before anyone runs them</strong>.</p>
+
+        <h3>4. Payroll and Expense Prep</h3>
+        <p>Payroll is precise work; the prep around it is messy and error-prone. <strong>Automation pulls the hours, leave, overtime and changes, checks them against the rules and hands payroll a clean file</strong>, not a spreadsheet built at midnight. Expenses follow, with <strong>receipts captured, matched to policy and sent for approval</strong>, and the odd one out flagged instead of rubber-stamped.</p>
+
+        <h3>5. Benefits Administration and Open Enrollment</h3>
+        <p>Benefits are a maze of forms, deadlines and carrier updates that eat HR time cycle after cycle. <strong>Automation walks each person through enrollment, checks their choices, syncs the elections to the providers and tracks the dates</strong>, so nothing slips. Open enrollment, the season HR dreads, becomes a guided flow people finish themselves, and <strong>the data reaches the carriers without a rekeyed form</strong>.</p>
+
+        <h3>6. Performance Reviews and Check-Ins</h3>
+        <p>Review cycles fail on logistics, not on content. <strong>Automation schedules the round, sends the self and peer forms, chases the late ones and lays the results in front of each manager</strong>, leaving the conversation as the only human part. Check-ins and pulse surveys follow suit, giving leaders <strong>a live read on how the team feels</strong> instead of a yearly scramble.</p>
+
+        <h3>7. Employee Requests and the HR Helpdesk</h3>
+        <p>HR fields the same questions on a loop: how much leave is left, where a policy lives, how to change bank details. <strong>A self-service portal and an AI assistant answer the routine ones on their own</strong>, pulling each reply from the policy or the record and escalating only the real exceptions. It frees HR from <strong>working as a human FAQ desk</strong> and hands those hours to work that needs a mind.</p>
+
+        <h3>8. Training and Development</h3>
+        <p>Required training is compliance dressed as learning, and tracking it by hand is thankless. <strong>Automation assigns the right courses by role, sends the nudges, tracks completion and files each certificate</strong> against the record. A new rule or a new hire triggers the right course on its own, and <strong>the proof that everyone finished builds as it happens</strong>, not in a panic before an audit.</p>
+
+        <h3>9. Compliance, Documents and Reporting</h3>
+        <p>HR holds the most sensitive records in the building, which makes manual handling a real risk. <strong>Automation files each document to the right record, tracks every contract and certification toward expiry, and keeps a time-stamped trail of who did what</strong>. Reports on headcount, turnover and diversity build and send on schedule, so <strong>the numbers leaders want are ready before they ask</strong>.</p>
+
+        <h3>10. Offboarding and Access Revocation</h3>
+        <p>Offboarding is onboarding in reverse, and the stakes are higher, because forgetting a step leaves a door open. <strong>Automation runs the exit checklist, kills system access on the final day, recovers kit, settles the final pay and triggers the exit interview</strong>. Nothing is left hanging behind a leaver, so <strong>the security gaps manual offboarding leaves close on their own</strong>.</p>
+
+        <table>
+          <thead>
+            <tr><th>Process</th><th>What gets automated</th><th>The payoff</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1. Recruiting</td><td>Job posting, screening, interview scheduling</td><td>Faster hires, no candidate left waiting</td></tr>
+            <tr><td>2. Onboarding</td><td>Contracts, accounts, equipment, first-week setup</td><td>A new hire who starts ready</td></tr>
+            <tr><td>3. Time-off and attendance</td><td>Requests, approvals, balances, timesheets</td><td>No inbox approvals, accurate pay data</td></tr>
+            <tr><td>4. Payroll and expense prep</td><td>Hours, changes, receipts, policy checks</td><td>Clean payroll, fewer errors</td></tr>
+            <tr><td>5. Benefits and enrollment</td><td>Guided enrollment, carrier sync, deadlines</td><td>Open enrollment without the scramble</td></tr>
+            <tr><td>6. Performance reviews</td><td>Scheduling, forms, reminders, results</td><td>Cycles that finish on time</td></tr>
+            <tr><td>7. Employee requests</td><td>Self-service portal, AI helpdesk</td><td>HR freed from repeat questions</td></tr>
+            <tr><td>8. Training</td><td>Course assignment, reminders, certificates</td><td>Compliance proven as it happens</td></tr>
+            <tr><td>9. Compliance and reporting</td><td>Document filing, expiry tracking, reports</td><td>Audit-ready by default</td></tr>
+            <tr><td>10. Offboarding</td><td>Exit checklist, access revocation, final pay</td><td>No security gaps left open</td></tr>
+          </tbody>
+        </table>
+
+        <blockquote><strong>The pattern:</strong> automation does not replace the HR conversation, it removes the forms and follow-ups around it. The hours it gives back are the ones an HR team should spend on people, not paperwork.</blockquote>
+
+        <CtaCard
+          title="Want your HR back office running on its own?"
+          sub="We map your onboarding, leave, payroll prep and offboarding, then automate the manual steps, wired into the HR tools you already use."
+          label="Book a call"
+        />
+
+        <h2>RPA, Workflow Automation and AI: Which Does What</h2>
+
+        <p>Three layers of technology power HR process automation, and keeping them apart sets honest expectations. <strong>Workflow automation handles the routing and handoffs</strong>: approvals, notifications and status updates moving between people and systems on your rules. It is the backbone of most HR automation, and the easiest place to start.</p>
+
+        <p><strong>RPA, or robotic process automation, handles the data work between systems that do not connect.</strong> RPA in HR copies a new hire's details from the recruiting tool into payroll, reconciles records across platforms and fills forms the way a person would, clicking through the screens. Where two systems cannot talk, <strong>robotic process automation in HR is the bridge that stops the rekeying</strong>.</p>
+
+        <p>AI then adds the judgment the other two layers lack, <strong>reading an unstructured CV, answering a question in plain language, drafting a job description and summarizing survey feedback</strong>, the work rules alone cannot capture. The three are partners, not rivals: <strong>workflow moves the process, RPA moves the data, and AI handles the reading and reasoning</strong>, the shift we trace in <a href="/blog/ai-for-business-automation">AI for business automation</a>.</p>
+
+        <table>
+          <thead>
+            <tr><th>Layer</th><th>What it does</th><th>HR example</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Workflow automation</td><td>Routes approvals and handoffs on rules</td><td>A leave request routed, approved and logged</td></tr>
+            <tr><td>RPA in HR</td><td>Moves data between disconnected systems</td><td>New hire details copied from the ATS to payroll</td></tr>
+            <tr><td>AI</td><td>Reads, answers and drafts</td><td>Screening CVs, answering employee questions</td></tr>
+          </tbody>
+        </table>
+
+        <blockquote><strong>Worth knowing:</strong> most of the value in HR automation is still plain workflow and RPA, not AI. The approvals, routing and data syncing return more, and more reliably, than the cleverest model on its own.</blockquote>
+
+        <h2>Where AI and AI Agents Help in HR Now</h2>
+
+        <p>The newest layer is AI doing work that once needed a person reading or writing. <strong>An assistant answers employee questions around the clock, drafts policies and job posts, screens applications and turns a pile of feedback into something a manager can use</strong>. This is intelligent automation in HR, taking on the reading and drafting that clogged the week.</p>
+
+        <p>Beyond assistants sit AI agents, which run a whole process, not a single step. <strong>An agent can handle early-stage hiring end to end, screening, scheduling and following up, or steer a full onboarding while managing the exceptions</strong>. The tech is promising but still maturing, so <strong>automate the rules first, add AI to the reading, then let agents take end-to-end work as they earn trust</strong>, a line we draw in <a href="/blog/ai-agents-vs-chatbots">AI agents versus chatbots</a>.</p>
+
+        <blockquote><strong>The honest read:</strong> AI in HR is real but uneven. It shines at reading and drafting and overpromises on full autonomy, so use it where it removes the reading and writing, and keep a person on any decision that touches someone's livelihood.</blockquote>
+
+        <h2>The Payoff, in Numbers</h2>
+
+        <p>The returns show up fast and then compound, with <strong>teams routinely winning back several hours a week per person</strong> once the admin runs itself, hours that move straight to hiring, development and retention. Adoption reflects it: HR automation has surged of late, and <strong>the gap between the teams who started and those still keying by hand keeps widening</strong>.</p>
+
+        <p>Accuracy and speed climb right alongside the reclaimed hours, as <strong>automated workflows strip out the typos and missed steps manual HR invites and move in minutes what used to wait days</strong>. Firms that automate recruiting have cut interview scheduling sharply and handled more candidates without new headcount, the inward echo of good <a href="/blog/customer-support-automation">customer support automation</a>.</p>
+
+        <h2>What HR Process Automation Costs, and the Payback</h2>
+
+        <p>The price sits within reach of a small team, not just an enterprise, and falls into three tiers. <strong>At the low end, no-code tools and the automation built into an HR platform cost a modest monthly subscription</strong> and cover the common workflows. It is the same on-ramp a lean finance team takes into <a href="/blog/finance-accounting-automation">finance and accounting automation</a>.</p>
+
+        <p>The middle tier is an all-in-one HR system, or HRIS, priced per employee per month. <strong>The top tier is a custom or done-for-you build</strong>, wired across the tools you already run and shaped to how you work, with a one-time setup cost on top. Each tier buys a different balance of fit and effort.</p>
+
+        <p>The payback is quick and hard to argue with once the numbers are on the table. <strong>Set the cost against seven hours a week per HR staffer, a botched payroll run and a new hire walking out over a clumsy start</strong>, and one automated process often pays for itself in months. Start with the heaviest, and let the saving fund the next.</p>
+
+        <table>
+          <thead>
+            <tr><th>Tier</th><th>What it is</th><th>Rough cost</th><th>Best for</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>No-code and built-in</td><td>Standalone tools or HR platform features</td><td>Modest monthly subscription</td><td>Lean teams, first automations</td></tr>
+            <tr><td>All-in-one HRIS</td><td>One platform covering core processes</td><td>Per employee, per month</td><td>Growing teams wanting one system</td></tr>
+            <tr><td>Custom or done-for-you</td><td>Automations wired across your tools</td><td>Setup fee plus software</td><td>Specific workflows, mixed stacks</td></tr>
+          </tbody>
+        </table>
+
+        <blockquote><strong>Rule of thumb:</strong> automate the process that costs you the most hours first, which for most teams is onboarding or leave management. Prove the saving on real cases, then let it pay for the next build.</blockquote>
+
+        <h2>The Challenges, and How to Avoid Them</h2>
+
+        <p>HR automation goes wrong in predictable ways, each with a known fix. <strong>The biggest is disconnected systems</strong>: recruiting, payroll and benefits that do not share data, leaving HR to copy between them. The fix is to choose tools that integrate, or bridge the gaps with RPA, rather than <strong>automating a broken process so it breaks faster</strong>.</p>
+
+        <p>The human side matters as much as the technical one. <strong>People resist tools they do not understand, and pointing automation at a bad process just produces bad results at speed</strong>. So map and fix the workflow first, bring the team in early, and <strong>guard sensitive employee data with the security it demands</strong>.</p>
+
+        <h2>How to Start: a Practical Sequence</h2>
+
+        <p>Automating everything at once overwhelms a small team, so sequence it. <strong>Audit where the hours go, then automate the single heaviest process, usually onboarding or leave</strong>, and prove it on real cases before you expand. Add the next process the saving justifies, and build out from there.</p>
+
+        <p>The discipline holds whether you build it yourself or bring in help. <strong>Pick one workflow, map it end to end, decide what to keep and what to cut, then automate the clean version</strong> and measure the result. For choosing what to tackle first across the business, our guide to the <a href="/blog/automations-to-set-up-first">automations to set up first</a> lays out the approach in full.</p>
+
+        <h2>What to Keep Human</h2>
+
+        <p>HR is a people function, and that draws a clear line. <strong>The conversations that carry weight, hiring calls, performance and pay, conflict, terminations, anything with emotion in it, stay with a person</strong>. Automation prepares the ground, schedules the meeting and lays out the facts. The judgment and empathy are never a machine's to supply.</p>
+
+        <p>The exceptions call for that same judgment, since <strong>a workflow handles the cases that follow the pattern, while the sensitive complaint, the unusual accommodation and the hard exit need a human who can read the room</strong>. Used this way, automation makes an HR team more human, because <strong>the freed hours flow into the people work only people can do</strong>.</p>
+
+        <h2>The Tools, by Job</h2>
+
+        <p>The market splits into a few clear categories, and the right mix depends on your size and stack. <strong>All-in-one HR platforms cover the core processes for most small teams</strong>, while specialist tools go deeper on recruiting, payroll or onboarding. RPA and <a href="/blog/no-code-automation-tools">no-code automation tools</a> stitch the gaps between systems that do not talk.</p>
+
+        <p>What matters in the end is fit, not the badge on the box, so <strong>choose tools that integrate with what you already run, match how your team works, and scale with you</strong>. A set chosen around your real workflows beats the longest feature list.</p>
+
+        <table>
+          <thead>
+            <tr><th>Category</th><th>What it covers</th><th>Examples</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>All-in-one HRIS</td><td>Core HR, onboarding, time-off, records</td><td>BambooHR, Rippling, Personio, Workday</td></tr>
+            <tr><td>Recruiting and ATS</td><td>Hiring pipeline and applicant tracking</td><td>Greenhouse, Lever, Workable</td></tr>
+            <tr><td>Payroll and benefits</td><td>Pay runs, benefits, compliance</td><td>Gusto, ADP, Deel</td></tr>
+            <tr><td>RPA</td><td>Data work across disconnected systems</td><td>UiPath, Automation Anywhere</td></tr>
+            <tr><td>No-code connectors</td><td>Linking tools and building workflows</td><td>The mainstream no-code automation tools</td></tr>
+          </tbody>
+        </table>
+
+        <h2>HR Process Automation for Small and Lean Teams</h2>
+
+        <p>Most coverage assumes a big HR department, yet the smallest teams gain the most, because they have the least slack. <strong>A one or two-person HR function, or a founder doing it all, feels the hours automation gives back</strong>. Start lean: pick the one most painful process, automate it with no-code tools or your platform's built-in features, and skip the enterprise scope.</p>
+
+        <p>Restraint is the whole strategy at this size, so <strong>automate onboarding and leave first, leave the complex builds until the volume justifies them, and add one process at a time</strong>. A lean team that automates its three heaviest routines runs like one several times its size.</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>What is HR process automation?</h3>
+        <p>HR process automation uses software to run the repetitive, rules-based steps of HR without manual effort, from onboarding and leave approvals to payroll prep and compliance records. <strong>A trigger starts the workflow, rules decide each step, and the system carries it out</strong>, while the people decisions stay with people. It is also called HR automation or HR workflow automation.</p>
+
+        <h3>Which HR processes should you automate first?</h3>
+        <p>Start with the process that costs the most hours, usually onboarding or leave and attendance. <strong>Both are high-volume, repetitive and quick to show a saving</strong>, which makes them the easiest place to prove the value. Payroll prep, employee requests and compliance reporting are the natural next steps.</p>
+
+        <h3>What is the difference between HR automation, RPA and AI?</h3>
+        <p>They are three layers built to work together, with <strong>workflow automation routing approvals and handoffs, RPA in HR moving data between systems that do not connect, and AI reading documents, answering questions and drafting content</strong>. A sound approach automates the workflows first, bridges the gaps with RPA, then adds AI to the reading and reasoning.</p>
+
+        <h3>How much does HR automation cost?</h3>
+        <p>It runs in three tiers: low-cost no-code tools and built-in platform features, an all-in-one HRIS priced per employee per month, and a custom done-for-you build with a one-time setup fee. <strong>Set against seven hours a week per HR staffer and the cost of payroll errors and early leavers, the payback is fast.</strong> One automated process like onboarding often recovers its cost within months.</p>
+
+        <h3>What are examples of HR automation?</h3>
+        <p>Common examples include automated onboarding that fires when an offer is accepted, leave requests that route and update balances on their own, payroll prep that validates hours, benefits enrollment, performance-review cycles, an AI helpdesk for employee questions, and offboarding that revokes access on the final day. <strong>Each one removes a repetitive, error-prone task that used to sit on an HR desk.</strong> Most teams run several together.</p>
+
+        <h3>Will HR automation replace HR jobs?</h3>
+        <p>It will not, and the fear misreads what automation does. <strong>Automation takes the paperwork, routing and data entry, while the hiring calls, the development conversations and the sensitive decisions that define HR stay with people.</strong> In practice it makes HR professionals more valuable, freeing them for the culture and retention work the business needs most.</p>
+
+        <h2>Give the Week Back to the People Work</h2>
+
+        <p>An HR team is worth most in the moments a machine cannot touch: making the right hire, defusing a conflict, giving someone a reason to stay. <strong>Everything that surrounds those moments, the paperwork and the chasing and the box-ticking, is what should run on its own.</strong> HR process automation takes that weight off the team.</p>
+
+        <p>Start with onboarding or leave, automate one process, and let the saving prove itself before the next. <strong>That is the work we do: onboarding, time off, payroll prep, compliance and offboarding, automated cleanly and wired into the tools you already run</strong>, with the people decisions left where they belong. Tell us where the week disappears, and we will map the process that pays off first.</p>
+      </>
+    ),
+  },
+  {
     slug: 'finance-accounting-automation',
     seoTitle: 'Finance and Accounting Automation: What to Automate',
     metaDescription: 'Finance and accounting automation explained: what to automate across procure-to-pay, order-to-cash and the financial close, the RPA and AI behind it, and costs.',
