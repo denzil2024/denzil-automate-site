@@ -48,7 +48,7 @@ export const POSTS = [
     title: 'Finance and Accounting Automation: What to Automate From AP to the Financial Close',
     excerpt: 'Finance teams spend half the week keying invoices, chasing approvals and reconciling accounts by hand, work that earns nothing and breaks the moment a number is wrong. Yet 79% of finance leaders say they need more automation, and only a third have started. Finance and accounting automation runs those cycles on their own, from procure-to-pay to the financial close. Here is what to automate, and where the judgment stays human.',
     date: '2026-06-23',
-    category: CATEGORIES.gettingStarted,
+    category: CATEGORIES.industryGuides,
     cover: '/blog/finance-accounting-automation-cover.jpg',
     author: AUTHOR,
     readTime: '15 min read',
