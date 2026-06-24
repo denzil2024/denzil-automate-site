@@ -42,6 +42,165 @@ export function CtaCard({ title, sub, label = 'Book a call' }) {
 
 export const POSTS = [
   {
+    slug: 'retail-automation',
+    seoTitle: 'Retail Automation: What to Automate, From Shelf to Till',
+    metaDescription: 'Retail automation explained across a trading day: shelves, checkout, the floor, cashierless stores, the back office and supply chain, plus AI and costs.',
+    title: 'Retail Automation: How a Store Runs Itself From Open to Close',
+    excerpt: 'It is the busiest hour of your week and the queue is six deep, while two of your staff are in the back counting stock and matching invoices, work no shopper will ever thank you for. Three customers put their baskets down and walk. That walkout is the cost of running a shop by hand, and it is what retail automation removes, from the shelf to the till to the back office. Here is what to automate across a single trading day, where the cashierless store is heading, and the part you keep human.',
+    date: '2026-06-24',
+    category: CATEGORIES.industryGuides,
+    cover: '/blog/retail-automation-cover.jpg',
+    author: AUTHOR,
+    readTime: '14 min read',
+    content: () => (
+      <>
+        <p>It is twenty to nine on a Saturday morning and the queue at your one open till is already six deep. Two of your people are in the back, one counting yesterday's delivery against the invoice and the other chasing a price that scanned wrong, <strong>work no shopper will ever thank you for</strong>. At the front, three customers do the arithmetic you dread, set their baskets on the nearest shelf and walk out the door.</p>
+
+        <p><strong>That walkout is the real cost of running a shop by hand</strong>, paid again every busy hour, and it almost never shows up on a report. The global retail automation market is climbing from <strong>$16.55 billion in 2022 toward $34.53 billion by 2030</strong>, and McKinsey reckons nearly half of all retail tasks could be handed to technology that already exists, because that hidden labour has quietly become the ceiling on what a store can do.</p>
+
+        <p>Retail automation is how you lift that ceiling, by setting the rules once and letting the software run them, from the overnight reorder that fills the shelf to the after-hours reconciliation that closes the books, so your people are freed for the floor. <strong>What follows walks one trading day, open to close and everything behind it</strong>: what to automate at each turn, where the cashierless store is heading, what it costs, and <strong>the part you keep human</strong>.</p>
+
+        <h2>What Retail Automation Means</h2>
+
+        <p>Behind the buzzwords, <strong>retail automation is software, robotics and connected devices doing the repetitive work a person used to do by hand</strong>, across the whole operation rather than one corner of it. Automation in the retail industry now reaches from the stockroom shelf to the marketing email to the supplier invoice, wherever a task repeats on a predictable pattern. Vendors dress it up as automated retail technologies or intelligent automation in retail, but the engine underneath is the same.</p>
+
+        <p>What ties it together is that a retail business is three businesses at once, and automation works all of them: the shop floor your customers see, the back office they never glimpse, and the supply chain that feeds both. The thread running through it is the same one behind any solid <a href="/blog/business-automation">business automation</a>, pointed at the particular rhythm of selling. To see where it fits, it helps to walk that rhythm through one trading day.</p>
+
+        <h2>Before Open: The Shelf and the Stockroom</h2>
+
+        <p>Long before the doors open, the work that decides your day is already done, because <strong>automated inventory and demand forecasting reorder your stock while you sleep</strong>. The system watches what sold, predicts what will, and raises the purchase order or places it outright before a bestseller runs dry, so you arrive to full shelves instead of gaps. The stock count that once meant a torch and a clipboard now runs off the data itself.</p>
+
+        <p>On the shelf, the hardware has caught up to the software, with <strong>smart shelves and electronic shelf labels that change a price across the store in seconds</strong> and flag a gap the moment one appears. Automated planograms lay the shelf out to sell, RFID and barcode systems track each item from stockroom to floor, and what the system thinks you hold stops drifting from what is on display. Retail store automation starts here, because nothing downstream works if the stock data is wrong.</p>
+
+        <blockquote><strong>Reality check:</strong> every other automation in the store rests on accurate stock data. A clever reorder built on a wrong number just orders the wrong thing faster, so get the count right before you build anything on top of it.</blockquote>
+
+        <h2>The Doors Open: Checkout and the Tills</h2>
+
+        <p>The moment the doors open, the slowest part of the old store was always the queue, and <strong>automated checkout is where that bottleneck disappears</strong>. Self-checkout kiosks, mobile and contactless payment and scan-as-you-go apps move shoppers through in a fraction of the time, the way Decathlon cut some checkout journeys from twenty minutes to under one, while the POS quietly updates stock and sales with every beep. Retail cash automation handles the takings too, counting and reconciling the drawer without a manager hunched over it at close.</p>
+
+        <p>Speeding the till does far more than save minutes, because <strong>a shopper who abandons a long queue is a sale you have already lost</strong>. Freeing your staff from ringing up every purchase puts them back on the floor, where they answer questions and close the larger baskets a kiosk never could. The checkout stops being a wall between the shopper and the door.</p>
+
+        <h2>On the Floor: Helping the Shopper Without a Clerk</h2>
+
+        <p>Out on the floor, automation fills the gap left by a team that cannot be everywhere at once, so <strong>a shopper with a question gets an answer without hunting for a clerk</strong>. In-store kiosks and product-finder screens point them to the aisle, while recommendation engines and clienteling apps hand your staff the customer's history and a smart suggestion on a tablet. Pointed at the shopper, it is <a href="/blog/customer-support-automation">customer support automation</a> brought onto the shop floor.</p>
+
+        <p>The same intelligence follows the shopper online and back again, because <strong>modern retail is one business across the shelf, the app and the phone in their pocket</strong>. A loyalty profile recognises them at the till and in their inbox alike, so the offer they saw online is honoured in store without anyone looking it up. The experience feels personal because the data, not a harried assistant, remembers them.</p>
+
+        <h2>The Cashierless Frontier: Stores That Sell Without Staff</h2>
+
+        <p>Push the checkout idea to its limit and you arrive at the store with no checkout at all, the cashierless shop that <strong>charges your account as you walk out with the goods</strong>. Cameras, weight sensors and smart shelves track what you lift, the way Amazon's grab-and-go stores do, and the fully automated convenience store runs around the clock with almost no staff on site. These automated retail technologies are still costly to fit, but the cost curve is bending fast.</p>
+
+        <p>Smaller formats are spreading the idea quicker than the full-store version, because <strong>automated retail units and smart vending drop a tiny, staffless shop wherever there is demand</strong>, in a lobby, a gym or a station. They will not replace the full-service store, yet they capture the quick, low-touch purchase that never needed a person. For many retailers this is the first taste of an automated store that pays for itself.</p>
+
+        <blockquote><strong>The shift:</strong> the checkout was always a compromise, a wall you built because someone had to take the money. Automation is quietly removing that wall, and the stores that move first feel faster than the ones still queuing.</blockquote>
+
+        <CtaCard
+          title="Want your shop running itself, open to close?"
+          sub="We map your store from the shelf to the till to the back office, then automate the manual steps, wired into the POS and tools you already use."
+          label="Book a call"
+        />
+
+        <h2>Behind the Curtain: Marketing, Loyalty and the Repeat Visit</h2>
+
+        <p>When the shopper leaves, the work of bringing them back begins, and <strong>retail marketing automation runs that quietly in the background</strong>. A welcome offer greets a new loyalty member, a win-back nudge reaches the customer who has drifted, and a restock alert pulls back the one who wanted the size you were out of. Each fires from something the shopper did, not a date you circled on a calendar.</p>
+
+        <p>What keeps it from feeling like spam is the data underneath, because <strong>segmenting buyers by what they buy lets each group hear something that fits</strong>. It is the same engine behind broader <a href="/blog/marketing-automation-small-business">marketing automation for small businesses</a>, tuned to a shop with regulars and seasons. Done well, the marketing reads less like a blast and more like a shopkeeper who remembers you.</p>
+
+        <h2>After Close: Invoices, Reconciliation and Reporting</h2>
+
+        <p>After the lights go down, the back office used to come alive with paperwork, and this is <strong>where robotic process automation earns its keep in retail</strong>. Supplier invoices are read and matched, the day's takings are reconciled against the POS, and the reports build themselves overnight, so no one spends the morning rekeying yesterday into a spreadsheet. Business process automation in retail turns the after-hours grind into a background task.</p>
+
+        <p>The same logic runs the team behind the counter, because <strong>scheduling, onboarding and payroll prep follow rules clean enough to automate</strong>. Shifts build around forecast footfall, new hires get their paperwork before day one, and the hours flow into payroll without a manager copying a timesheet. It is the quiet cousin of tidy <a href="/blog/finance-accounting-automation">finance and accounting automation</a>, run on a store's calendar.</p>
+
+        <blockquote><strong>The quiet win:</strong> the back office never makes the headlines, yet it hides the steadiest hours of all. An invoice that matches itself and a till that reconciles overnight hand you back the morning.</blockquote>
+
+        <h2>Behind the Shelf: The Supply Chain</h2>
+
+        <p>None of the shelf magic works without the chain behind it, so <strong>automation reaches back from the till to the warehouse and the supplier</strong>. Orders flow to vendors on their own when stock dips, goods are tracked from dock to shelf, and the warehouse runs on robotics that pick and pack faster than any crew, the way Ocado's hive fills a fifty-item order in minutes and Zalando's robots shift thousands of boxes a day. Retail supply chain automation is what keeps the promise the shelf makes to the shopper.</p>
+
+        <p>The deep version of this is its own discipline, because <strong>a warehouse full of robots and routing software is a serious build in its own right</strong>, which we cover in our guide to <a href="/blog/logistics-automation">logistics automation</a>. For most retailers the win is simpler: connect the store's stock data to the supplier so reordering stops being a guess. Get that one link right and the whole chain tightens behind it.</p>
+
+        <table>
+          <thead>
+            <tr><th>Point in the day</th><th>What gets automated</th><th>The payoff</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Before open</td><td>Forecasting, reordering, smart shelves, planograms</td><td>Full shelves, no dawn stock-takes</td></tr>
+            <tr><td>The tills</td><td>Self-checkout, mobile pay, cash counting</td><td>Shorter queues, fewer lost sales</td></tr>
+            <tr><td>The floor</td><td>Kiosks, recommendations, clienteling</td><td>Help without hunting for staff</td></tr>
+            <tr><td>After close</td><td>Invoices, reconciliation, reporting, payroll</td><td>No morning rekeying</td></tr>
+            <tr><td>Behind the shelf</td><td>Ordering, warehouse robotics, supplier links</td><td>Stock that never runs dry</td></tr>
+          </tbody>
+        </table>
+
+        <h2>RPA, AI and Robotics: What Each One Does</h2>
+
+        <p>Three kinds of technology do this work, and knowing them apart keeps your expectations honest, because each handles a different job. <strong>Robotic process automation runs the rule-based screen work like invoice matching, robotics handles the physical lifting and picking, and AI reads the messy and the unpredictable</strong>. Robotic process automation in retail is the workhorse here, cheap and reliable on anything that repeats.</p>
+
+        <p>AI is the layer earning the headlines, because <strong>it forecasts demand, personalises an offer, reads a supplier's odd invoice format and answers a shopper in plain language</strong>, the leap we trace in <a href="/blog/ai-for-business-automation">AI for business automation</a>. Intelligent retail automation pairs the three, letting AI carry the judgment while RPA and robotics carry the volume. Used together they cover far more of the store than any one of them could alone.</p>
+
+        <h2>What to Keep Human</h2>
+
+        <p>For all of that, the shop floor is still a human place, and <strong>the things that make a store worth visiting stay with people</strong>. The welcome that turns a browser into a regular, the merchandising eye that makes a display sing, the judgment in a tricky return or a complaint, none of those belong to a machine. Automation clears the busywork precisely so your staff can do that work.</p>
+
+        <p>The exceptions are where it shows, because <strong>a kiosk handles the simple purchase while the complicated, high-value sale still wants a person</strong> who can read a hesitant shopper. Run automation this way and it makes the store more human, not less, by handing your team back the hours that good selling needs.</p>
+
+        <blockquote><strong>The line to hold:</strong> automate the transaction, never the relationship. A shopper remembers how your staff made them feel long after they forget how fast the queue moved.</blockquote>
+
+        <h2>What It Costs, and Where to Start</h2>
+
+        <p>The price is more approachable than the robot-store headlines suggest, because <strong>most of the wins start in software you pay for by the month</strong>, a modern POS, an inventory tool, a marketing platform, scaled to the size of your shop. The no-code tools that wire them together are within reach without a developer, as we cover in our guide to <a href="/blog/no-code-automation-tools">no-code automation tools</a>. The robotics and cashierless hardware sit at the top end, for when the volume justifies them.</p>
+
+        <p>Start where the bleed is worst, which for most stores is inventory or checkout, and <strong>prove one system before you reach for the next</strong>. Set the cost against the numbers automation moves, fewer lost sales, less cash tied up in excess stock and hours handed back at close, and the payback shows quickly. Grocers, for instance, could automate well over half their labour hours, and one tightened reorder cycle often pays for the software that runs it.</p>
+
+        <table>
+          <thead>
+            <tr><th>Tier</th><th>What it is</th><th>Rough cost</th><th>Best for</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Software tools</td><td>POS, inventory, marketing apps</td><td>Monthly subscription</td><td>Most shops, the first wins</td></tr>
+            <tr><td>No-code connectors</td><td>Wiring your tools together</td><td>Low monthly add-on</td><td>Joining systems that do not talk</td></tr>
+            <tr><td>Robotics and cashierless</td><td>Automated checkout, warehouse robots</td><td>Large upfront build</td><td>High volume and scale</td></tr>
+          </tbody>
+        </table>
+
+        <blockquote><strong>Rule of thumb:</strong> automate the number that hurts most first, which for most shops is stock sitting idle or sales lost to an empty shelf. Fix that one, and the saving funds everything after it.</blockquote>
+
+        <h2>The Tools, by the Job They Do</h2>
+
+        <p>The market sorts into a few clear lanes, and matching each to a job beats buying a suite you half use. <strong>A modern POS like Square, Lightspeed or Shopify POS runs the front of store</strong>, inventory and forecasting tools keep the shelves honest, and RPA platforms take the back-office paperwork. Choose your retail automation software around the way your shop trades, not the longest feature list.</p>
+
+        <p>One boundary is worth naming, because <strong>your online shop and your physical store are two channels of one business</strong>, and selling online has its own depth, which we cover in <a href="/blog/ecommerce-automation">ecommerce automation</a>. Run them on connected systems so stock, prices and customers stay in step across both, and a shopper never feels the seam between your aisle and your website.</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>What is retail automation?</h3>
+        <p>Retail automation uses software, robotics and connected devices to run the repetitive work of a store for you, from forecasting and reordering to checkout, marketing and the back office. <strong>A trigger starts the workflow, a rule decides each step, and the system carries it out</strong>, while the merchandising and the customer relationships stay with people. It spans the shop floor, the back office and the supply chain that feeds them.</p>
+
+        <h3>What are examples of retail automation?</h3>
+        <p>Common retail automation examples include automated reordering that fills shelves overnight, self-checkout and cashierless stores, electronic shelf labels that update prices in seconds, chatbots and product-finder kiosks, loyalty and win-back marketing, and back-office RPA that matches invoices and reconciles the day's takings. <strong>Each one lifts a repetitive task off your team.</strong> Most stores run several of these together.</p>
+
+        <h3>How much does retail automation cost?</h3>
+        <p>Most of it starts as monthly software, a POS, an inventory tool or a marketing platform, priced to the size of your shop, with no-code connectors added cheaply on top. <strong>Robotics and cashierless hardware are the costly tier, worth it only at real volume.</strong> Set against lost sales and excess stock, the software tier usually pays back fast.</p>
+
+        <h3>What is the difference between RPA, AI and robotics in retail?</h3>
+        <p>They are three tools for three jobs. <strong>RPA runs rule-based screen work like invoice matching, robotics does the physical picking and lifting, and AI handles the messy, predictive work like forecasting and personalisation.</strong> The strongest setups use all three together, with AI on the judgment and RPA and robotics on the volume.</p>
+
+        <h3>Will automation replace retail staff?</h3>
+        <p>It changes the work more than it erases it. <strong>Automation takes the counting, ringing-up and rekeying, while the selling, merchandising and service that make a store worth visiting stay with people.</strong> In practice it lets a smaller team run a better shop, with more hours on the floor and fewer in the stockroom.</p>
+
+        <h3>Can a small or independent shop afford it?</h3>
+        <p>Yes, and small shops often gain the most, because they have the least slack. <strong>A modern POS, an inventory app and a few no-code connectors put real automation within reach without a developer or a big budget.</strong> Automate one painful job, usually stock or checkout, and let the saving fund the next.</p>
+
+        <h2>The Store That Sells While You Sleep</h2>
+
+        <p>Strip a great shop back and its value was never the queue or the stock count, but the feel of the place and the people who run it. <strong>Everything mechanical around that, from the reordering to the ringing-up to the reconciling, is what should run on its own.</strong> Retail automation clears that work so your hours go to the floor, the range and the customer.</p>
+
+        <p>Start with the shelf or the till, automate one part of the day, and let the saving prove itself before you reach for the next. <strong>That is the work we do: inventory, checkout, marketing and the back office, automated cleanly and wired into the POS and tools you already run</strong>, with the shopkeeping left to you. Tell us where your day loses the most time, and we will map the part that pays off first.</p>
+      </>
+    ),
+  },
+  {
     slug: 'property-management-automation',
     seoTitle: 'Property Management Automation: What to Automate',
     metaDescription: 'Property management automation explained: what to automate for residents, owners and the building, short-term rentals, the Fair Housing trap, AI and costs.',
