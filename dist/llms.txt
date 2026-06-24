@@ -6,6 +6,7 @@ Denzil Automations builds custom automation systems for growing businesses, so t
 
 ## Blog
 
+- [Property Management Automation: What to Automate](https://automate.workwithdenzil.com/blog/property-management-automation): Property management automation explained: what to automate for residents, owners and the building, short-term rentals, the Fair Housing trap, AI and costs.
 - [Law Firm Automation: What to Automate Across a Matter](https://automate.workwithdenzil.com/blog/law-firm-automation): Law firm automation explained across a matter: intake, documents, deadlines, billing and trust, where AI helps and where it gets lawyers sanctioned.
 - [HR Process Automation: 10 Processes to Automate First](https://automate.workwithdenzil.com/blog/hr-process-automation): HR process automation explained: the 10 HR processes to automate from onboarding to offboarding, how RPA and AI fit, what it costs, and what to keep human.
 - [Finance and Accounting Automation: What to Automate](https://automate.workwithdenzil.com/blog/finance-accounting-automation): Finance and accounting automation explained: what to automate across procure-to-pay, order-to-cash and the financial close, the RPA and AI behind it, and costs.

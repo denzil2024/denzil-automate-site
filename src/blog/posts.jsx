@@ -42,6 +42,164 @@ export function CtaCard({ title, sub, label = 'Book a call' }) {
 
 export const POSTS = [
   {
+    slug: 'property-management-automation',
+    seoTitle: 'Property Management Automation: What to Automate',
+    metaDescription: 'Property management automation explained: what to automate for residents, owners and the building, short-term rentals, the Fair Housing trap, AI and costs.',
+    title: 'Property Management Automation: Keeping the Resident, the Owner and the Building Happy at Once',
+    excerpt: 'Two people are waiting on you, and they never speak to each other: the owner who wants their return and the resident who wants a working dishwasher by Tuesday. Between them sits the building, throwing off work whether or not you have a spare hour. Property management automation runs that busywork for you, across leasing, rent, maintenance and the reports your owners live by. Here is what to automate on all three fronts, where short-term rentals change the game, and the compliance line you cannot cross.',
+    date: '2026-06-24',
+    category: CATEGORIES.industryGuides,
+    cover: '/blog/property-management-automation-cover.jpg',
+    author: AUTHOR,
+    readTime: '15 min read',
+    content: () => (
+      <>
+        <p>Two people are waiting on you, and they never speak to each other. <strong>The owner wants their return and a clean statement by the fifth; the resident wants the dishwasher fixed by Tuesday.</strong> Between them sits the building, throwing off work whether or not you have a free hour, until your day disappears into chasing rent, dispatching plumbers and rebuilding the report you sent last month.</p>
+
+        <p>With a handful of units you can carry that by hand. Past thirty or forty doors the cracks start to show: rent that arrives late because no one chased it, a renewal that lapses because it slipped your mind, a vacant unit bleeding rent while its listing waits to go up. Workers lose <strong>around 219 hours a year</strong> to repetitive tasks a machine could handle, and few feel that loss like you do running a portfolio.</p>
+
+        <p>Property management automation is how you take that time back. <strong>You set the rule once, and the software runs it the moment its trigger fires</strong>, the rent reminder, the work order, the owner report, with AI and connected devices layered on top. What follows covers the whole job: what to automate for your residents, your owners and the building itself, where short-term rentals rewrite the rules, and <strong>the compliance line you cannot cross</strong>.</p>
+
+        <h2>What Property Management Automation Covers</h2>
+
+        <p>Underneath the vendor pitches the idea is plain, and it is all automation in property management amounts to: <strong>software, rules and connected devices doing the work you used to chase</strong>. Something happens, a quick check decides whether it applies, and an action follows, whether that is the late rent flagged, the work order routed or the lease sent for signature. They will sell it to you as an automated property management system, property automation software or real estate workflow automation software, but the machine underneath is the same.</p>
+
+        <p>That machine works three fronts at once, and a capable platform covers all of them: the resident side of leasing and living, the owner side of money and reporting, and the building that ties the two together. You almost certainly keep a <a href="/blog/crm-automation">CRM-grade system of record</a> for your leads and contacts already, and automation is what makes it act instead of sit there. Property management workflow automation is the wiring that joins steps you used to walk by hand.</p>
+
+        <h2>Filling the Unit: Listings, Screening and the Lease</h2>
+
+        <p>An empty unit bleeds money for every day it stays empty, so the first thing automation buys you is speed. <strong>One listing fans out to the major sites at once</strong>, anyone who enquires gets an answer in seconds, and self-guided touring hands a screened lead a one-time door code without you driving across town to open it. The same instinct that wins a sale, <a href="/blog/speed-to-lead">speed to lead</a>, is the one that fills your vacancy.</p>
+
+        <p>Screening and signing are where your hours used to vanish, and this is where you claw them back: <strong>automated checks run credit, criminal and eviction history in minutes</strong>, while lease automation software fills the template, drops in the required disclosures and gathers the e-signatures, the everyday face of real estate document automation. Automated leasing turns a week of back-and-forth into a signed lease and a move-in date while you were busy elsewhere.</p>
+
+        <h2>The Tenancy: Rent, Requests and Resident Communication</h2>
+
+        <p>Once a resident moves in, rent becomes the heartbeat of your month, and chasing it by hand is the single biggest drain on your time. <strong>Autopay pulls it on the first, reminders go out before anyone is late, and the late fee applies itself</strong>, which earns its keep when the average late fee sits near $85 and most residents would rather pay online anyway. An automated rental management system means the money arrives without you playing debt collector.</p>
+
+        <p>Communication is the other thing that never lets up, so a resident portal paired with an AI assistant carries the load, <strong>fielding the routine questions, logging the maintenance requests and pushing out the building-wide notices</strong> until your phone stops lighting up for things a message could settle. Turned inward like this, it is <a href="/blog/customer-support-automation">customer support automation</a> for your tenants, keeping everyone informed without swallowing your day.</p>
+
+        <blockquote><strong>The fastest win:</strong> rent collection is where automation pays for itself first. Autopay and automatic reminders take the most repetitive chase in your building and make it something you stop thinking about.</blockquote>
+
+        <h2>What the Owner Sees: Accounting, Statements and Reporting</h2>
+
+        <p>Your residents are only half the job, because <strong>the owner is the customer who decides whether you keep the contract at all</strong>. Automation reconciles the bank feed, splits income and expenses by property and builds the monthly owner statement without anyone rekeying a figure. When tax season arrives, the documents are already assembled and waiting.</p>
+
+        <p>Reporting is what turns a jittery owner into a loyal one, because <strong>a live dashboard showing occupancy, arrears and maintenance spend the moment they ask</strong> beats anything you could stay late to assemble by hand. It runs on the same discipline as clean <a href="/blog/finance-accounting-automation">finance and accounting automation</a>, and an owner who can see their numbers at a glance rarely goes shopping for another manager.</p>
+
+        <h2>The Building Itself: Maintenance, Inspections and Turnover</h2>
+
+        <p>The building sets its own schedule, and <strong>property management maintenance automation keeps that schedule from burying you</strong>. A resident reports a leak, the system opens the work order, matches it to the right vendor by trade and availability and tracks it through to done, keeping the resident posted the whole way. Preventative schedules quietly book the filter change or the boiler service before anything fails.</p>
+
+        <p>Inspections and turnover round out the building work, and both run themselves once you set them up: <strong>mobile inspections capture the photos and notes on the spot and spin findings straight into tasks</strong>, while the day a tenant moves out the make-ready kicks off on its own, cleaning booked, repairs scheduled, the unit back on the market before the keys are cold. The turnover that once ate weeks of phone calls now runs as a single sweep.</p>
+
+        <h2>The Physical Layer: Smart Access and Connected Devices</h2>
+
+        <p>Software is only half the story, because a building is a physical place, and <strong>the newest automation lives in the hardware on the walls</strong>. Smart locks and video intercoms let residents and approved visitors in from a phone, a package room hands couriers a one-time code and pings the resident, and your self-guided tours run on that same access tech. The front door stops being a job for whoever holds the key ring.</p>
+
+        <p>Sensors then cover what no one can sit and watch, with <strong>noise, occupancy, leak and temperature monitors catching trouble while it is still small</strong>, a party before the complaint reaches you, a drip before it becomes a ceiling, a cold snap before the pipe bursts. This is the gap between automating your tasks and <strong>automating the property itself</strong>, and the serious operators now do both.</p>
+
+        <blockquote><strong>The shift:</strong> the door, the thermostat and the smoke alarm are becoming part of the software. Automating the property, not just the paperwork, is what separates a modern operation from a merely busy one.</blockquote>
+
+        <h2>The Short-Term Rental Game Is Different</h2>
+
+        <p>Short-term rentals run on the same bones as long-term ones, only with the tempo cranked up, because <strong>a guest who books at midnight expects the door code, the wifi and the house guide before they arrive</strong>, and vacation rental automation sends the lot without waking you. Airbnb automation software keeps your calendars in sync across listing sites, nudges your pricing with demand and fires off the review request the second a stay ends.</p>
+
+        <p>Turnover is the part that quietly breaks short-term hosts, which is why the checkout triggers <strong>the clean, the restock and the inspection</strong> on its own, so the next guest walks into a spotless place hours later while noise monitoring enforces the no-party rule for you. The best Airbnb automation takes a frantic same-day scramble and makes it a routine that runs whether you are awake or on a plane, the booking-side cousin of broader <a href="/blog/marketing-automation-small-business">marketing automation for small businesses</a>.</p>
+
+        <blockquote><strong>Reality check:</strong> in short-term rentals the turnover is the product. A cleaning that slips is a one-star review, so the automation that books and tracks it earns its keep faster than any other.</blockquote>
+
+        <table>
+          <thead>
+            <tr><th>Front</th><th>What gets automated</th><th>The payoff</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>The resident</td><td>Listings, screening, leases, rent, comms</td><td>Filled units, rent on time</td></tr>
+            <tr><td>The owner</td><td>Reconciliation, statements, tax docs, reports</td><td>Clear numbers, kept contracts</td></tr>
+            <tr><td>The building</td><td>Maintenance, inspections, turnover, sensors</td><td>Fewer breakdowns, faster make-ready</td></tr>
+            <tr><td>Short-term rentals</td><td>Guest messaging, check-in, pricing, turnover</td><td>Five-star stays on autopilot</td></tr>
+          </tbody>
+        </table>
+
+        <CtaCard
+          title="Want your portfolio running itself?"
+          sub="We map your leasing, rent, maintenance and owner reporting, then automate the manual steps, wired into the property tools you already use."
+          label="Book a call"
+        />
+
+        <h2>Where AI and RPA Fit, and Where They Do Not</h2>
+
+        <p>Three layers do the real lifting here, and it helps to keep them straight, because each takes a different kind of work: <strong>workflow rules move the routing and the reminders, RPA in property management shuttles data between systems that refuse to talk</strong>, and AI reads, drafts and answers. Around 44% of property professionals already lean on AI in some form, the same leap we trace in <a href="/blog/ai-for-business-automation">AI for business automation</a>.</p>
+
+        <p>AI earns its place on the messy, human-shaped jobs that rules cannot script, so <strong>it answers a resident at 2am, drafts your listing copy, summarizes an inspection and flags the lease clause that needs your eyes</strong>. It overreaches the moment you let it approve an applicant or release a payment on its own, so the setup that works is the one where AI prepares and you decide.</p>
+
+        <h2>The Compliance Trap: Fair Housing and Automated Screening</h2>
+
+        <p>The risk the vendors skate past is the one that should keep you up at night, because <strong>an automated screening rule or a targeted listing ad can break Fair Housing law without anyone intending it</strong>, by filtering on something it never should or showing a home to some people and not others. Automation does precisely what you tell it, which is exactly the danger when the instruction is quietly discriminatory.</p>
+
+        <p>The answer is to govern the automation rather than fear it, which means you <strong>keep your screening criteria lawful and applied to everyone the same way, log every decision the system makes, and put a person on the edge cases it flags</strong>. Handled with care, automation strengthens your compliance, because a consistent, time-stamped process is far easier to defend than your memory of what happened.</p>
+
+        <blockquote><strong>The line that ends careers:</strong> an automation that screens or advertises unlawfully is still your liability, even when a vendor built it. Govern the rules, log the decisions, and keep a person on the edge cases.</blockquote>
+
+        <h2>What Still Needs a Person</h2>
+
+        <p>Automation can run the building, but <strong>it cannot run your relationships</strong>, and that is exactly where the line falls. The owner weighing whether to sell, the resident dispute curdling into something bitter, the eviction that has to be handled with care and within the law, those stay with you, because they need someone who can read the room. The software lays out the facts and the paperwork, but the judgment is yours.</p>
+
+        <p>The exceptions are where that line matters most, because <strong>a workflow easily handles the resident who pays on time and reports a leak through the app</strong>, while the one in real trouble needs a conversation, not another late-fee trigger. Run it this way and automation hands you the hours, and the calm, to do the human part well.</p>
+
+        <h2>What It Costs, and Where to Start</h2>
+
+        <p>The price is gentler than you might assume, because <strong>most platforms bill per unit per month</strong>, usually with a small floor for tiny portfolios, so the cost grows with the doors you manage instead of demanding a lump sum up front. The no-code tools that stitch it all together are within your reach without hiring a developer, as we cover in our guide to <a href="/blog/no-code-automation-tools">no-code automation tools</a>.</p>
+
+        <p>Start with rent, because it runs across your whole portfolio and pays you back fastest. Once the money moves on its own, add maintenance routing, then leasing, then reporting, proving one workflow before you trust it with the next. Set against the hours you claw back, the vacant days you cut and the late fees you finally collect, <strong>the payback is quick and easy to put in front of an owner</strong>.</p>
+
+        <table>
+          <thead>
+            <tr><th>Tier</th><th>What it is</th><th>Rough cost</th><th>Best for</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>All-in-one platform</td><td>Leasing, rent, maintenance, accounting</td><td>Per unit, per month</td><td>Most managers wanting one system</td></tr>
+            <tr><td>Point tool</td><td>One job, like access or sensors</td><td>Per listing or per device</td><td>Filling a specific gap</td></tr>
+            <tr><td>Custom or done-for-you</td><td>Your tools wired together</td><td>Setup fee plus software</td><td>Mixed stacks, larger portfolios</td></tr>
+          </tbody>
+        </table>
+
+        <blockquote><strong>Rule of thumb:</strong> automate the task common to all your units first, which is almost always rent. Prove it on a full cycle, then let the saving fund the next build.</blockquote>
+
+        <h2>The Tools, by the Job They Do</h2>
+
+        <p>The market sorts into two camps, the platforms and the point tools, and knowing which you need saves money: <strong>all-in-one systems like DoorLoop, Buildium, AppFolio and Yardi run the core of leasing, rent, maintenance and accounting</strong>, while the specialists go deep on one job, Rently for self-touring, ButterflyMX for access, Minut for sensors. Choose your property management automation software around the doors you manage and the stack you already run, not the longest feature list.</p>
+
+        <p>One boundary is worth drawing before you buy, because <strong>this is the operations side of real estate, your rentals, tenants and upkeep</strong>, a different discipline from the sales side of listings, showings and closings that we cover in <a href="/blog/real-estate-automation">real estate automation</a>. Pick the tools built for the job in front of you, and the two stacks support each other instead of colliding.</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>What is property management automation?</h3>
+        <p>Property management automation uses software, rules and connected devices to run the repetitive work of your portfolio for you, across leasing, rent, maintenance, communication and reporting. <strong>A trigger starts the workflow, a rule decides each step, and the system carries it out</strong>, while the relationships and the judgment stay with you. An automated property management system bundles these workflows into one platform.</p>
+
+        <h3>Which tasks should you automate first?</h3>
+        <p>Start with rent collection, since it runs across your whole portfolio and pays back fastest. <strong>Autopay, reminders and automatic late fees lift the most repetitive chase out of your week</strong>, and the saving is easy to measure. From there, maintenance routing, leasing and owner reporting are the natural next steps.</p>
+
+        <h3>How much does property management automation cost?</h3>
+        <p>Most automated property management software is priced per unit per month, often with a small floor for tiny portfolios, so the cost scales with the doors you manage. <strong>Point tools for access or sensors are billed per listing or per device, and a custom build adds a one-time setup fee.</strong> Set against hours saved and vacancy days cut, the payback is usually quick.</p>
+
+        <h3>Can you run a property management company remotely?</h3>
+        <p>Increasingly, yes. <strong>Self-guided tours, digital leases, online rent, app-based maintenance and smart access let most of the work happen without anyone on site.</strong> You still handle the in-person and relationship work, but the day-to-day can run from anywhere.</p>
+
+        <h3>Does automation replace a property manager?</h3>
+        <p>It does not replace you. <strong>It takes the paperwork, the chasing and the routing, while the owner relationships, the disputes and the judgment calls stay with you.</strong> In practice it lets you manage far more units without letting your service slip.</p>
+
+        <h3>Is it different for short-term or vacation rentals?</h3>
+        <p>Yes, the pace is faster and turnover is everything. <strong>Vacation rental automation handles guest messaging, automated check-in, demand-based pricing, same-day turnover cleaning and review requests</strong>, often with noise monitoring to protect the property. The bones are the same as long-term automation, run at a much higher tempo.</p>
+
+        <h2>Run the Building, Keep the Relationships</h2>
+
+        <p>You earn your keep in the moments that need a human: the owner talked off the ledge, the dispute defused, the resident in trouble treated like one. <strong>Leasing, rent, work orders and reports are the work that should run on its own.</strong> Property management automation lifts that weight off you so your hours go where they count.</p>
+
+        <p>Start with rent, automate one front, and let the saving prove itself before you reach for the next. <strong>That is the work we do: leasing, rent, maintenance and owner reporting, automated cleanly and wired into the platforms you already run</strong>, with the relationships left exactly where they belong. Tell us where your portfolio loses the most time, and we will map the front that pays off first.</p>
+      </>
+    ),
+  },
+  {
     slug: 'law-firm-automation',
     seoTitle: 'Law Firm Automation: What to Automate Across a Matter',
     metaDescription: 'Law firm automation explained across a matter: intake, documents, deadlines, billing and trust, where AI helps and where it gets lawyers sanctioned.',
