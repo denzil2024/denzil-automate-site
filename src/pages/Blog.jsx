@@ -1,10 +1,12 @@
 import { useEffect, useMemo } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import SiteHeader from '../components/SiteHeader';
-import SiteFooter from '../components/SiteFooter';
+import DeckNav from '../components/DeckNav';
+import DeckFooter from '../components/DeckFooter';
 import { CONTACT } from '../site';
 import { applySeo } from '../seo';
 import { posts, formatPostDate } from '../blog/posts.jsx';
+import '../landing-deck.css';
+import '../blog-dark.css';
 
 const POSTS_PER_PAGE = 9;
 
@@ -118,8 +120,8 @@ export default function Blog() {
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'instant' }); }, [page]);
 
   return (
-    <>
-      <SiteHeader />
+    <div className="deck">
+      <DeckNav />
 
       <section className="bl-hero">
         <div className="wrap">
@@ -159,7 +161,7 @@ export default function Blog() {
         </div>
       </section>
 
-      <SiteFooter />
-    </>
+      <DeckFooter />
+    </div>
   );
 }

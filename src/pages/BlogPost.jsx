@@ -1,9 +1,11 @@
 import { useEffect } from 'react';
 import { Link, useParams, Navigate } from 'react-router-dom';
-import SiteHeader from '../components/SiteHeader';
-import SiteFooter from '../components/SiteFooter';
+import DeckNav from '../components/DeckNav';
+import DeckFooter from '../components/DeckFooter';
 import { CONTACT } from '../site';
 import { applySeo, ORIGIN } from '../seo';
+import '../landing-deck.css';
+import '../blog-dark.css';
 import { getPostBySlug, getRelatedPosts, formatPostDate } from '../blog/posts.jsx';
 
 function CoverFallback({ title }) {
@@ -85,8 +87,8 @@ export default function BlogPost() {
   const related = getRelatedPosts(post.slug, 3);
 
   return (
-    <>
-      <SiteHeader />
+    <div className="deck">
+      <DeckNav />
 
       <article>
         <header className="bp-head">
@@ -139,7 +141,7 @@ export default function BlogPost() {
         </section>
       )}
 
-      <SiteFooter />
-    </>
+      <DeckFooter />
+    </div>
   );
 }

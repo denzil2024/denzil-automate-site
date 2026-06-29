@@ -2,6 +2,8 @@
 // primary navigation so the header, mobile menu and footer never drift.
 export const CONTACT = 'https://wa.me/254781246345';
 export const WHATSAPP_DISPLAY = '+254 781 246 345';
+export const TELEGRAM = 'https://t.me/+254729456805';
+export const TELEGRAM_DISPLAY = '+254 729 456 805';
 export const EMAIL = 'denzil@workwithdenzil.com';
 export const EMAIL_LINK = 'mailto:denzil@workwithdenzil.com';
 

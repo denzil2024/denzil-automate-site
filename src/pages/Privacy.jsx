@@ -1,8 +1,10 @@
 import { useEffect } from 'react';
-import SiteHeader from '../components/SiteHeader';
-import SiteFooter from '../components/SiteFooter';
+import DeckNav from '../components/DeckNav';
+import DeckFooter from '../components/DeckFooter';
 import { applySeo } from '../seo';
 import { CONTACT, EMAIL, EMAIL_LINK } from '../site';
+import '../landing-deck.css';
+import '../blog-dark.css';
 
 export default function Privacy() {
   useEffect(() => {
@@ -14,8 +16,8 @@ export default function Privacy() {
   }, []);
 
   return (
-    <>
-      <SiteHeader />
+    <div className="deck">
+      <DeckNav />
 
       <section className="bl-hero">
         <div className="wrap">
@@ -65,7 +67,7 @@ export default function Privacy() {
         </div>
       </div>
 
-      <SiteFooter />
-    </>
+      <DeckFooter />
+    </div>
   );
 }
